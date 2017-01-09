@@ -19,7 +19,7 @@ theme = "hugo-elate-theme"
     work = "Work"
     testimonials = "Testimonials"
     services = "Services"
-    about = "About"
+    about = "Sponsors"
     contact = "Contact"
 
     # You can add custom links before or after the default links
@@ -41,7 +41,7 @@ theme = "hugo-elate-theme"
   [params.hero]
     title = "Making what we love."
     subtitle = 'Mann Robotics is a VEX Robotics Competition Organization based at J. L. Mann High School in Greenville, South Carolina'
- 
+
   # Intro section
   # Available icons: http://simplelineicons.com/
   [params.intro]
