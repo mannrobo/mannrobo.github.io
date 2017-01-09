@@ -1,5 +1,5 @@
 # Page settings
-baseurl = "https://mannrobo.github.io"
+baseurl = "https://mannrobo.github.io/story/"
 title = "Mann Robotics | Robotics Organization in Greenville, SC"
 languageCode = "en-us"
 theme = "hugo-elate-theme"
