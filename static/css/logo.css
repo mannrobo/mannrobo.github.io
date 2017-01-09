@@ -3,15 +3,15 @@ header .navbar-brand > img {
   position: absolute;
   top: 0;
   padding: 8px;
-  content: url("/story/img/logo-white.svg");
+  content: url("/img/logo-white.svg");
 
 }
 header.navbar-fixed-top.fh5co-animated.slideInDown .navbar-brand > img {
-  content: url("/story/img/logo-blue.svg");
+  content: url("/img/logo-blue.svg");
 }
 
 @media screen and (max-width: 768px) {
   header .navbar-brand > img {
-    content: url("/story/img/logo-blue.svg");
+    content: url("/img/logo-blue.svg");
   }
 }
