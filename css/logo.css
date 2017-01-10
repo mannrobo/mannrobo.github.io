@@ -1,0 +1,17 @@
+header .navbar-brand > img {
+  height: 55px;
+  position: absolute;
+  top: 0;
+  padding: 8px;
+  content: url("/img/logo-white.svg");
+
+}
+header.navbar-fixed-top.fh5co-animated.slideInDown .navbar-brand > img {
+  content: url("/img/logo-blue.svg");
+}
+
+@media screen and (max-width: 768px) {
+  header .navbar-brand > img {
+    content: url("/img/logo-blue.svg");
+  }
+}

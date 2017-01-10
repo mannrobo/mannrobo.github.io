@@ -1,0 +1,70 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes" ?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>Mann Robotics | Robotics Organization in Greenville, SC</title>
+    <link>https://mannrobo.github.io/index.xml</link>
+    <description>Recent content on Mann Robotics | Robotics Organization in Greenville, SC</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>en-us</language>
+    <lastBuildDate>Tue, 10 Jan 2017 15:21:53 -0500</lastBuildDate>
+    <atom:link href="https://mannrobo.github.io/index.xml" rel="self" type="application/rss+xml" />
+    
+    <item>
+      <title>Mann Made (3796A)</title>
+      <link>https://mannrobo.github.io/team/3796A/</link>
+      <pubDate>Tue, 10 Jan 2017 15:21:53 -0500</pubDate>
+      
+      <guid>https://mannrobo.github.io/team/3796A/</guid>
+      <description>
+
+&lt;h1 id=&#34;hello-world&#34;&gt;Hello World&lt;/h1&gt;
+</description>
+    </item>
+    
+    <item>
+      <title></title>
+      <link>https://mannrobo.github.io/join/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>https://mannrobo.github.io/join/</guid>
+      <description>&lt;!DOCTYPE html&gt;
+&lt;!--[if lt IE 7]&gt;      &lt;html class=&#34;no-js lt-ie9 lt-ie8 lt-ie7&#34;&gt; &lt;![endif]--&gt;
+&lt;!--[if IE 7]&gt;         &lt;html class=&#34;no-js lt-ie9 lt-ie8&#34;&gt; &lt;![endif]--&gt;
+&lt;!--[if IE 8]&gt;         &lt;html class=&#34;no-js lt-ie9&#34;&gt; &lt;![endif]--&gt;
+&lt;!--[if gt IE 8]&gt;      &lt;html class=&#34;no-js&#34;&gt; &lt;![endif]--&gt;
+&lt;html&gt;
+    &lt;head&gt;
+        {{ partial &#34;head.html&#34; .}}
+    &lt;/head&gt;
+    &lt;body&gt;
+        {{ partial &#34;nav-join.html&#34; .}}
+
+        &lt;section id=&#34;fh5co-home&#34; data-section=&#34;home&#34; style=&#34;background-image: url(images/full_image_2.jpg);&#34; data-stellar-background-ratio=&#34;0.5&#34;&gt;
+          &lt;div class=&#34;gradient&#34;&gt;&lt;/div&gt;
+          &lt;div class=&#34;container&#34;&gt;
+            &lt;div class=&#34;text-wrap&#34;&gt;
+              &lt;div class=&#34;text-inner&#34;&gt;
+                &lt;div class=&#34;row&#34;&gt;
+                  &lt;div class=&#34;col-md-8 col-md-offset-2&#34;&gt;
+                    &lt;h1 class=&#34;to-animate&#34;&gt;Be a part of something awesome!&lt;/h1&gt;
+                    &lt;h2 class=&#34;to-animate&#34;&gt;Join Mann Robotics Today!&lt;/h2&gt;
+                  &lt;/div&gt;
+                &lt;/div&gt;
+              &lt;/div&gt;
+            &lt;/div&gt;
+          &lt;/div&gt;
+          &lt;div class=&#34;slant&#34;&gt;&lt;/div&gt;
+        &lt;/section&gt;
+
+      	{{ partial &#34;contact-join.html&#34; .}}
+
+      	{{ partial &#34;footer.html&#34; .}}
+
+        {{ partial &#34;js.html&#34; .}}
+    &lt;/body&gt;
+&lt;/html&gt;
+</description>
+    </item>
+    
+  </channel>
+</rss>
