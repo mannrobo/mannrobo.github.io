@@ -4,3 +4,11 @@ a.btn.btn-large {
   font-size: 130%;
 
 }
+
+select.form-control {
+  color: rgba(0,0,0,0.4);
+}
+
+select.form-control.modified {
+  color: #555555;
+}
