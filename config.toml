@@ -6,7 +6,7 @@ theme = "hugo-elate-theme"
 
 [params]
 
-  custom_css = ["/css/logo.css", "/css/sponsors.css"]
+  custom_css = ["/css/logo.css", "/css/sponsors.css", "/css/main.css"]
 
   # Meta
   author = "Brendan McGuire"
