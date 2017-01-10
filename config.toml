@@ -212,17 +212,17 @@ theme = "hugo-elate-theme"
       speed = 300
 
     [[params.counters.item]]
-      description = "Cups of coffee"
-      icon = "icon-cup"
+      description = "Years Competed"
+      icon = "icon-calendar"
       from = 0
-      to = 1302
+      to = 3
       interval = 50
       speed = 300
     [[params.counters.item]]
-      description = "Happy clients"
-      icon = "icon-people"
+      description = "Hours Spent (est.)"
+      icon = "icon-clock"
       from = 0
-      to = 52
+      to = 3000
       interval = 50
       speed = 300
 
