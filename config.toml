@@ -6,7 +6,7 @@ theme = "hugo-elate-theme"
 
 [params]
 
-  custom_css = ["css/logo.css", "css/sponsors.css"]
+  custom_css = ["/css/logo.css", "/css/sponsors.css"]
 
   # Meta
   author = "Brendan McGuire"
@@ -17,8 +17,7 @@ theme = "hugo-elate-theme"
     brand = "<img src='' alt='Mann Robotics'>"
     home = "Home"
     work = "Work"
-    testimonials = "Testimonials"
-    services = "Services"
+    services = "About"
     about = "Sponsors"
     contact = "Contact"
 
@@ -150,27 +149,27 @@ theme = "hugo-elate-theme"
   # Services section
   [params.services]
     enable = true
-    title = "Services"
-    description = "Far far away, behind the word mountains, far from the countries Vokalia and Consonantia, there live the blind texts."
+    title = "About"
+    description = "Starting in Vex Robotics Skyrise with only one team of 8, Mann Robotics has grown to a medium sized organization and a force to be reckoned with in the region"
 
     [[params.services.item]]
-      title = "Brand &amp; Strategy"
+      title = "First Year"
       description = "Far far away, behind the word mountains, far from the countries Vokalia and Consonantia, there live the blind texts. Separated they live in Bookmarksgrove right at the coast of the Semantics, a large language ocean"
-      icon = "icon-anchor"
+      icon = "icon-rocket"
 
     [[params.services.item]]
-      title = "Web &amp; Interface"
+      title = "New Year, New Team"
       description = "Far far away, behind the word mountains, far from the countries Vokalia and Consonantia, there live the blind texts. Separated they live in Bookmarksgrove right at the coast of the Semantics, a large language ocean"
-      icon = "icon-layers2"
+      icon = "icon-wrench"
     [[params.services.item]]
-      title = "Photo &amp; Video"
+      title = "State Tournament"
       description = "Far far away, behind the word mountains, far from the countries Vokalia and Consonantia, there live the blind texts. Separated they live in Bookmarksgrove right at the coast of the Semantics, a large language ocean"
-      icon = "icon-video2"
+      icon = "icon-trophy"
 
       [[params.services.item]]
-      title = "CMS &amp; eCommerce"
+      title = "New Year, New Team (again)"
       description = "Far far away, behind the word mountains, far from the countries Vokalia and Consonantia, there live the blind texts. Separated they live in Bookmarksgrove right at the coast of the Semantics, a large language ocean"
-      icon = "icon-monitor"
+      icon = "icon-people"
 
   # About section
   [params.about]
@@ -193,7 +192,7 @@ theme = "hugo-elate-theme"
   # Counters section
   [params.counters]
     enable = true
-    title = "Stats"
+    title = "Join Now"
     background = "full_image_1.jpg"
 
     [[params.counters.item]]
