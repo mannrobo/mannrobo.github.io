@@ -55,7 +55,7 @@ theme = "hugo-elate-theme"
 
   [[params.intro.item]]
     title = "Some Assembly Required (3796B)"
-    description = "Birthed in VEX Robotics Nothing But Net, 3796B qualified for the South Carolina State Tournament in their first year."
+    description = "Founded in VEX Robotics Nothing But Net, 3796B qualified for the South Carolina State Tournament in their first year."
     url = "/team/3796B/"
     button = "Learn More"
     icon = "icon-wrench"
