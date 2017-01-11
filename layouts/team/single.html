@@ -5,15 +5,22 @@
 <!--[if gt IE 8]>      <html class="no-js"> <![endif]-->
 <html>
     <head>
-        {{ partial "head.html" .}}
+        {{ partial "head.html" }}
+        <link rel="stylesheet" href="/css/team.css">
+        <script async src="js/stats.js"></script>
     </head>
     <body>
-        {{ partial "nav-team.html" .}}
+        {{ partial "team/nav.html" .}}
 
-      	{{ partial "contact-join.html" .}}
+        {{ partial "team/hero.html" .}}
+
+        {{ partial "team/stats.html" .}}
+
+        {{ partial "team/biography.html" .}}
 
       	{{ partial "footer.html" .}}
 
         {{ partial "js.html" .}}
+
     </body>
 </html>
