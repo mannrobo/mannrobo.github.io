@@ -154,21 +154,21 @@ theme = "hugo-elate-theme"
 
     [[params.services.item]]
       title = "First Year"
-      description = "Far far away, behind the word mountains, far from the countries Vokalia and Consonantia, there live the blind texts. Separated they live in Bookmarksgrove right at the coast of the Semantics, a large language ocean"
+      description = "Our first year as a team was a very educational and fun experience for all of us. We went from being a startup group without any idea what we were doing to a registered VRC team with an actual robot."
       icon = "icon-rocket"
 
     [[params.services.item]]
       title = "New Year, New Team"
-      description = "Far far away, behind the word mountains, far from the countries Vokalia and Consonantia, there live the blind texts. Separated they live in Bookmarksgrove right at the coast of the Semantics, a large language ocean"
+      description = "In Nothing But Net (2015-2016) we gained a new team: Some Assembly Required. Made of a Junior trying to get back into robotics and two 8th graders updrading from FLL, they won Programming Skills at our tournament, qualifing them for state."
       icon = "icon-wrench"
     [[params.services.item]]
       title = "State Tournament"
-      description = "Far far away, behind the word mountains, far from the countries Vokalia and Consonantia, there live the blind texts. Separated they live in Bookmarksgrove right at the coast of the Semantics, a large language ocean"
+      description = "On little sleep and lots of hope, Some Assembly Required traveled to Lexington, South Carolina to compete in the South Carolina State Tournament, scoring better than about half the teams who went."
       icon = "icon-trophy"
 
       [[params.services.item]]
       title = "New Year, New Team (again)"
-      description = "Far far away, behind the word mountains, far from the countries Vokalia and Consonantia, there live the blind texts. Separated they live in Bookmarksgrove right at the coast of the Semantics, a large language ocean"
+      description = "Yet again, in StarStruck, we gained another team: WoMann. Designed to attract young women to Robotics and STEM, WoMann have yet to compete in any competition, but will debut at the Viking Gauntlet Challenge"
       icon = "icon-people"
 
   # About section
