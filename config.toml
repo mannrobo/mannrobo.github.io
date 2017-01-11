@@ -193,9 +193,9 @@ theme = "hugo-elate-theme"
       [[params.mentors.item]]
         name = "Steve Hajosy"
         position = "Teacher"
-        description = "Steve Hajosy is the Engineering Teacher at J. L. Mann at sponsors Mann Robotics. He mentors [Mann Made](/team/3796A) and [WoMann](/team/3796C)"
-        img = "https://unsplash.it/300/300"
-        alt = "Person1"
+        description = "Steve Hajosy is the Engineering Teacher at J. L. Mann that sponsors Mann Robotics. He mentors [Mann Made](/team/3796A) and [WoMann](/team/3796C)"
+        img = "/img/mentors/hajosy.jpg"
+        alt = "Steve Hajosy"
         social = [
           ["icon-globe", "http://sites.google.com/a/greenvilleschools.us/shajosy/"],
           ["icon-envelope", "mailto:shajosy@greenvilleschools.k12.sc.us"],
@@ -206,12 +206,23 @@ theme = "hugo-elate-theme"
           position = "Parent"
           description = "Michael Mulea, parent of Tyler Mulea, a member of [Some Assembly Required](/team/3796B), mentors the team. He also makes all of the t-shirts for teams"
           img = "https://unsplash.it/300/300"
-          alt = "Person1"
+          alt = "Micheal Mulea"
           social = [
             ["icon-globe", "http://great-gear-graphics.com/"],
             ["icon-envelope", "mailto:mike@great-gear-graphics.com/"],
             ["icon-phone", "tel:17049754212 "]
           ]
+          [[params.mentors.item]]
+            name = "Steven Pasternak"
+            position = "Teacher"
+            description = "Steven Pasternak is a Math Teacher at J. L. Mann, specifically focused on Project Based Learning in NewTech@Mann. He assists in mentoring [Mann Made](/team/3796A)"
+            img = "/img/mentors/pasternak.jpg"
+            alt = "Steven Pasternak"
+            social = [
+              ["icon-globe", "http://sites.google.com/a/greenvilleschools.us/mr-pasternak-s-math-class/"],
+              ["icon-envelope", "mailto:spasternak@greenville.k12.sc.us"],
+              ["icon-phone", "tel:18643556376 "]
+            ]
 
 
 
