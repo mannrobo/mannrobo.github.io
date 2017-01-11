@@ -186,6 +186,32 @@ theme = "hugo-elate-theme"
       social = [
         ["icon-globe", "http://www.palmettopartnersrobotics.com/"],
       ]
+    [params.mentors]
+      enable = true
+      title = "Mentors"
+
+      [[params.mentors.item]]
+        name = "Steve Hajosy"
+        position = "Teacher"
+        description = "Steve Hajosy is the Engineering Teacher at J. L. Mann at sponsors Mann Robotics. He mentors 3796A Mann Made and 3796C WoMann"
+        img = "https://unsplash.it/300/300"
+        alt = "Person1"
+        social = [
+          ["icon-globe", "http://sites.google.com/a/greenvilleschools.us/shajosy/"],
+          ["icon-envelope", "mailto:shajosy@greenvilleschools.k12.sc.us"],
+          ["icon-phone", "tel:1-864-355-7581"]
+        ]
+        [[params.mentors.item]]
+          name = "Michael Mulea"
+          position = "Parent"
+          description = "Michael Mulea, parent of Tyler Mulea, a member of Some Assembly Required, mentors the team. He also makes all of the t-shirts for teams"
+          img = "https://unsplash.it/300/300"
+          alt = "Person1"
+          social = [
+            ["icon-globe", "http://great-gear-graphics.com/"],
+            ["icon-envelope", "mailto:mike@great-gear-graphics.com/"],
+            ["icon-phone", "tel:1-704-975-4212"]
+          ]
 
 
 

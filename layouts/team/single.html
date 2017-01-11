@@ -7,12 +7,14 @@
     <head>
         {{ partial "head.html" }}
         <link rel="stylesheet" href="/css/team.css">
-        <script async src="js/stats.js"></script>
+        <script src="/js/team.js"></script>
     </head>
     <body>
         {{ partial "team/nav.html" .}}
 
         {{ partial "team/hero.html" .}}
+
+        {{ partial "team/members.html" .}}
 
         {{ partial "team/stats.html" .}}
 

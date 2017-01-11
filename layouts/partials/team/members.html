@@ -1,0 +1,30 @@
+<section id="fh5co-members" data-section="members">
+  <div class="container">
+    <div class="row">
+      <div class="col-md-12 section-heading text-center">
+        <h2 class="to-animate">Members</h2>
+      </div>
+    </div>
+    <div class="row">
+      <div class="col-md-6">
+        {{ with index .Site.Params.mentors.item .Params.mentor }}
+            <div class="fh5co-person text-center to-animate">
+              <figure><img src="{{ .img }}" alt="{{ .alt }}"></figure>
+              <h3>{{ .name | markdownify }}</h3>
+              <span class="fh5co-position">{{ .position | markdownify }}</span>
+              <p>{{ .description | markdownify }}</p>
+              <ul class="social social-circle">
+              {{ range .social }}
+                <li><a href="{{ index . 1 }}"><i class="{{ index .  0 }}"></i></a></li>
+              {{ end }}
+              </ul>
+            </div>
+        {{ end }}
+    </div>
+    <div class="col-md-6 text-center">
+      {{ range .Params.members }}
+       <p class = "subtext">{{ . }}</p>
+      {{ end }}
+    </div>
+  </div>
+</section>
