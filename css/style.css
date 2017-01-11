@@ -5,12 +5,8 @@
   font-weight: normal;
   font-style: normal;
 }
-/* =======================================================
-*
-* 	Template Style
-*	Edit this section
-*
-* ======================================================= */
+
+
 body {
   font-family: "Source Sans Pro", Arial, sans-serif;
   font-weight: 300;
@@ -21,6 +17,7 @@ body {
   background: #fff;
   height: 100%;
   position: relative;
+  overflow-x: hidden;
 }
 
 a {
