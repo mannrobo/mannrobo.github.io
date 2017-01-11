@@ -208,6 +208,38 @@
 		}
 	};
 
+	var mentorsAnimate = function() {
+		var mentors = $('#fh5co-mentors');
+		console.log(mentors);
+		if ( mentors.length > 0 ) {
+
+			mentors.waypoint( function( direction ) {
+
+				if( direction === 'down' && !$(this.element).hasClass('animated') ) {
+
+
+					setTimeout(function() {
+						mentors.find('.to-animate').each(function( k ) {
+							var el = $(this);
+
+							setTimeout ( function () {
+								el.addClass('fadeInUp animated');
+							},  k * 200, 'easeInOutExpo' );
+
+						});
+					}, 200);
+
+
+
+					$(this.element).addClass('animated');
+
+				}
+			} , { offset: '80%' } );
+
+		}
+	};
+
+
 	var workAnimate = function() {
 		if ( $('#fh5co-work').length > 0 ) {
 
@@ -352,6 +384,8 @@
 		}
 	};
 
+
+
 	var countersAnimate = function() {
 		var counters = $('#fh5co-counters');
 		if ( counters.length > 0 ) {
@@ -460,12 +494,14 @@
 		// Animations
 		homeAnimate();
 		introAnimate();
+		mentorsAnimate();
 		workAnimate();
 		testimonialAnimate();
 		servicesAnimate();
 		aboutAnimate();
 		countersAnimate();
 		contactAnimate();
+		if (typeof membersAnimate == "function") membersAnimate();
 
 
 	});
