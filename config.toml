@@ -199,7 +199,7 @@ theme = "hugo-elate-theme"
         social = [
           ["icon-globe", "http://sites.google.com/a/greenvilleschools.us/shajosy/"],
           ["icon-envelope", "mailto:shajosy@greenvilleschools.k12.sc.us"],
-          ["icon-phone", "tel:1-864-355-7581"]
+          ["icon-phone", "tel:18643557581"]
         ]
         [[params.mentors.item]]
           name = "Michael Mulea"
@@ -210,7 +210,7 @@ theme = "hugo-elate-theme"
           social = [
             ["icon-globe", "http://great-gear-graphics.com/"],
             ["icon-envelope", "mailto:mike@great-gear-graphics.com/"],
-            ["icon-phone", "tel:1-704-975-4212"]
+            ["icon-phone", "tel:17049754212 "]
           ]
 
 
