@@ -159,7 +159,7 @@ theme = "hugo-elate-theme"
 
     [[params.services.item]]
       title = "New Year, New Team"
-      description = "In Nothing But Net (2015-2016) we gained a new team: Some Assembly Required. Made of a Junior trying to get back into robotics and two 8th graders updrading from FLL, they won Programming Skills at our tournament, qualifing them for state."
+      description = "In Nothing But Net (2015-2016) we gained a new team: Some Assembly Required. Made of a Junior trying to get back into robotics and two 8th graders moving up from FLL, they won Programming Skills at our tournament, qualifing them for state."
       icon = "icon-wrench"
     [[params.services.item]]
       title = "State Tournament"
@@ -193,7 +193,7 @@ theme = "hugo-elate-theme"
       [[params.mentors.item]]
         name = "Steve Hajosy"
         position = "Teacher"
-        description = "Steve Hajosy is the Engineering Teacher at J. L. Mann at sponsors Mann Robotics. He mentors 3796A Mann Made and 3796C WoMann"
+        description = "Steve Hajosy is the Engineering Teacher at J. L. Mann at sponsors Mann Robotics. He mentors [Mann Made](/team/3796A) and [WoMann](/team/3796C)"
         img = "https://unsplash.it/300/300"
         alt = "Person1"
         social = [
@@ -204,7 +204,7 @@ theme = "hugo-elate-theme"
         [[params.mentors.item]]
           name = "Michael Mulea"
           position = "Parent"
-          description = "Michael Mulea, parent of Tyler Mulea, a member of Some Assembly Required, mentors the team. He also makes all of the t-shirts for teams"
+          description = "Michael Mulea, parent of Tyler Mulea, a member of [Some Assembly Required](/team/3796B), mentors the team. He also makes all of the t-shirts for teams"
           img = "https://unsplash.it/300/300"
           alt = "Person1"
           social = [
@@ -276,4 +276,4 @@ theme = "hugo-elate-theme"
   # Footer section
   [params.footer]
     enable = true
-    copyright = '&copy; Mann Robotics. All Rights Reserved.'
+    copyright = '&copy; Mann Robotics. All Rights Reserved. <br /> Student Contact: <br /> Brendan McGuire <a href="mailto: artificalchamber@gmail.com">&lt;artificalchamber@gmail.com&gt;</a>'
