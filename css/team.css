@@ -230,5 +230,9 @@ section#fh5co-counters .fh5co-counter-icon {
 
 section#fh5co-bio {
   margin-top: 64px;
-  
+
+}
+
+div.biography {
+  text-align: justify;
 }

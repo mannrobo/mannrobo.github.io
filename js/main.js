@@ -354,6 +354,49 @@
 		}
 	};
 
+	var ctaAnimate = function() {
+		var cta = $('#fh5co-cta');
+		if ( cta.length > 0 ) {
+
+			cta.waypoint( function( direction ) {
+
+				if( direction === 'down' && !$(this.element).hasClass('animated') ) {
+
+					var sec = cta.find('.to-animate').length,
+						sec = parseInt((sec * 200) + 400);
+
+					setTimeout(function() {
+						cta.find('.to-animate').each(function( k ) {
+							var el = $(this);
+
+							setTimeout ( function () {
+								el.addClass('fadeInUp animated');
+							},  k * 200, 'easeInOutExpo' );
+
+						});
+					}, 200);
+
+					setTimeout(function() {
+						cta.find('.to-animate-2').each(function( k ) {
+							var el = $(this);
+
+							setTimeout ( function () {
+								el.addClass('bounceIn animated');
+							},  k * 200, 'easeInOutExpo' );
+
+						});
+					}, sec);
+
+
+
+					$(this.element).addClass('animated');
+
+				}
+			} , { offset: '80%' } );
+
+		}
+	};
+
 	var aboutAnimate = function() {
 		var about = $('#fh5co-about');
 		if ( about.length > 0 ) {
@@ -501,6 +544,7 @@
 		aboutAnimate();
 		countersAnimate();
 		contactAnimate();
+		ctaAnimate();
 		if (typeof membersAnimate == "function") membersAnimate();
 
 

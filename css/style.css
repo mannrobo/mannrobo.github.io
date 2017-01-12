@@ -608,22 +608,22 @@ h1, h2, h3, h4, h5, h6 {
   }
 }
 
-#fh5co-services, #fh5co-work, #fh5co-counters {
+#fh5co-services, #fh5co-join, #fh5co-work, #fh5co-counters {
   padding: 7em 0;
 }
 @media screen and (max-width: 768px) {
-  #fh5co-services, #fh5co-work, #fh5co-counters {
+  #fh5co-services, #fh5co-join, #fh5co-work, #fh5co-counters {
     padding: 4em 0;
   }
 }
 
-#fh5co-services {
+#fh5co-services, #fh5co-join {
   background-color: #8299e6;
   overflow: hidden;
   position: relative;
   color: rgba(255, 255, 255, 0.7);
 }
-#fh5co-services:before, #fh5co-services:after {
+#fh5co-services:before, #fh5co-join:before, #fh5co-services:after, #fh5co-join:after {
   position: absolute;
   transform: rotate(-1.7deg);
   -ms-transform: rotate(-1.7deg);
@@ -638,11 +638,11 @@ h1, h2, h3, h4, h5, h6 {
   padding: 0;
   width: 101%;
 }
-#fh5co-services:before {
+#fh5co-services:before, #fh5co-join:before {
   top: 0;
   margin-top: -35px;
 }
-#fh5co-services:after {
+#fh5co-services:after, #fh5co-join:after {
   bottom: 0;
   margin-bottom: -35px;
 }
@@ -664,10 +664,10 @@ h1, h2, h3, h4, h5, h6 {
 #fh5co-services .icon:before {
   color: #fff;
 }
-#fh5co-services .section-heading h2 {
+#fh5co-services .section-heading h2, #fh5co-join .section-heading h2 {
   color: #fff;
 }
-#fh5co-services .section-heading h2.left-border:after {
+#fh5co-services .section-heading h2.left-border:after, #fh5co-join .section-heading h2:after {
   background: rgba(255, 255, 255, 0.3);
 }
 
@@ -681,6 +681,8 @@ h1, h2, h3, h4, h5, h6 {
   width: 100%;
   padding: 9em 0 10em 0;
 }
+
+
 @media screen and (max-width: 768px) {
   #fh5co-counters {
     padding: 4em 0;
@@ -695,6 +697,7 @@ h1, h2, h3, h4, h5, h6 {
   z-index: 2;
   background: rgba(0, 0, 0, 0.7);
 }
+
 #fh5co-counters:before, #fh5co-counters:after {
   position: absolute;
   transform: rotate(-1.7deg);
@@ -729,7 +732,7 @@ h1, h2, h3, h4, h5, h6 {
 #fh5co-counters .section-heading h2:after {
   background: rgba(255, 255, 255, 0.3) !important;
 }
-#fh5co-counters .section-heading .subtext h3 {
+#fh5co-counters .section-heading .subtext h3, #fh5co-join .section-heading .subtext h3 {
   color: rgba(255, 255, 255, 0.7) !important;
 }
 #fh5co-counters .fh5co-counter {
@@ -1232,6 +1235,7 @@ h1, h2, h3, h4, h5, h6 {
   border: none !important;
   border: 2px solid transparent !important;
 }
+
 .btn.btn-primary:hover, .btn.btn-primary:active, .btn.btn-primary:focus {
   box-shadow: none;
   background: #8299e6;
@@ -1243,6 +1247,21 @@ h1, h2, h3, h4, h5, h6 {
 }
 .btn.btn-default:hover, .btn.btn-default:focus, .btn.btn-default:active {
   border-color: transparent;
+}
+
+.btn.btn-white {
+  background: #FFF;
+  color: #8299e6;
+  border: none !important;
+  border: 2px solid transparent !important;
+}
+
+.btn.btn-white:hover, .btn.btn-white:focus, .btn.btn-white:active {
+  border-color: transparent;
+}
+
+.btn-big {
+  font-size: 150%;
 }
 
 .social {
@@ -1382,5 +1401,4 @@ h1, h2, h3, h4, h5, h6 {
   -webkit-animation-fill-mode: both;
   animation-fill-mode: both;
 }
-
 /*# sourceMappingURL=style.css.map */
