@@ -62,7 +62,7 @@ theme = "hugo-elate-theme"
     img = "img_8.jpg"
 
   [[params.intro.item]]
-    title = "WoMann (3796C)"
+    title = "Flower Power (3796C)"
     description = "Created in VEX Robotics StarStruck, 3796C was created to attract young women to STEM and Robotics at J. L. Mann High School, set to debut at the Viking Gauntlet Challenge"
     url = "/team/3796C/"
     button = "Learn More"
@@ -167,8 +167,8 @@ theme = "hugo-elate-theme"
       icon = "icon-trophy"
 
       [[params.services.item]]
-      title = "New Year, New Team (again)"
-      description = "Yet again, in StarStruck, we gained another team: WoMann. Designed to attract young women to Robotics and STEM, WoMann have yet to compete in any competition, but will debut at the Viking Gauntlet Challenge"
+      title = "Another New Year, Another New Team"
+      description = "Yet again, in StarStruck, we gained another team: Flower Power. Designed to attract young women to Robotics and STEM, Flower Power have yet to compete in any competition, but will debut at the Viking Gauntlet Challenge"
       icon = "icon-people"
 
   # About section
@@ -180,7 +180,7 @@ theme = "hugo-elate-theme"
     [[params.about.item]]
       name = "Palmetto Partners"
       position = "Sponsor"
-      description = "Palmetto Partners sponsors many robotics and STEM fields across the state of South Carolina"
+      description = "Palmetto Partners sponsors many robotics organizations across the state of South Carolina and have helped us jumpstart both [Some Assembly Required](/team/3796B) and [Flower Power](/team/3796C)"
       img = "sponsors/palmetto.svg"
       alt = "Person1"
       social = [
@@ -193,7 +193,7 @@ theme = "hugo-elate-theme"
       [[params.mentors.item]]
         name = "Steve Hajosy"
         position = "Teacher"
-        description = "Steve Hajosy is the Engineering Teacher at J. L. Mann that sponsors Mann Robotics. He mentors [Mann Made](/team/3796A) and [WoMann](/team/3796C)"
+        description = "Steve Hajosy is a PTLW Engineering Teacher at J. L. Mann. He sponsors Mann Robotics as a whole and mentors [Mann Made](/team/3796A) and [Flower Power](/team/3796C)"
         img = "/img/mentors/hajosy.jpg"
         alt = "Steve Hajosy"
         social = [
@@ -204,7 +204,7 @@ theme = "hugo-elate-theme"
         [[params.mentors.item]]
           name = "Michael Mulea"
           position = "Parent"
-          description = "Michael Mulea, parent of Tyler Mulea, a member of [Some Assembly Required](/team/3796B), mentors the team. He also makes all of the t-shirts for teams"
+          description = "Michael Mulea, parent of Tyler Mulea, mentors the [Some Assembly Required](/team/3796B) team. He owns a printing company, and generously prints team T-shirts every season."
           img = "https://unsplash.it/300/300"
           alt = "Micheal Mulea"
           social = [
@@ -215,7 +215,7 @@ theme = "hugo-elate-theme"
           [[params.mentors.item]]
             name = "Steven Pasternak"
             position = "Teacher"
-            description = "Steven Pasternak is a Math Teacher at J. L. Mann, specifically focused on Project Based Learning in NewTech@Mann. He assists in mentoring [Mann Made](/team/3796A)"
+            description = "Steven Pasternak is a mathematics and PLTW engineering teacher at J.L. Mann. He is a mentor for [Mann Made](/team/3796A)"
             img = "/img/mentors/pasternak.jpg"
             alt = "Steven Pasternak"
             social = [
@@ -229,7 +229,7 @@ theme = "hugo-elate-theme"
   # Counters section
   [params.counters]
     enable = true
-    title = "Join Now"
+    title = "Stats"
     background = "full_image_1.jpg"
 
     [[params.counters.item]]
@@ -245,7 +245,7 @@ theme = "hugo-elate-theme"
       icon = "icon-user"
       from = 0
       to = 25
-      interval = 50
+      interval = 2
       speed = 300
 
     [[params.counters.item]]
@@ -253,14 +253,14 @@ theme = "hugo-elate-theme"
       icon = "icon-calendar"
       from = 0
       to = 3
-      interval = 50
+      interval = 1
       speed = 300
     [[params.counters.item]]
-      description = "Hours Spent (est.)"
-      icon = "icon-clock"
+      description = "Robots Built"
+      icon = "icon-wrench"
       from = 0
-      to = 3000
-      interval = 50
+      to = 6
+      interval = 1
       speed = 300
 
   # Contact section
@@ -287,4 +287,4 @@ theme = "hugo-elate-theme"
   # Footer section
   [params.footer]
     enable = true
-    copyright = '&copy; Mann Robotics. All Rights Reserved. <br /> Student Contact: <br /> Brendan McGuire <a href="mailto: artificalchamber@gmail.com">&lt;artificalchamber@gmail.com&gt;</a>'
+    copyright = '&copy; Mann Robotics. All Rights Reserved.'

@@ -22,9 +22,11 @@
         {{ end }}
     </div>
     <div class="col-md-6 text-center">
-      {{ range .Params.members }}
-       <p class = "subtext">{{ . }}</p>
-      {{ end }}
+      <div class="row">
+        {{ range .Params.members }}
+         <p class="subtext col-xs-6">{{ . }}</p>
+        {{ end }}
+      </div>
     </div>
   </div>
 </section>
