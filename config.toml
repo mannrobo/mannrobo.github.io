@@ -63,7 +63,7 @@ theme = "hugo-elate-theme"
 
   [[params.intro.item]]
     title = "Flower Power (3796C)"
-    description = "Created in VEX Robotics StarStruck, 3796C was created to attract young women to STEM and Robotics at J. L. Mann High School, set to debut at the Viking Gauntlet Challenge"
+    description = "Founded in VEX Robotics StarStruck, 3796C was created to attract young women to STEM and Robotics at J. L. Mann High School, set to debut at the Viking Gauntlet Challenge"
     url = "/team/3796C/"
     button = "Learn More"
     icon = "icon-rocket"
