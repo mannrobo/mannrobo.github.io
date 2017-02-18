@@ -1,0 +1,58 @@
+#fh5co-header {
+  position: relative;
+  height: 60vh;
+  width: 100vw;
+  margin: 0;
+  background-color: #FFF !important;
+}
+
+#fh5co-header .container {
+  padding: 0;
+}
+
+#fh5co-header .navbar.navbar-default {
+  background: #FFFFFF;
+}
+
+#fh5co-header .fh5co-nav-toggle {
+  margin-right: 15px !important;
+}
+
+#fh5co-header .navbar.navbar-default ul.nav {
+  position: relative;
+  top: -18px;
+}
+
+#fh5co-header .navbar.navbar-default .navbar-brand {
+  padding-left: 15px;
+}
+
+#fh5co-header .background-image {
+  height:60vh;
+  width:100vw;
+  position:absolute;
+  object-fit:cover
+}
+
+#fh5co-header.slideInDown .background-image {
+  display: none;
+}
+
+#fh5co-header.slideInDown {
+  height: 55px
+}
+#fh5co-header.slideInDown .navbar.navbar-default {
+  margin-top: 0
+}
+
+@media (min-width: 768px) {
+  #fh5co-header .navbar.navbar-default {
+    margin-top: 40px;
+    padding: 15px 0;
+    background-color: transparent;
+  }
+}
+
+article {
+  margin-top: 40px;
+}

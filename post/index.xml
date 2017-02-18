@@ -1,13 +1,13 @@
 <?xml version="1.0" encoding="utf-8" standalone="yes" ?>
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
-    <title>Mann Robotics | Robotics Organization in Greenville, SC</title>
-    <link>https://mannrobo.github.io/index.xml</link>
-    <description>Recent content on Mann Robotics | Robotics Organization in Greenville, SC</description>
+    <title>Posts on Mann Robotics | Robotics Organization in Greenville, SC</title>
+    <link>https://mannrobo.github.io/post/index.xml</link>
+    <description>Recent content in Posts on Mann Robotics | Robotics Organization in Greenville, SC</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>en-us</language>
     <lastBuildDate>Sat, 18 Feb 2017 06:18:04 +0000</lastBuildDate>
-    <atom:link href="https://mannrobo.github.io/index.xml" rel="self" type="application/rss+xml" />
+    <atom:link href="https://mannrobo.github.io/post/index.xml" rel="self" type="application/rss+xml" />
     
     <item>
       <title>Hello World</title>
@@ -62,89 +62,6 @@
 &lt;p&gt;Fusce a libero urna. Pellentesque habitant morbi tristique senectus et netus et malesuada fames ac turpis egestas. Phasellus rhoncus sodales elit, et elementum dolor sollicitudin quis. Quisque sagittis nulla vel nunc pulvinar, quis maximus libero facilisis. Sed id semper eros, id venenatis augue. Nunc sodales vel erat et viverra. Orci varius natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus. Aliquam erat volutpat. Integer vel metus tristique, tincidunt tellus ac, eleifend lectus. Nunc quis lectus varius, ultricies nunc sit amet, lobortis libero. Vestibulum pulvinar finibus fermentum.&lt;/p&gt;
 
 &lt;p&gt;Aliquam aliquet nec nibh eu tristique. Nunc mattis egestas placerat. Curabitur viverra ac mauris sit amet efficitur. Aenean convallis ullamcorper elit non porta. In id libero aliquet, tincidunt lectus eu, vulputate urna. Cras tempus hendrerit odio vel interdum. Lorem ipsum dolor sit amet, consectetur adipiscing elit. Etiam feugiat odio vitae risus rhoncus, ac euismod ex consequat. Suspendisse est est, eleifend volutpat sodales in, dictum non ligula. Integer nisi lacus, viverra in ligula at, accumsan condimentum orci. Duis sed varius lectus, sed ullamcorper lectus. In fermentum dolor et metus ultricies viverra. Donec sit amet massa quis leo pulvinar bibendum.&lt;/p&gt;
-</description>
-    </item>
-    
-    <item>
-      <title>Flower Power (3796C)</title>
-      <link>https://mannrobo.github.io/team/3796C/</link>
-      <pubDate>Tue, 10 Jan 2017 15:21:53 -0500</pubDate>
-      
-      <guid>https://mannrobo.github.io/team/3796C/</guid>
-      <description>&lt;p&gt;Flower Power is a new team this season, Mann’s third team overall. The team is comprised of a group of girls with a passion for STEM. So far, the robot is assembled and ready to rock at a tournament. They will be participating in Starstruck tournaments in early February.&lt;/p&gt;
-</description>
-    </item>
-    
-    <item>
-      <title>Mann Made (3796A)</title>
-      <link>https://mannrobo.github.io/team/3796A/</link>
-      <pubDate>Tue, 10 Jan 2017 15:21:53 -0500</pubDate>
-      
-      <guid>https://mannrobo.github.io/team/3796A/</guid>
-      <description>&lt;p&gt;Mann Made has been sending robots to the competition since 2014 during the Skyrise season. They started out as the sole pioneer team for our club without much experience. During their first season, we designed a Skyrise robot that focused on bringing cubes back to their alliance station. They went to only one tournament that year and didn’t earn any awards. While the robot wasn’t as neat as that of other teams, it was a good starting point for us and gave us a lot of valuable experience.&lt;/p&gt;
-
-&lt;p&gt;The next year, their team started again with an influx of new members. The game for that season was Nothing But Net. They designed a robot that could collect balls off of the ground and shoot them from anywhere on the field using a flywheel. Fortunately, their Nothing But Net robot was very successful − it worked and was a valuable asset for potential alliance partners.&lt;/p&gt;
-
-&lt;p&gt;This year we are participating again in VRC Starstruck. With some members graduating and others coming in, we’ve experienced some turnover. However, we have a strong team with members that possess a broad spectrum of skills. Our robot this year features a catapult-style design and will shoot stars and cubes over the fence. They will be participating in tournaments in early February.&lt;/p&gt;
-</description>
-    </item>
-    
-    <item>
-      <title>Some Assembly Required (3796B)</title>
-      <link>https://mannrobo.github.io/team/3796B/</link>
-      <pubDate>Tue, 10 Jan 2017 15:21:53 -0500</pubDate>
-      
-      <guid>https://mannrobo.github.io/team/3796B/</guid>
-      <description>&lt;p&gt;Some Assembly Required was created at JL Mann in 2015. However, several member of the team have been working together for much longer, having competed in FLL together. They got a late start in the 2015-2016 season, not even starting until October, but they managed to pull through, helping Mann Robotics host a tournament that February. In that tournament, they proved our own, qualifying not only for the state level competition, but also for a national level competition in Nevada that they were unfortunately unable to attend.
-With just three weeks between our first competition and state, the team was suddenly, and unexpectedly faced with a serious challenge. Their robot began to show signs of of severe technical issues. Increasing their meeting schedule from one or two to five meetings a week, and burning the midnight oil outside of meetings, they managed to get our robot into mostly working order, and performed adequately at state.
-With renewed determination, we have increased our work ethic this year, starting earlier and meeting more often. The team has the strength of personal commitment and time investment.&lt;/p&gt;
-</description>
-    </item>
-    
-    <item>
-      <title></title>
-      <link>https://mannrobo.github.io/join/</link>
-      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
-      
-      <guid>https://mannrobo.github.io/join/</guid>
-      <description>&lt;!DOCTYPE html&gt;
-&lt;!--[if lt IE 7]&gt;      &lt;html class=&#34;no-js lt-ie9 lt-ie8 lt-ie7&#34;&gt; &lt;![endif]--&gt;
-&lt;!--[if IE 7]&gt;         &lt;html class=&#34;no-js lt-ie9 lt-ie8&#34;&gt; &lt;![endif]--&gt;
-&lt;!--[if IE 8]&gt;         &lt;html class=&#34;no-js lt-ie9&#34;&gt; &lt;![endif]--&gt;
-&lt;!--[if gt IE 8]&gt;      &lt;html class=&#34;no-js&#34;&gt; &lt;![endif]--&gt;
-&lt;html&gt;
-    &lt;head&gt;
-        {{ partial &#34;head.html&#34; .}}
-        &lt;link rel=&#34;stylesheet&#34; href=&#34;https://mannrobo.github.io/css/join.css&#34;&gt;
-    &lt;/head&gt;
-    &lt;body&gt;
-        {{ partial &#34;nav-join.html&#34; .}}
-
-        &lt;section id=&#34;fh5co-home&#34; data-section=&#34;home&#34; data-stellar-background-ratio=&#34;0.5&#34;&gt;
-          &lt;div class=&#34;gradient&#34;&gt;&lt;/div&gt;
-          &lt;div class=&#34;container&#34;&gt;
-            &lt;div class=&#34;text-wrap&#34;&gt;
-              &lt;div class=&#34;text-inner&#34;&gt;
-                &lt;div class=&#34;row&#34;&gt;
-                  &lt;div class=&#34;col-md-8 col-md-offset-2&#34;&gt;
-                    &lt;i class=&#34;icon-rocket to-animate eyecatcher&#34;&gt;&lt;/i&gt;
-                    &lt;h1 class=&#34;to-animate&#34;&gt;Be a part of something awesome!&lt;/h1&gt;
-                    &lt;h2 class=&#34;to-animate&#34;&gt;Join Mann Robotics Today!&lt;/h2&gt;
-                  &lt;/div&gt;
-                &lt;/div&gt;
-              &lt;/div&gt;
-            &lt;/div&gt;
-          &lt;/div&gt;
-          &lt;div class=&#34;slant&#34;&gt;&lt;/div&gt;
-        &lt;/section&gt;
-
-      	{{ partial &#34;contact-join.html&#34; .}}
-
-      	{{ partial &#34;footer.html&#34; .}}
-
-        {{ partial &#34;js.html&#34; .}}
-    &lt;/body&gt;
-&lt;/html&gt;
 </description>
     </item>
     
