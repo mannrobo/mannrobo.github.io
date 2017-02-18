@@ -1,4 +1,4 @@
-	<section id="fh5co-contact" data-section="contact">
+	<section id="contact" data-section="contact">
 		<div class="container">
 			<div class="row">
 				<div class="col-md-12 section-heading text-center">
@@ -13,9 +13,9 @@
 			<div class="row row-bottom-padded-md">
 				<div class="col-md-6 to-animate">
 					<h3>{{ with .Site.Params.contact.info }}{{ . | markdownify }}{{ end }}</h3>
-					<ul class="fh5co-contact-info">
+					<ul class="contact-info">
 					{{ range .Site.Params.contact.details }}
-						<li class="fh5co-contact-address "><i class="{{ with index . 0}}{{ . }}{{ end }}"></i>{{ with index . 1}}{{ . | markdownify }}{{ end }}</li>
+						<li class="contact-address "><i class="{{ with index . 0}}{{ . }}{{ end }}"></i>{{ with index . 1}}{{ . | markdownify }}{{ end }}</li>
 					{{ end }}
 					</ul>
 				</div>

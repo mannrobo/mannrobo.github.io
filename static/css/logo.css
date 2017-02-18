@@ -6,7 +6,7 @@ header .navbar-brand > img {
   content: url("/img/logo-white.svg");
 
 }
-header.navbar-fixed-top.fh5co-animated.slideInDown .navbar-brand > img {
+header.navbar-fixed-top.animated.slideInDown .navbar-brand > img {
   content: url("/img/logo-blue.svg");
 }
 

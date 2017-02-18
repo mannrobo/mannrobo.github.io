@@ -9,7 +9,7 @@ header .navbar-brand > img {
 
 header .navbar-brand
 
-header.navbar-fixed-top.fh5co-animated.slideInDown .navbar-brand > img {
+header.navbar-fixed-top.animated.slideInDown .navbar-brand > img {
   content: url("/img/logo-blue.svg");
 }
 
@@ -19,23 +19,23 @@ header.navbar-fixed-top.fh5co-animated.slideInDown .navbar-brand > img {
   }
 }
 
-#fh5co-header .navbar {
+#header .navbar {
   padding-bottom: 0;
   margin-bottom: 0;
 }
-#fh5co-header #navbar li a {
+#header #navbar li a {
   font-family: "Source Sans Pro", Arial, sans-serif;
   color: #777777;
   position: relative;
   font-size: 19px;
   font-weight: 300;
 }
-#fh5co-header #navbar li a span {
+#header #navbar li a span {
   position: relative;
   display: block;
   padding-bottom: 2px;
 }
-#fh5co-header #navbar li a span:before {
+#header #navbar li a span:before {
   content: "";
   position: absolute;
   width: 100%;
@@ -55,10 +55,10 @@ header.navbar-fixed-top.fh5co-animated.slideInDown .navbar-brand > img {
   -o-transition: all 0.3s ease-in-out 0s;
   transition: all 0.3s ease-in-out 0s;
 }
-#fh5co-header #navbar li a:hover {
+#header #navbar li a:hover {
   color: #8299e6;
 }
-#fh5co-header #navbar li a:hover span:before {
+#header #navbar li a:hover span:before {
   visibility: visible;
   -webkit-transform: scaleX(1);
   -moz-transform: scaleX(1);
@@ -66,17 +66,17 @@ header.navbar-fixed-top.fh5co-animated.slideInDown .navbar-brand > img {
   -o-transform: scaleX(1);
   transform: scaleX(1);
 }
-#fh5co-header #navbar li.active a {
+#header #navbar li.active a {
   background: transparent;
   background: none;
   color: #fff;
 }
-#fh5co-header #navbar li.active a span:before {
+#header #navbar li.active a span:before {
   visibility: visible;
   -webkit-transform: scaleX(1);
   transform: scaleX(1);
 }
-#fh5co-header .navbar-brand {
+#header .navbar-brand {
   float: left;
   display: block;
   font-size: 30px;
@@ -84,7 +84,7 @@ header.navbar-fixed-top.fh5co-animated.slideInDown .navbar-brand > img {
   padding-left: 0;
   color: #fff;
 }
-#fh5co-header.navbar-fixed-top {
+#header.navbar-fixed-top {
   position: fixed !important;
   background: #fff;
   -webkit-box-shadow: 0 0 9px 0 rgba(0, 0, 0, 0.1);
@@ -94,30 +94,30 @@ header.navbar-fixed-top.fh5co-animated.slideInDown .navbar-brand > img {
   margin-top: 0px;
   top: 0;
 }
-#fh5co-header.navbar-fixed-top .navbar-brand {
+#header.navbar-fixed-top .navbar-brand {
   color: #8299e6;
 }
-#fh5co-header.navbar-fixed-top #navbar li a {
+#header.navbar-fixed-top #navbar li a {
   color: rgba(0, 0, 0, 0.5);
   -webkit-transition: 0.3s;
   -o-transition: 0.3s;
   transition: 0.3s;
 }
-#fh5co-header.navbar-fixed-top #navbar li a:hover {
+#header.navbar-fixed-top #navbar li a:hover {
   color: #8299e6;
 }
-#fh5co-header.navbar-fixed-top #navbar li.active a {
+#header.navbar-fixed-top #navbar li.active a {
   background: transparent;
   background: none;
   color: #8299e6;
 }
-#fh5co-header.navbar-fixed-top #navbar li.active a span:before {
+#header.navbar-fixed-top #navbar li.active a span:before {
   visibility: visible;
   -webkit-transform: scaleX(1);
   transform: scaleX(1);
   background-color: #8299e6;
 }
-#fh5co-header .navbar-default {
+#header .navbar-default {
   border: transparent;
   background: transparent;
   -webkit-border-radius: 0px;
@@ -126,23 +126,23 @@ header.navbar-fixed-top.fh5co-animated.slideInDown .navbar-brand > img {
   border-radius: 0px;
 }
 @media screen and (max-width: 768px) {
-  #fh5co-header .navbar-default {
+  #header .navbar-default {
     margin-top: 0px;
     padding-right: 0px;
     padding-left: 0px;
   }
 }
-#fh5co-header .navbar-default .brand-slogan {
+#header .navbar-default .brand-slogan {
   margin: 28px 0 0 15px;
   float: left;
   letter-spacing: 2px;
   color: #adadad;
 }
-#fh5co-header .navbar-default .brand-slogan em {
+#header .navbar-default .brand-slogan em {
   color: #8299e6;
   font-style: normal;
 }
-#fh5co-header a {
+#header a {
   -webkit-transition: 0s;
   -o-transition: 0s;
   transition: 0s;
@@ -157,7 +157,7 @@ img.circle {
 }
 
 
-section#fh5co-teamhome {
+section#teamhome {
   padding-top: 30vh;
 }
 
@@ -219,16 +219,16 @@ section#fh5co-teamhome {
 }
 
 
-section#fh5co-counters {
+section#counters {
   background: #8299e6;
 }
 
-section#fh5co-counters .fh5co-counter-icon {
+section#counters .counter-icon {
   color: #FFFFFF !important;
 }
 
 
-section#fh5co-bio {
+section#bio {
   margin-top: 64px;
 
 }
