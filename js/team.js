@@ -1,5 +1,5 @@
 var membersAnimate = function() {
-  var members = $('#fh5co-members');
+  var members = $('#members');
   if ( members.length > 0 ) {
 
     members.waypoint( function( direction ) {

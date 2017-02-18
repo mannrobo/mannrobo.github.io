@@ -120,7 +120,7 @@ With renewed determination, we have increased our work ethic this year, starting
     &lt;body&gt;
         {{ partial &#34;nav-join.html&#34; .}}
 
-        &lt;section id=&#34;fh5co-home&#34; data-section=&#34;home&#34; data-stellar-background-ratio=&#34;0.5&#34;&gt;
+        &lt;section id=&#34;home&#34; data-section=&#34;home&#34; data-stellar-background-ratio=&#34;0.5&#34;&gt;
           &lt;div class=&#34;gradient&#34;&gt;&lt;/div&gt;
           &lt;div class=&#34;container&#34;&gt;
             &lt;div class=&#34;text-wrap&#34;&gt;
