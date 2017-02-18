@@ -156,6 +156,19 @@ theme = "hugo-elate-theme"
             ]
 
 
+    [params.work]
+      enable = true
+      title = "Updates"
+      description = "From tutorials to post-mortems, see the latest of Mann Robotics"
+      footertext = ""
+
+      [[params.work.row]]
+        alt = "Hello World"
+        slug = "hello"
+        title = "Hello World"
+        author = "Brendan McGuire"
+
+
 
   # Counters section
   [params.counters]
