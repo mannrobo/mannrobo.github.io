@@ -1,0 +1,18 @@
+<article data-section="article">
+  <div class="container">
+    <div class="row">
+      <div class="section-heading text-center">
+        <h2>{{ .Title }}</h2>
+        <p>{{ .Params.author }} — {{ .Date.Format "January 1, 2006"  }}</p>
+      </div>
+      <div class="row">
+        <a href='http://www.facebook.com/sharer.php?{{( querify "s" 100 "p[url]" .Permalink )}}s=100&p[url]=https%3A%2F%2Fmannrobo.github.io%2Fpost%2Fhello%2F&p[title]=Post%20TItle'></a>
+      </div>
+    </div>
+    <div class="row">
+      <div class="col-xss-12 col-md-10 col-md-offset-1 biography">
+        {{ .Content }}
+      </div>
+    </div>
+  </div>
+</article>
