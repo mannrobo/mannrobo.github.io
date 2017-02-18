@@ -56,3 +56,7 @@
 article {
   margin-top: 40px;
 }
+
+article img {
+  max-width: 100%;
+}
