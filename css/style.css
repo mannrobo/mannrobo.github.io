@@ -716,6 +716,7 @@ h1, h2, h3, h4, h5, h6 {
 #counters:before {
   top: 0;
   margin-top: -35px;
+  background-color: #8299e6;
 }
 #counters:after {
   bottom: 0;
@@ -877,6 +878,7 @@ h1, h2, h3, h4, h5, h6 {
 #work:after {
   bottom: 0;
   margin-bottom: -35px;
+  background-color: #8299e6;
 }
 #work .section-heading h2 {
   color: #fff;
