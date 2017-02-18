@@ -1182,7 +1182,7 @@ h1, h2, h3, h4, h5, h6 {
   width: 25px;
   border-bottom: none !important;
 }
-@media screen and (max-width: 768px) {
+@media screen and (max-width: 767px) {
   .nav-toggle {
     display: block;
   }

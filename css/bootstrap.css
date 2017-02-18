@@ -3017,7 +3017,7 @@ table th[class*="col-"] {
   overflow-x: auto;
   min-height: 0.01%;
 }
-@media screen and (max-width: 767px) {
+@media screen and (max-width: 768px) {
   .table-responsive {
     width: 100%;
     margin-bottom: 15px;
