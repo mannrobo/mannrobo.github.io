@@ -126,8 +126,8 @@
 	// Window Scroll
 	var windowScroll = function() {
 		var lastScrollTop = 0;
-
-		$(window).on("scroll touchmove", function(event){
+		
+		$(window).on("scroll touchstart touchend touchmove mousewheel touchcancel gesturestart gestureend gesturechange orientationchange", function(event){
 
 		   	var header = $('#header'),
 				scrlTop = $(this).scrollTop();
