@@ -136,7 +136,7 @@ theme = "hugo-elate-theme"
           name = "Michael Mulea"
           position = "Parent"
           description = "Michael Mulea, parent of Tyler Mulea, mentors the [Some Assembly Required](/team/3796B) team. He owns a printing company, and generously prints team T-shirts every season."
-          img = "https://unsplash.it/300/300?random"
+          img = "/img/mentors/mulea.png"
           alt = "Micheal Mulea"
           social = [
             ["icon-globe", "http://great-gear-graphics.com/"],
