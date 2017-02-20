@@ -16,7 +16,7 @@ theme = "hugo-elate-theme"
   [params.navigation]
     brand = "<img src='' alt='Mann Robotics'>"
     home = "Home"
-    work = "Work"
+    work = "Updates"
     services = "About"
     about = "Sponsors"
     contact = "Contact"
