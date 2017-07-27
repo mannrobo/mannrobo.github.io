@@ -1,0 +1,35 @@
+@import "util";
+
+header {
+    background-color: $blue;
+    position: relative;
+
+    height: 90vh;
+    @include break($break-tablet) {
+        height: 70vh;   
+    };
+    @include slant();
+
+
+    nav {
+        height: 54px;
+        .logo-box img { 
+            height: 54px;
+            margin: 16px;
+        }
+    }
+}
+
+// Collapsable Menu System
+header nav {
+
+    ul.links {
+        list-style: none;
+        @include break($break-tablet) {
+
+        }
+
+        li a { color: white; text-decoration: none; }
+    }
+
+}
