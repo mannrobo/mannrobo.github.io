@@ -4,12 +4,14 @@
 @charset "utf-8";
 
 @import "header";
+@import "about";
 @import url('https://fonts.googleapis.com/css?family=Source+Sans+Pro');
 
 body, html {
     margin: 0;
     height: 100%;
     overflow-x: hidden;
+    color: $grey3;
 
     font-family: 'Source Sans Pro', sans-serif;
 }
