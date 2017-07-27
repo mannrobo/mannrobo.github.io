@@ -1,5 +1,7 @@
 @import "util";
 
+$nav-height: 54px;
+
 header {
     background-color: $blue;
     position: relative;
@@ -12,24 +14,159 @@ header {
 
 
     nav {
-        height: 54px;
-        .logo-box img { 
-            height: 54px;
+        margin-top: 32px;
+        .logo-box {
+            display: inline-block;
             margin: 16px;
+            margin-left: 48px;
+            img { 
+                height: 39px;
+            }
         }
     }
 }
 
 // Collapsable Menu System
 header nav {
-
+    top: 0;
+    position: absolute;
+    width: 100%;
     ul.links {
         list-style: none;
-        @include break($break-tablet) {
+        position: relative;
+        transition: $transition;
+        @media (max-width: $break-tablet) {
+            opacity: 0;
+            &.active {
+                opacity: 1;
+                height: auto;
+                display: flex;
+                flex-direction: column;
+                background: $white;
+                padding-top: 16px;
+                @include drop-shadow();
+                li a::before { 
+                    display: none;
+                }
+                li a {
+                    color: $grey3;
+                    &:hover, &:active, &.active {
+                        color: $blue;
+                    }
+                }
 
+            }
         }
-
-        li a { color: white; text-decoration: none; }
+        @include break($break-tablet) {
+            display: inline-flex;
+            float: right;
+            margin-right: 32px;
+            height: $nav-height;
+            vertical-align: center;
+        }
+        li {
+            display: inline-block;
+            margin: 16px;
+            margin-top: 0;
+            position: relative;
+        }
+        li a { 
+            color: rgba($white, 0.5);
+            text-decoration: none;
+            font-size: 19px;
+            font-weight: 300;
+            &:hover, &:active, &.active {
+                color: $white;
+                &::before {
+                    transform: scaleX(1);
+                    visibility: visible;
+                }
+            }
+            &::before {
+                content: "";
+                position: absolute;
+                width: 100%;
+                height: 2px;
+                bottom: 6px;
+                left: 0;
+                background-color: rgba($white, 0.5);
+                visibility: hidden;
+                transform: scaleX(0);
+                transition: $transition;
+            }
+        }
     }
 
+}
+
+// Hamburger
+header nav a.hamburger {
+    @include break($break-tablet) { display: none }
+    float: right;
+    height: $nav-height;
+    position: relative;
+    top: $nav-height / 2 + 5px;
+    width: 32px;
+    margin-right: 32px;
+    span.burger { transition: $transition };
+    &:hover {
+        span.burger::before { top: -14px }
+        span.burger::after { top: 14px }
+    }
+    &.active span.burger {
+        width: 0;
+        &::before { 
+            transform: rotate(45deg);
+            top: 0px;
+        }
+        &::after { 
+            transform: rotate(-45deg);
+            top: 0px;
+        }
+    }
+}
+
+header nav a.hamburger span.burger {
+    width: 32px;
+    height: 3px;
+    background: $white;
+    position: absolute;
+    &::before, &::after {
+        background: $white;
+        content: "";
+        height: 3px;
+        width: 32px;
+        position: absolute;
+        transition: $transition;
+        transform: rotate(0deg);
+    }
+    &::before { top: -10px }
+    &::after { top: 10px }
+}
+
+// Hero
+header { display: flex; flex-direction: column; justify-content: center; }
+
+header .hero {
+    text-align: center;
+    align-self: center;
+
+    width: 100%;
+    max-width: $break-phone;
+    @include break($break-tablet) {
+        max-width: $break-tablet;
+    }
+
+    h1 {
+        font-size: 50px;
+        margin: 0 0 20px 0;
+        color: white;
+    }
+    h2 {
+        font-size: 28px;
+        line-height: 38px;
+        font-weight: 300;
+        color: rgba(255, 255, 255, 0.8);
+        margin: 0;
+    }
 }

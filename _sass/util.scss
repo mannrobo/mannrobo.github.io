@@ -11,6 +11,8 @@ $break-desktop: 1024px;
 $break-tablet: 768px;
 $break-phone: 480px;
 
+$transition: all 0.3s ease-in-out 0s;;
+
 @mixin break($point) {
     @media (min-width: $point) {
         @content;
@@ -31,4 +33,16 @@ $break-phone: 480px;
         padding: 0;
         width: 100%;
     }
+}
+
+@mixin vertical-align($position: relative) {
+  position: $position;
+  top: 50%;
+  -webkit-transform: translateY(-50%);
+  -ms-transform: translateY(-50%);
+  transform: translateY(-50%);
+}
+
+@mixin drop-shadow {
+    box-shadow: 0 4px 4px 1px rgba(0, 0, 0, 0.1)
 }

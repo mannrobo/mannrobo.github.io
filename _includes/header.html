@@ -3,7 +3,11 @@
     <div class="logo-box">
       <img class="logo-svg" src="{% if include.blue %}/assets/logo-blue.svg{% else %}/assets/logo-white.svg{% endif %}" alt="Mann Robotics">
     </div>
+    <a href="#" class="hamburger">
+      <span class="burger"></span>
+    </a>
     <ul class="links">
+      <li><a href="#" class="active"></span>Home</a></li>
       <li><a href="#about">About</a></li>
       <li><a href="#teams">Teams</a></li>
       <li><a href="#stats">Stats</a></li>
@@ -11,4 +15,8 @@
       <li><a href="#contact">Contact</a></li>
     </ul>
   </nav>
+  <div class="hero">
+    <h1>Building the Future</h1>
+    <h2>{{ site.description }}</h2>
+  </div>
 </header>
