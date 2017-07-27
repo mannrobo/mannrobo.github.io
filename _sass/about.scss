@@ -1,0 +1,12 @@
+@import "util";
+
+#about .about {
+    h1.title {
+        color: $blue;
+    }
+}
+#about .map {
+    iframe {
+        height: 320px;
+    }
+}
