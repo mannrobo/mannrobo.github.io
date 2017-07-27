@@ -37,6 +37,7 @@ header nav {
         transition: $transition;
         @media (max-width: $break-tablet) {
             opacity: 0;
+            li { display: none }
             &.active {
                 opacity: 1;
                 height: auto;
@@ -151,7 +152,8 @@ header .hero {
     text-align: center;
     align-self: center;
 
-    width: 100%;
+    margin: 0 16px;
+
     max-width: $break-phone;
     @include break($break-tablet) {
         max-width: $break-tablet;
