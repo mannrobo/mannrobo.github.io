@@ -4,12 +4,19 @@ header {
     background-color: $blue;
     position: relative;
 
-    height: 90vh;
+    height: 70vh;
+    margin-bottom: -148px;
     @include break($break-tablet) {
-        height: 70vh;   
+        margin-bottom: -200px;
+        height: 80vh;   
     };
+    @include break($break-desktop) {
+        height: 90vh;
+    }
     @include slant();
 
+    z-index: -2;
+    
 
     nav {
         margin-top: 32px;
@@ -22,12 +29,42 @@ header {
             }
         }
     }
+
+    .bg {
+        width: 100vw;
+        height: 100%; 
+        overflow: hidden;
+        position: absolute;
+        top: 0;
+        bottom: 0;
+        z-index: -1;
+        img {
+            top: -25%;
+            position: absolute;
+            min-width: 100%;
+            min-height: 130%; // Sometimes the header is wierd, make sure we're big enough to expand to it
+            filter: brightness(50%);
+            transition: 1s opacity ease-in-out 0s;
+            &.top { 
+                opacity: 1;
+                &.step {
+                    opacity: 0;
+                }
+            }
+            &.bottom {
+                opacity: 0;
+                &.step {
+                    opacity: 1;
+                }
+            }
+        };
+    }
 }
 
 // Collapsable Menu System
 header nav {
     top: 0;
-    position: absolute;
+    position: fixed;
     width: 100%;
     ul.links {
         list-style: none;
@@ -150,7 +187,10 @@ header .hero {
     text-align: center;
     align-self: center;
 
-    margin: 0 16px;
+    margin: 0 auto;
+    padding: 16px;
+
+    z-index: 1;
 
     max-width: $break-phone;
     @include break($break-tablet) {
