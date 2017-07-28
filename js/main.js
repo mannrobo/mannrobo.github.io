@@ -12,7 +12,8 @@ window.addEventListener("load", function() {
     for(var i = 0; i < links.length; i++) {
         links[i].addEventListener("click", function(e) {
             e.preventDefault();
-            scrollTo($(e.target["data-scrollTo"]));
+            console.log(e.target.dataset.scrollto);
+            scrollToElement($(e.target.dataset.scrollto), 400);
             for (var x = 0; x < links.length; x++) links[x].classList.remove("active");
             e.target.classList.add("active");
         });
@@ -26,7 +27,7 @@ window.addEventListener("load", function() {
  * @param {Number} duration The duration of the scroll, in ms
  * @param {Function} callback
  */
-function scrollTo(element, duration, callback) {
+function scrollToElement(element, duration, callback) {
     if(!element) return;
     var startingY = window.pageYOffset;
     var diff = getYOffset(element) - startingY;
@@ -35,10 +36,10 @@ function scrollTo(element, duration, callback) {
     requestAnimationFrame(function go(timestamp) {
         if(!start) start = timestamp;
         var delta = timestamp - start, // Elapsed time
-            percent = Math.min(time / duration, 1); // [0, 1]
+            percent = Math.min(delta / duration, 1); // [0, 1]
 
         scrollTo(0, startingY + diff * percent);
-        if (time < duration) {
+        if (delta < duration) {
             window.requestAnimationFrame(go);
         } else {
             callback && callback();
@@ -51,6 +52,6 @@ function scrollTo(element, duration, callback) {
  * @param {Element} element 
  */
 function getYOffset(element) {
-    var rec = document.getElementById(element).getBoundingClientRect();
+    var rec = element.getBoundingClientRect();
     return rec.top + window.scrollY;
 }
