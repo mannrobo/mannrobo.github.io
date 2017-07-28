@@ -26,30 +26,29 @@ window.addEventListener("load", function() {
     for(var i = 0; i < links.length; i++) {
         links[i].addEventListener("click", function(e) {
             e.preventDefault();
-            scrollTo(
-                getYOffset($(e.target.dataset.scrollto)) - 20,
-                null,
-                300
-            );
+            console.log(e.target.dataset.scrollto);
+            scrollToElement($(e.target.dataset.scrollto), 400);
             for (var x = 0; x < links.length; x++) links[x].classList.remove("active");
             e.target.classList.add("active");
         });
     }
 
-    // Image "Carosel" (really just a fade in and out) in the header
-    
-    var i = 0;
-    var top = $("header img.top");
-    var bottom = $("header img.bottom");
-    setInterval(function() {
-        top.classList.toggle("step");
-        bottom.classList.toggle("step");
-        if(i++ % 2) {
-            top.src = images[i % images.length]
-        } else {
-            bottom.src = images[i % images.length]
-        }
-    }, 10 * 1000);
+    if(window.carosel) {
+        console.log("Carosel Activated");
+        var i = 0;
+        var top = $("header .bg .top");
+        var bottom = $("header .bg .bottom");
+        setInterval(function() {
+            top.classList.toggle("step");
+            bottom.classList.toggle("step");
+
+            if(i++ % 2) {
+                top.src = carosel[i % carosel.length]
+            } else {
+                bottom.src = carosel[i % carosel.length]
+            }
+        }, 10 * 1000)
+    }
 
 });
 
@@ -59,57 +58,20 @@ window.addEventListener("load", function() {
  * Nice Quadradtic Ease-In-Out replacement for scrollTo() by james2doyle
  * https://gist.github.com/james2doyle/5694700
  */
-// easing functions http://goo.gl/5HLl8
-Math.easeInOutQuad = function (t, b, c, d) {
-  t /= d/2;
-  if (t < 1) {
-    return c/2*t*t + b
-  }
-  t--;
-  return -c/2 * (t*(t-2) - 1) + b;
-};
+function scrollToElement(element, duration, callback) {
+    if(!element) return;
+    var startingY = window.pageYOffset;
+    var diff = getYOffset(element) - startingY;
+    var start;
 
-Math.easeInCubic = function(t, b, c, d) {
-  var tc = (t/=d)*t*t;
-  return b+c*(tc);
-};
+    requestAnimationFrame(function go(timestamp) {
+        if(!start) start = timestamp;
+        var delta = timestamp - start, // Elapsed time
+            percent = Math.min(delta / duration, 1); // [0, 1]
 
-Math.inOutQuintic = function(t, b, c, d) {
-  var ts = (t/=d)*t,
-  tc = ts*t;
-  return b+c*(6*tc*ts + -15*ts*ts + 10*tc);
-};
-
-// requestAnimationFrame for Smart Animating http://goo.gl/sx5sts
-var requestAnimFrame = (function () {
-    return window.requestAnimationFrame || window.webkitRequestAnimationFrame || window.mozRequestAnimationFrame || function (callback) { window.setTimeout(callback, 1000 / 60); };
-})();
-
-function scrollTo(to, callback, duration) {
-    // because it's so fucking difficult to detect the scrolling element, just move them all
-    function move(amount) {
-        document.documentElement.scrollTop = amount;
-        document.body.parentNode.scrollTop = amount;
-        document.body.scrollTop = amount;
-    }
-    function position() {
-        return document.documentElement.scrollTop || document.body.parentNode.scrollTop || document.body.scrollTop;
-    }
-    var start = position(),
-        change = to - start,
-        currentTime = 0,
-        increment = 20;
-    duration = (typeof (duration) === 'undefined') ? 500 : duration;
-    var animateScroll = function () {
-        // increment the time
-        currentTime += increment;
-        // find the value with the quadratic in-out easing function
-        var val = Math.easeInOutQuad(currentTime, start, change, duration);
-        // move the document.body
-        move(val);
-        // do the animation unless its over
-        if (currentTime < duration) {
-            requestAnimFrame(animateScroll);
+        scrollTo(0, startingY + diff * percent);
+        if (delta < duration) {
+            window.requestAnimationFrame(go);
         } else {
             if (callback && typeof (callback) === 'function') {
                 // the animation is done so lets callback

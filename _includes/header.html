@@ -1,26 +1,37 @@
 <header>
-  <div class="bg">
-    <img class="top" src="https://images.unsplash.com/photo-1496482475496-a91f31e0386c?dpr=1&auto=format&fit=crop&w=1500&h=1000&q=80&cs=tinysrgb&crop=" alt="BG Image">
-    <img class="bottom" src="https://images.unsplash.com/photo-1498477386155-805b90bf61f7?dpr=1&auto=format&fit=crop&w=1500&h=913&q=80&cs=tinysrgb&crop=" alt="BG Image">
-  </div>
-  <nav>
-    <div class="logo-box">
-      <img class="logo-svg" src="{% if include.blue %}/assets/logo-blue.svg{% else %}/assets/logo-white.svg{% endif %}" alt="Mann Robotics">
+  <div class="wrapper">
+     {% if page.background == "carosel" %}
+    <div class="bg">
+      <img src="{{ page.images[0] }}" alt="Background Image" class="top">
+      <img src="{{ page.images[1] }}" alt="Background Image" class="bottom">
+      <script>
+        window.carosel = "{{ page.images | join ' ' }}".split(" ");
+      </script>
     </div>
-    <a href="#" class="hamburger">
+    {% elsif page.background == "image" %}
+    <div class="bg">
+      <img src="{{ page.image }}" alt="Background Image" class="top">
+    </div>
+    {% endif %}
+    <nav>
+      <div class="logo-box">
+        <img class="logo-svg" src="{% if include.blue %}/assets/logo-blue.svg{% else %}/assets/logo-white.svg{% endif %}" alt="Mann Robotics">
+      </div>
+      <a href="#" class="hamburger">
       <span class="burger"></span>
     </a>
-    <ul class="links">
-      <li><a href="#" class="active" data-scrollTo="header"></span>Home</a></li>
-      <li><a href="#about" data-scrollTo="#about">About</a></li>
-      <li><a href="#teams" data-scrollTo="#teams">Teams</a></li>
-      <li><a href="#stats" data-scrollTo="#stats">Stats</a></li>
-      <li><a href="#sponsors" data-scrollTo="#sponsors">Sponsors</a></li>
-      <li><a href="#contact" data-scrollTo="#contact">Contact</a></li>
-    </ul>
-  </nav>
-  <div class="hero">
-    <h1>Building the Future</h1>
-    <h2>{{ site.description }}</h2>
+      <ul class="links">
+        <li><a href="#" class="active" data-scrollTo="header"></span>Home</a></li>
+        <li><a href="#about" data-scrollTo="#about">About</a></li>
+        <li><a href="#teams" data-scrollTo="#teams">Teams</a></li>
+        <li><a href="#stats" data-scrollTo="#stats">Stats</a></li>
+        <li><a href="#sponsors" data-scrollTo="#sponsors">Sponsors</a></li>
+        <li><a href="#contact" data-scrollTo="#contact">Contact</a></li>
+      </ul>
+    </nav>
+    <div class="hero">
+      <h1>{{ page.title }}</h1>
+      <h2>{% if page.subtitle %}{{ page.subtitle }}{% else %}{{ site.description }}{% endif %}</h2>
+    </div>
   </div>
 </header>

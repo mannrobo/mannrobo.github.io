@@ -4,12 +4,19 @@ header {
     background-color: $blue;
     position: relative;
 
-    height: 90vh;
+    height: 70vh;
+    margin-bottom: -148px;
     @include break($break-tablet) {
-        height: 70vh;   
+        margin-bottom: -200px;
+        height: 80vh;   
     };
+    @include break($break-desktop) {
+        height: 90vh;
+    }
     @include slant();
 
+    z-index: -2;
+    
 
     nav {
         margin-top: 32px;
@@ -52,7 +59,7 @@ header {
 // Collapsable Menu System
 header nav {
     top: 0;
-    position: absolute;
+    position: fixed;
     width: 100%;
     &.fixed {
         position: fixed;
@@ -198,7 +205,13 @@ header .hero {
     text-align: center;
     align-self: center;
 
+<<<<<<< HEAD
+    margin: 0 auto;
+    padding: 16px;
+
+=======
     margin: 0 16px;
+>>>>>>> website-redesign
     z-index: 1;
 
     max-width: $break-phone;
