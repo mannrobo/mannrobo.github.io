@@ -74,7 +74,7 @@ function scrollToElement(element, duration, callback) {
                 callback();
             }
         }
-    };
+    });
     animateScroll();
 }
 
