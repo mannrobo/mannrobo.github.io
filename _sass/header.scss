@@ -29,6 +29,29 @@ header nav {
     top: 0;
     position: absolute;
     width: 100%;
+    &.fixed {
+        position: fixed;
+        background: $white;
+        margin: 0;
+        height: 64px;
+        z-index: 99;
+        @include drop-shadow();
+        span.burger, span.burger::before, span.burger::after {
+            background: $blue !important;
+        }
+        ul.links.active {
+            margin-top: -16px !important;
+        }
+        ul li a {
+            color: rgba($blue, 0.5) !important;
+            &::before {
+                background-color: rgba($blue, 0.5) !important;
+            }
+            &:hover, &:active, &.active {
+                color: $blue !important;
+            }
+        }
+    }
     ul.links {
         list-style: none;
         position: relative;
