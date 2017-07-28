@@ -1,10 +1,17 @@
 #about .about {
     h1.title {
         color: $blue;
+        margin: 0 !important;
+        font-size: 1.5em;
     }
 }
 #about .map {
-    iframe {
-        height: 320px;
-    }
+    min-height: 300px;
+    display: flex;
+    flex-direction: column;
+    iframe { flex: 1 }
+}
+
+#about .container {
+    @include same-height(); // Ensures children are of the same height
 }

@@ -1,4 +1,5 @@
 
 // All of the team cards
-#teams .media.card {
+#teams .container {
+    @include same-height();
 }

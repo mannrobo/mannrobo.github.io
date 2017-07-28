@@ -51,6 +51,15 @@ $transition: all 0.3s ease-in-out 0s;;
     box-shadow: 0 4px 4px 1px rgba(0, 0, 0, 0.1)
 }
 
+@mixin same-height {
+    @include break($break-tablet) {
+        display: flex;
+    }
+    > * {
+        flex: 1;
+    }
+}
+
 section {
     margin-top: 64px;
     display: flex;
@@ -182,11 +191,15 @@ section {
     .text {
         font-size: 14px;
         color: $grey3;
+        overflow-y: scroll;
     }
 
-    .action {
+    .actions {
         position: absolute;
         bottom: 0;
+        right: 0;
+        left: 0;
+        background: white;
     }
 
 }
