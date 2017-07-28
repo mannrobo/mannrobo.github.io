@@ -30,6 +30,7 @@ header {
         }
     }
 
+<<<<<<< HEAD
     .bg {
         width: 100vw;
         height: 100%; 
@@ -58,6 +59,31 @@ header {
                 }
             }
         };
+=======
+    // Image "Carosel"
+    .bg {
+        position: absolute;
+        top: 0;
+        left: 0;
+        right: 0;
+        bottom: 0;
+        overflow: hidden;
+        img {
+            transition: 1s opacity ease-in-out 0s;
+            width: 100%;
+            position: absolute;
+            top: -25%;
+            filter: brightness(50%);
+            &.top {
+                opacity: 1;
+                &.step { opacity: 0 }
+            }
+            &.bottom {
+                opacity: 0;
+                &.step { opacity: 1 }
+            }
+        }
+>>>>>>> website-redesign
     }
 }
 
@@ -66,6 +92,29 @@ header nav {
     top: 0;
     position: fixed;
     width: 100%;
+    &.fixed {
+        position: fixed;
+        background: $white;
+        margin: 0;
+        height: 64px;
+        z-index: 99;
+        @include drop-shadow();
+        span.burger, span.burger::before, span.burger::after {
+            background: $blue !important;
+        }
+        ul.links.active {
+            margin-top: -16px !important;
+        }
+        ul li a {
+            color: rgba($blue, 0.5) !important;
+            &::before {
+                background-color: rgba($blue, 0.5) !important;
+            }
+            &:hover, &:active, &.active {
+                color: $blue !important;
+            }
+        }
+    }
     ul.links {
         list-style: none;
         position: relative;
@@ -187,9 +236,13 @@ header .hero {
     text-align: center;
     align-self: center;
 
+<<<<<<< HEAD
     margin: 0 auto;
     padding: 16px;
 
+=======
+    margin: 0 16px;
+>>>>>>> website-redesign
     z-index: 1;
 
     max-width: $break-phone;
