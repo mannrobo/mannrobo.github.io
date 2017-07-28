@@ -22,6 +22,31 @@ header {
             }
         }
     }
+
+    // Image "Carosel"
+    .bg {
+        position: absolute;
+        top: 0;
+        left: 0;
+        right: 0;
+        bottom: 0;
+        overflow: hidden;
+        img {
+            transition: 1s opacity ease-in-out 0s;
+            width: 100%;
+            position: absolute;
+            top: -25%;
+            filter: brightness(50%);
+            &.top {
+                opacity: 1;
+                &.step { opacity: 0 }
+            }
+            &.bottom {
+                opacity: 0;
+                &.step { opacity: 1 }
+            }
+        }
+    }
 }
 
 // Collapsable Menu System
@@ -174,6 +199,7 @@ header .hero {
     align-self: center;
 
     margin: 0 16px;
+    z-index: 1;
 
     max-width: $break-phone;
     @include break($break-tablet) {

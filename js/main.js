@@ -1,3 +1,17 @@
+
+// Carosel Images
+var images = [
+    "https://images.unsplash.com/photo-1496482475496-a91f31e0386c?dpr=1&auto=format&fit=crop&w=1500&h=1000&q=80&cs=tinysrgb&crop=",
+    "https://images.unsplash.com/photo-1498477386155-805b90bf61f7?dpr=1&auto=format&fit=crop&w=1500&h=913&q=80&cs=tinysrgb&crop=",
+    "https://images.unsplash.com/photo-1499482624510-89fb8b6d0ded?dpr=1&auto=format&fit=crop&w=1500&h=1000&q=80&cs=tinysrgb&crop=",
+    "https://images.unsplash.com/photo-1496251713551-8cef3b476b0c?dpr=1&auto=format&fit=crop&w=1500&h=998&q=80&cs=tinysrgb&crop="
+];
+// Preload all these images
+images.forEach(function(src) {
+    var img = new Image();
+    img.src = src;
+});
+
 // Attach all the listeners
 window.addEventListener("load", function() {
     function $(query) { return document.querySelector(query) }; // Like jQuery, but better
@@ -21,6 +35,21 @@ window.addEventListener("load", function() {
             e.target.classList.add("active");
         });
     }
+
+    // Image "Carosel" (really just a fade in and out) in the header
+    
+    var i = 0;
+    var top = $("header img.top");
+    var bottom = $("header img.bottom");
+    setInterval(function() {
+        top.classList.toggle("step");
+        bottom.classList.toggle("step");
+        if(i++ % 2) {
+            top.src = images[i % images.length]
+        } else {
+            bottom.src = images[i % images.length]
+        }
+    }, 10 * 1000);
 
 });
 
@@ -135,4 +164,3 @@ var ScrollEvents = (function() {
         remove: remove
     };
 })();
-
