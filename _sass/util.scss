@@ -19,17 +19,21 @@ $transition: all 0.3s ease-in-out 0s;;
     }
 }
 
-@mixin slant() {
-    &::after {
+@mixin slant($selector: after) {
+    position: relative;
+    &::#{$selector} {
         position: absolute;
         transform: rotate(-1.7deg);
         background-color: #fff;
         content: "";
-        z-index: 3;
         display: inline-block;
         height: 70px;
-        bottom: 0;
-        margin-bottom: -35px;
+        @if($selector == after) {
+           margin-bottom: -35px;
+           bottom: 0;
+        } @else {
+            top: -35px;
+        }
         padding: 0;
         width: 100%;
     }
@@ -49,6 +53,12 @@ $transition: all 0.3s ease-in-out 0s;;
 
 section {
     margin-top: 64px;
+    display: flex;
+    justify-content: center;
+    &.blue { background: $blue }
+    > * {
+        display: inline-block
+    }
 }
 
 
@@ -58,7 +68,7 @@ section {
 .container {
   position: relative;
   width: 100%;
-  max-width: 960px;
+  max-width: $break-desktop;
   margin: 0 auto;
   padding: 0 20px;
   box-sizing: border-box; }
@@ -146,14 +156,17 @@ section {
     background: $white;
     border-radius: 3px;
     padding: 16px;
+    &.hasActions { padding-bottom: 60px !important; } // To give space for our actions 
     margin-bottom: 16px;
+    position: relative;
+    z-index: 1;
     &.media { 
         padding: 0;
         .media {
             width: 100%;
             border-radius: 3px !important; // We must conform to the card!
         }
-        .title, .text {
+        .title, .text, .subtitle {
             margin: 16px;
         }
     }
@@ -161,11 +174,21 @@ section {
     .title {
         font-size: 19px;
         color: $grey1;
+        margin: 16px 16px 0px 16px !important; // These rules aren't applying, even though they have a narrower scope...?
+    }
+    .subtitle {
+        margin: 0px 16px 16px 16px !important;
     }
     .text {
         font-size: 14px;
         color: $grey3;
     }
+
+    .action {
+        position: absolute;
+        bottom: 0;
+    }
+
 }
 
 
@@ -180,7 +203,7 @@ a.button {
     margin: 8px;
     border-radius: 3px;
     transition: $transition;
-    &.right { float: right }
+    &.right { float: right; right: 0 }
     &:hover {
         background: $grey1;
     }
