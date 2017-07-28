@@ -54,10 +54,6 @@ window.addEventListener("load", function() {
 
 
 
-/**
- * Nice Quadradtic Ease-In-Out replacement for scrollTo() by james2doyle
- * https://gist.github.com/james2doyle/5694700
- */
 function scrollToElement(element, duration, callback) {
     if(!element) return;
     var startingY = window.pageYOffset;
