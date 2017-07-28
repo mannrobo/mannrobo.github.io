@@ -19,6 +19,23 @@ window.addEventListener("load", function() {
         });
     }
 
+    if(window.carosel) {
+        console.log("Carosel Activated");
+        var i = 0;
+        var top = $("header .bg .top");
+        var bottom = $("header .bg .bottom");
+        setInterval(function() {
+            top.classList.toggle("step");
+            bottom.classList.toggle("step");
+
+            if(i++ % 2) {
+                top.src = carosel[i % carosel.length]
+            } else {
+                bottom.src = carosel[i % carosel.length]
+            }
+        }, 10 * 1000)
+    }
+
 });
 
 /**
