@@ -3,8 +3,11 @@
 ---
 @charset "utf-8";
 
+@import "util";
 @import "header";
 @import "about";
+@import "teams";
+@import "stats";
 @import url('https://fonts.googleapis.com/css?family=Source+Sans+Pro');
 
 body, html {
