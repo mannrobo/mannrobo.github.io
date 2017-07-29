@@ -95,10 +95,10 @@ section {
     .title {
         font-size: 19px;
         color: $grey1;
-        margin: 16px 16px 0px 16px !important; // These rules aren't applying, even though they have a narrower scope...?
+        margin: 0 !important; // These rules aren't applying, even though they have a narrower scope...?
     }
     .subtitle {
-        margin: 0px 16px 16px 16px !important;
+        margin-bottom: 16px;
     }
     .text {
         font-size: 14px;
@@ -123,7 +123,7 @@ a.button {
     color: $white;
     text-decoration: none;
     font-size: 18px;
-    padding: 12px 32px;
+    padding: 8px 32px;
     margin: 8px;
     border-radius: 3px;
     transition: $transition;
