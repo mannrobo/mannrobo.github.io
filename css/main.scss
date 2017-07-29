@@ -19,6 +19,6 @@ body, html {
     -webkit-overflow-scrolling: touch;
 }
 
-body {
+body > .wrapper {
     overflow-x: hidden;
 }
