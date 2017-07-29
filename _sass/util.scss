@@ -76,26 +76,26 @@ section {
     @include drop-shadow();
     background: $white;
     border-radius: 3px;
-    padding: 16px;
-    &.hasActions { padding-bottom: 60px !important; } // To give space for our actions 
     margin-bottom: 16px;
     position: relative;
     z-index: 1;
     &.media { 
-        padding: 0;
         .media {
             width: 100%;
             border-radius: 3px !important; // We must conform to the card!
         }
-        .title, .text, .subtitle {
-            margin: 16px;
+        .text {
+            margin: 12px;
+            line-height: 21px;
         }
     }
 
     .title {
         font-size: 19px;
         color: $grey1;
-        margin: 0 !important; // These rules aren't applying, even though they have a narrower scope...?
+        padding: 16px;
+        padding-bottom: 0;
+        margin: 0;
     }
     .subtitle {
         margin-bottom: 16px;
@@ -103,6 +103,7 @@ section {
     .text {
         font-size: 14px;
         color: $grey3;
+        margin: 0 16px;
     }
 
     .actions {
