@@ -52,6 +52,16 @@ header {
     }
 }
 
+@keyframes slideDown {
+    from {
+        top: -100%;
+    }
+    to {
+        top: 0;
+    }
+}
+
+
 // Collapsable Menu System
 header nav {
     top: 0;
@@ -63,6 +73,7 @@ header nav {
         display: flex;
         align-items: center;
     }
+    &.fixed { animation: 0.8s ease-in-out 0s slideDown; }
     &.fixed, &.active {
         position: fixed;
         background: $white;
@@ -242,7 +253,7 @@ header nav a.hamburger span.burger {
 }
 
 // Hero
-header { display: flex; flex-direction: column; justify-content: center; }
+header { display: flex !important; flex-direction: column; justify-content: center; }
 
 header .hero {
     text-align: center;
