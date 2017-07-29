@@ -33,3 +33,24 @@ images:
         </div>
     </div>
 </section>
+
+<section id="teams">
+    <div class="container">
+        <h1 class="section-head">Teams</h1>
+        <div class="row">
+            {% for team in site.teams %}
+                <div class="col-4">
+                    <div class="team media card">
+                        <h1 class="title">{{ team.name }}</h1>
+                        <p class="subtitle">{{ team.number }}</p>
+                        <img src="{{ team.picture }}" alt="{{ team.number }}" class="media">
+                        <p class="text">{{ team.short }}</p>
+                        <div class="actions">
+                            <a href="/about/{{ team.number }}" class="right action button">More</a>
+                        </div>
+                    </div>
+                </div>
+            {% endfor %}
+        </div>
+    </div>
+</section>
