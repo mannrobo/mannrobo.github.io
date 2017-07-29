@@ -12,14 +12,16 @@ images.forEach(function(src) {
     img.src = src;
 });
 
+function $(query) { return document.querySelector(query) }; // Like jQuery, but better
+
 // Attach all the listeners
 window.addEventListener("load", function() {
-    function $(query) { return document.querySelector(query) }; // Like jQuery, but better
 
     $("header a.hamburger").addEventListener("click", function(e) {
         e.preventDefault();
         $("header a.hamburger").classList.toggle("active");
         $("header ul.links").classList.toggle("active");
+        $("header nav").classList.toggle("active");
     });
 
     var links = document.querySelectorAll("header ul.links li a");
@@ -27,10 +29,14 @@ window.addEventListener("load", function() {
     var hamburger = $("header nav a.hamburger")
     for(var i = 0; i < links.length; i++) {
         links[i].addEventListener("click", function(e) {
-            for (var x = 0; x < links.length; x++) links[x].classList.remove("active");
-            e.target.classList.add("active");
-            menu.classList.remove("active");
-            hamburger.classList.remove("active");
+            if (e.target.dataset.go) {
+                e.preventDefault();
+                for (var x = 0; x < links.length; x++) links[x].classList.remove("active");
+                e.target.classList.add("active");
+                menu.classList.remove("active");
+                hamburger.classList.remove("active");
+                scrollToElement($(e.target.dataset.go), 400);
+            }
         });
     }
 
@@ -57,7 +63,7 @@ window.addEventListener("load", function() {
 function scrollToElement(element, duration, callback) {
     if(!element) return;
     var startingY = window.pageYOffset;
-    var diff = getYOffset(element) - startingY;
+    var diff = getYOffset(element) - startingY - 50;
     var start;
 
     requestAnimationFrame(function go(timestamp) {
@@ -75,7 +81,6 @@ function scrollToElement(element, duration, callback) {
             }
         }
     });
-    animateScroll();
 }
 
 /**
@@ -150,3 +155,18 @@ var vexdb = {
             .then(r => r.size);
     }
 }
+
+var nav = $("header nav");
+function goScroll() {
+    if (window.scrollY >= 100) {
+        nav.classList.add("fixed");
+    } else {
+        nav.classList.remove("fixed");
+    }
+}
+
+window.addEventListener("scroll", goScroll, false);
+window.addEventListener("gesturechange", goScroll, false);
+window.addEventListener("touchmove", goScroll, false);
+window.addEventListener("touchstart", goScroll, false);
+window.addEventListener("touchend", goScroll, false);

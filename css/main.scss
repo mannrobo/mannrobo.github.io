@@ -15,7 +15,10 @@ body, html {
     height: 100%;
     color: $grey3;
 
-    overflow-x: hidden;
     font-family: 'Source Sans Pro', sans-serif;
     -webkit-overflow-scrolling: touch;
+}
+
+body {
+    overflow-x: hidden;
 }

@@ -63,7 +63,7 @@ header nav {
         display: flex;
         align-items: center;
     }
-    &.fixed {
+    &.fixed, &.active {
         position: fixed;
         background: $white;
         margin: 0;
@@ -71,9 +71,6 @@ header nav {
         @include drop-shadow();
         span.burger, span.burger::before, span.burger::after {
             background: $blue !important;
-        }
-        ul.links.active {
-            margin-top: -16px !important;
         }
         ul li a {
             color: rgba($grey1, 0.5) !important;
@@ -97,7 +94,7 @@ header nav {
         svg { 
             height: 39px;
         }
-    }        
+    }      
     ul.links {
         list-style: none;
         position: relative;
@@ -120,7 +117,7 @@ header nav {
                 display: flex;
                 flex-direction: column;
                 background: $white;
-                padding-top: 16px;
+                top: 55px;
                 @include drop-shadow();
                 li a::before { 
                     display: none;
@@ -174,6 +171,20 @@ header nav {
 
 }
 
+header nav.active:not(.fixed) {
+    height: 72px;
+    a.hamburger {
+        margin: 16px;
+        margin-right: 32px;
+    }
+    .logo-box {
+        margin-top: 32px;
+    }
+    ul.links {
+        top: 72px;
+    }
+}
+
 // Hamburger
 header nav a.hamburger {
     @include break($break-tablet) { display: none }
@@ -201,6 +212,8 @@ header nav a.hamburger {
         }
     }
 }
+
+
 @media (max-width: $break-tablet) {
     a.hamburger.active span.burger {
         background: $blue !important;
