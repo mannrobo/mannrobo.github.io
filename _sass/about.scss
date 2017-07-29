@@ -1,0 +1,16 @@
+#about .container .row {
+    @include same-height();
+    .col-6 {
+        height: 200px;
+    }
+    .card {
+        height: 100%;
+        &.map {
+            display: flex;
+            flex-direction: column;
+            iframe {
+                flex: 1;
+            }
+        }
+    }
+}
