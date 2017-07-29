@@ -56,6 +56,25 @@ window.addEventListener("load", function() {
             }
         }, 10 * 1000)
     }
+
+    var nav = $("header nav");
+    function goScroll() {
+        var scrollTop = (window.pageYOffset !== undefined) ? window.pageYOffset : (document.documentElement || document.body.parentNode || document.body).scrollTop;
+        console.log(scrollTop, nav);
+        if (scrollTop >= 300) {
+            nav.classList.add("fixed");
+        } else {
+            nav.classList.remove("fixed");
+        }
+        
+        var navPoints = document.querySelectorAll("header ul.links li a[data-go]");
+
+    }
+    window.addEventListener("scroll", goScroll, false);
+    window.addEventListener("gesturechange", goScroll, false);
+    window.addEventListener("touchmove", goScroll, false);
+    window.addEventListener("touchstart", goScroll, false);
+    window.addEventListener("touchend", goScroll, false);
 });
 
 
@@ -127,48 +146,3 @@ var ScrollEvents = (function() {
         remove: remove
     };
 })();
-
-/**
- * VexDB Client Library
- */
-var vexdb = {
-    encode: function encode(obj) {
-        var str = "?";
-        for (var key in obj) {
-            if (str != "") {
-                str += "&";
-            }
-            str += key + "=" + encodeURIComponent(obj[key]);
-        }
-        return str;
-    },
-    request: function request(endpoint, params) {
-        return fetch("https://api.vexdb.io/v1/get_" + endpoint + vexdb.encode(params))
-            .then(r => r.json())
-    },
-    get: function (endpoint, params) {
-        return vexdb.request(endpoint, params)
-            .then(r => r.result);
-    },
-    size: function (endpoint, params) {
-        return vexdb.request(endpoint, params)
-            .then(r => r.size);
-    }
-}
-
-function goScroll() {
-    var nav = $("header nav");
-    var scrollTop = (window.pageYOffset !== undefined) ? window.pageYOffset : (document.documentElement || document.body.parentNode || document.body).scrollTop;
-    console.log(scrollTop, nav);
-    if (scrollTop >= 300) {
-        nav.classList.add("fixed");
-    } else {
-        nav.classList.remove("fixed");
-    }
-}
-
-window.addEventListener("scroll", goScroll, false);
-window.addEventListener("gesturechange", goScroll, false);
-window.addEventListener("touchmove", goScroll, false);
-window.addEventListener("touchstart", goScroll, false);
-window.addEventListener("touchend", goScroll, false);
