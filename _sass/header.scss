@@ -13,23 +13,14 @@ header {
     @include break($break-desktop) {
         height: 90vh;
     }
+    @media (max-height: 900px) {
+        margin-bottom: -48px !important;
+        height: 106vh;
+    }
     @include slant();
 
-    z-index: -2;
+    z-index: -1;
     
-
-    nav {
-        margin-top: 32px;
-        .logo-box {
-            display: inline-block;
-            margin: 16px;
-            margin-left: 48px;
-            img { 
-                height: 39px;
-            }
-        }
-    }
-
     .bg {
         width: 100vw;
         height: 100%; 
@@ -64,8 +55,12 @@ header {
 // Collapsable Menu System
 header nav {
     top: 0;
-    position: fixed;
+    position: absolute;
     width: 100%;
+    @include break($break-tablet) {
+        display: flex;
+        align-items: center;
+    }
     &.fixed {
         position: fixed;
         background: $white;
@@ -89,10 +84,21 @@ header nav {
             }
         }
     }
+    .logo-box {
+        display: inline-block;
+        margin: 16px;
+        @include break($break-tablet) {
+            margin-left: 48px;
+        }
+        img { 
+            height: 39px;
+        }
+    }        
     ul.links {
         list-style: none;
         position: relative;
         transition: $transition;
+        margin-left: auto;
         @media (max-width: $break-tablet) {
             opacity: 0;
             li { display: none }
@@ -121,12 +127,10 @@ header nav {
             float: right;
             margin-right: 32px;
             height: $nav-height;
-            vertical-align: center;
         }
         li {
             display: inline-block;
             margin: 16px;
-            margin-top: 0;
             position: relative;
         }
         li a { 
@@ -146,7 +150,7 @@ header nav {
                 position: absolute;
                 width: 100%;
                 height: 2px;
-                bottom: 6px;
+                bottom: -10px;
                 left: 0;
                 background-color: rgba($white, 0.5);
                 visibility: hidden;
