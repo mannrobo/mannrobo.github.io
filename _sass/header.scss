@@ -15,12 +15,22 @@ header {
     @media (max-height: 900px) {
         margin-bottom: -48px !important;
         height: 110vh;
+        i.down {
+            display: inline-block !important;
+        }
     }
     @include slant();
 
     &.blue { background-color: $blue }
 
-    
+    i.down {
+        color: rgba($white, 0.5);
+        width: 100%;
+        text-align: center;
+        font-size: 48px;
+        display: none;
+        margin-top: 16px;
+    }
     .bg {
         width: 100vw;
         height: 100%; 
@@ -78,23 +88,43 @@ header nav {
         position: fixed;
         background: $white;
         margin: 0;
-        height: 64px;
+        height: 55px;
+        display: flex;
+        align-items: center;
         @include drop-shadow();
         span.burger, span.burger::before, span.burger::after {
             background: $blue !important;
         }
-        ul li a {
-            color: rgba($grey1, 0.5) !important;
-            &::before {
-                background-color: rgba($blue, 0.5) !important;
-            }
-            &:hover, &:active, &.active {
-                color: $blue !important;
+        ul {
+            margin: 0px auto;
+            li a {
+                color: rgba($grey1, 0.5) !important;
+                &::before {
+                    background-color: rgba($blue, 0.5) !important;
+                }
+                &:hover, &:active, &.active {
+                    color: $blue !important;
+                }
+            }    
+        }
+        .logo-box {
+            margin: 0;
+            margin-left: 16px;
+            height: 39px;
+            position: relative;
+            flex: 1;
+            svg {
+                height: 100%;
+                position: absolute;
+                .st1 {
+                    fill: $blue;
+                }
             }
         }
-        svg .st1 {
-            fill: $blue;
+        a.hamburger {
+            margin-top: -12px;
         }
+
     }
     .logo-box {
         display: inline-block;
@@ -151,6 +181,7 @@ header nav {
         li {
             display: inline-block;
             margin: 16px;
+            margin-top: 12px;
             position: relative;
         }
         li a { 
@@ -170,7 +201,7 @@ header nav {
                 position: absolute;
                 width: 100%;
                 height: 2px;
-                bottom: -10px;
+                bottom: -6px;
                 left: 0;
                 background-color: rgba($white, 0.5);
                 visibility: hidden;
@@ -205,6 +236,7 @@ header nav a.hamburger {
     top: $nav-height / 2 + 5px;
     width: 32px;
     margin-right: 32px;
+    margin-top: 4px;
     z-index: 99;
     span.burger { transition: $transition };
     &:hover {
