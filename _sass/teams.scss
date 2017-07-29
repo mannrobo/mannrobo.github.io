@@ -1,1 +1,6 @@
-
+#teams .container .row {
+    @include same-height();
+    .card {
+        height: 100%;
+    }
+}
