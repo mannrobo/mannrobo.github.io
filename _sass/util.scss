@@ -79,6 +79,8 @@ section {
     margin-bottom: 16px;
     position: relative;
     z-index: 1;
+    display: flex;
+    flex-direction: column;
     &.media { 
         .media {
             width: 100%;
@@ -87,6 +89,7 @@ section {
         }
         .text {
             line-height: 21px;
+            flex: 0;
         }
     }
 
@@ -109,6 +112,7 @@ section {
     .text {
         font-size: 16px;
         color: $grey3;
+        flex: 1;
     }
 
     .title, .subtitle, .text {
