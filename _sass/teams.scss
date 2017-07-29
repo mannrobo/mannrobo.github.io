@@ -1,10 +1,1 @@
 
-#teams {
-    flex-direction: column;
-    .container {
-        @include same-height();
-    }
-    h1.section-head {
-        text-align: center;
-    }
-}
