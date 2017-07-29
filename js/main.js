@@ -156,9 +156,11 @@ var vexdb = {
     }
 }
 
-var nav = $("header nav");
 function goScroll() {
-    if (window.scrollY >= 100) {
+    var nav = $("header nav");
+    var scrollTop = (window.pageYOffset !== undefined) ? window.pageYOffset : (document.documentElement || document.body.parentNode || document.body).scrollTop;
+    console.log(scrollTop, nav);
+    if (scrollTop >= 500) {
         nav.classList.add("fixed");
     } else {
         nav.classList.remove("fixed");
