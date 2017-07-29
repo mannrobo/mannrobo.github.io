@@ -191,7 +191,6 @@ section {
     .text {
         font-size: 14px;
         color: $grey3;
-        overflow-y: scroll;
     }
 
     .actions {
@@ -219,5 +218,29 @@ a.button {
     &.right { float: right; right: 0 }
     &:hover {
         background: $grey1;
+    }
+}
+
+
+h1.section-head {
+    margin: 0 0 30px 0;
+    font-size: 50px;
+    font-weight: 300;
+    color: $grey1;
+    text-transform: uppercase;
+    position: relative;
+    display: block;
+    padding-bottom: 20px;
+    line-height: 1.5;
+    &::after {
+        content: "";
+        position: absolute;
+        display: block;
+        width: 80px;
+        height: 2px;
+        background: $blue;
+        left: 50%;
+        margin-left: -40px;
+        bottom: 0;
     }
 }
