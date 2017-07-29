@@ -99,10 +99,18 @@ header nav {
         position: relative;
         transition: $transition;
         margin-left: auto;
+        z-index: 10;
         @media (max-width: $break-tablet) {
+            display: none;
             opacity: 0;
+            position: fixed;
+            top: 0;
+            width: 100%;
+            bottom: 0;
+            margin: auto;
             li { display: none }
             &.active {
+                display: block;
                 opacity: 1;
                 height: auto;
                 display: flex;
@@ -171,6 +179,7 @@ header nav a.hamburger {
     top: $nav-height / 2 + 5px;
     width: 32px;
     margin-right: 32px;
+    z-index: 99;
     span.burger { transition: $transition };
     &:hover {
         span.burger::before { top: -14px }
@@ -185,6 +194,14 @@ header nav a.hamburger {
         &::after { 
             transform: rotate(-45deg);
             top: 0px;
+        }
+    }
+}
+@media (max-width: $break-tablet) {
+    a.hamburger.active span.burger {
+        background: $blue !important;
+        &::before, &::after {
+            background: $blue !important;
         }
     }
 }

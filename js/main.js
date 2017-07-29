@@ -23,10 +23,14 @@ window.addEventListener("load", function() {
     });
 
     var links = document.querySelectorAll("header ul.links li a");
+    var menu = $("header nav ul.links");
+    var hamburger = $("header nav a.hamburger")
     for(var i = 0; i < links.length; i++) {
         links[i].addEventListener("click", function(e) {
             for (var x = 0; x < links.length; x++) links[x].classList.remove("active");
             e.target.classList.add("active");
+            menu.classList.remove("active");
+            hamburger.classList.remove("active");
         });
     }
 
@@ -46,7 +50,6 @@ window.addEventListener("load", function() {
             }
         }, 10 * 1000)
     }
-
 });
 
 
@@ -119,3 +122,31 @@ var ScrollEvents = (function() {
         remove: remove
     };
 })();
+
+/**
+ * VexDB Client Library
+ */
+var vexdb = {
+    encode: function encode(obj) {
+        var str = "?";
+        for (var key in obj) {
+            if (str != "") {
+                str += "&";
+            }
+            str += key + "=" + encodeURIComponent(obj[key]);
+        }
+        return str;
+    },
+    request: function request(endpoint, params) {
+        return fetch("https://api.vexdb.io/v1/get_" + endpoint + vexdb.encode(params))
+            .then(r => r.json())
+    },
+    get: function (endpoint, params) {
+        return vexdb.request(endpoint, params)
+            .then(r => r.result);
+    },
+    size: function (endpoint, params) {
+        return vexdb.request(endpoint, params)
+            .then(r => r.size);
+    }
+}
