@@ -18,3 +18,23 @@ github_username:  mannrobo
 
 sass:
   style: compressed
+
+
+teams:
+  - name: Mann Made
+    number: 3796A
+    picture: https://unsplash.it/600/600
+    short: >
+      Mann Made is the first team
+
+  - name: Some Assembly Required
+    number: 3796B
+    picture: https://unsplash.it/600/600
+    short: >
+      Mann Made is the first team
+
+  - name: Flower Power
+    number: 3796C
+    picture: https://unsplash.it/600/600
+    short: >
+      Mann Made is the first team

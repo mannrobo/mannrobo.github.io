@@ -32,32 +32,17 @@ images:
 <section id="teams">
     <h1 class="section-head">Teams</h1>
     <div class="container">
-        <div class="media card hasActions four columns">
-            <h1 class="title">Mann Made</h1>
-            <p class="subtitle">3796A</p>
-            <img src="https://unsplash.it/600/600" alt="3796A" class="media">
-            <p class="text">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Veniam in, eum magni delectus optio explicabo nihil maxime nobis, sapiente alias deserunt debitis totam eaque aperiam ipsa, laborum, ratione excepturi a.</p>
-            <div class="actions">
-                <a href="/teams/3796B/" class="right action button">Learn More</a>
+        {% for team in site.teams %}
+            <div class="media card hasActions four columns">
+                <h1 class="title">{{ team.name }}</h1>
+                <p class="subtitle">{{ team.number }}</p>
+                <img src="{{ team.picture }}" alt="Team Picture" class="media">
+                <p class="text">{{ team.short }}</p>
+                <div class="actions">
+                    <a href="/teams/{{ team.number }}/" class="right action button">Learn More</a>
+                </div>
             </div>
-        </div>
-        <div class="media card hasActions four columns">
-            <h1 class="title">Some Assembly Required</h1>
-            <p class="subtitle">3796B</p>
-            <img src="https://unsplash.it/600/600" alt="3796A" class="media">
-            <p class="text">Officiis praesentium, molestias similique laudantium blanditiis pariatur. Dolor iusto mollitia debitis, esse voluptates. Minus laborum reprehenderit cum ducimus debitis totam repellat, dolores deserunt qui ratione dignissimos atque deleniti, natus excepturi!</p>
-            <div class="actions">
-                <a href="/teams/3796B/" class="right action button">Learn More</a>
-            </div>
-        </div>
-        <div class="media card hasActions four columns">
-            <h1 class="title">Flower Power</h1>
-            <p class="subtitle">3796C</p>
-            <img src="https://unsplash.it/600/600" alt="3796A" class="media">
-            <p class="text">Architecto ut cupiditate saepe, deserunt ipsam autem harum sit ratione ipsa labore qui sunt vel, veniam laborum non hic odio maxime sequi nisi! Libero ad hic iusto delectus expedita alias?</p>
-            <div class="actions">
-                <a href="/teams/3796C/" class="right action button">Learn More</a>
-            </div>
+        {% endfor %}
     </div>
 </section>
 
