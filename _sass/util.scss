@@ -82,29 +82,40 @@ section {
     &.media { 
         .media {
             width: 100%;
-            border-radius: 3px !important; // We must conform to the card!
+            border-top-left-radius: 3px;
+            border-top-right-radius: 3px;
         }
         .text {
-            margin: 12px;
             line-height: 21px;
         }
     }
 
+    .title ~ .media, .subtitle ~ .media {
+        border-radius: 0px !important; // If there's a title, border radius looks stupid
+    }
+
     .title {
         font-size: 19px;
-        color: $grey1;
+        padding-bottom: 0 !important;
+        padding-top: 8px !important;
+    }
+
+    .subtitle {
+        color: $grey3;
+        padding: 0 16px !important;
+        margin-top: -4px;
+    }
+
+    .text {
+        font-size: 16px;
+        color: $grey3;
+    }
+
+    .title, .subtitle, .text {
         padding: 16px;
-        padding-bottom: 0;
         margin: 0;
     }
-    .subtitle {
-        margin-bottom: 16px;
-    }
-    .text {
-        font-size: 14px;
-        color: $grey3;
-        margin: 0 16px;
-    }
+
 
     .actions {
         position: absolute;
