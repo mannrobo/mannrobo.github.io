@@ -25,9 +25,6 @@ window.addEventListener("load", function() {
     var links = document.querySelectorAll("header ul.links li a");
     for(var i = 0; i < links.length; i++) {
         links[i].addEventListener("click", function(e) {
-            e.preventDefault();
-            console.log(e.target.dataset.scrollto);
-            scrollToElement($(e.target.dataset.scrollto), 400);
             for (var x = 0; x < links.length; x++) links[x].classList.remove("active");
             e.target.classList.add("active");
         });
