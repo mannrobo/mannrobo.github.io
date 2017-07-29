@@ -1,4 +1,36 @@
 #stats {
     @include slant(before);
     margin-top: -125px; // Encroach the slant
+    > .container {
+        margin-top: 128px;
+        min-height: 40vh;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        .numbers {
+            display: flex;
+            .number {
+                color: #FFFFFF;
+                text-align: center;
+                justify-content: center;
+                margin: 64px;
+                
+                .number {
+                    font-size: 96px;
+                }
+                .label {
+                    font-size: 18px;
+                    color: rgba(#FFFFFF, 0.5);
+                }
+            }
+        }
+        .section-head {
+            color: #FFFFFF;
+            text-align: center;
+            margin: 64px 0;
+            &::after {
+                background: rgba(#FFFFFF, 0.5);
+            }
+        }
+    }
 }
