@@ -14,7 +14,7 @@ header {
     }
     @media (max-height: 900px) {
         margin-bottom: -48px !important;
-        height: 106vh;
+        height: 110vh;
     }
     @include slant();
 
@@ -58,6 +58,7 @@ header nav {
     position: absolute;
     width: 100%;
     margin: 16px 0;
+    z-index: 99;
     @include break($break-tablet) {
         display: flex;
         align-items: center;
