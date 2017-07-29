@@ -75,13 +75,16 @@ header nav {
             margin-top: -16px !important;
         }
         ul li a {
-            color: rgba($blue, 0.5) !important;
+            color: rgba($grey1, 0.5) !important;
             &::before {
                 background-color: rgba($blue, 0.5) !important;
             }
             &:hover, &:active, &.active {
                 color: $blue !important;
             }
+        }
+        svg .st1 {
+            fill: $blue;
         }
     }
     .logo-box {
@@ -90,7 +93,7 @@ header nav {
         @include break($break-tablet) {
             margin-left: 48px;
         }
-        img { 
+        svg { 
             height: 39px;
         }
     }        
