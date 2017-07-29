@@ -57,6 +57,7 @@ header nav {
     top: 0;
     position: absolute;
     width: 100%;
+    margin: 16px 0;
     @include break($break-tablet) {
         display: flex;
         align-items: center;
