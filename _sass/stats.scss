@@ -1,0 +1,27 @@
+#stats {
+    @include slant(before);
+    @include slant(after);
+    margin-top: -128px; // Encroach the section a little
+    .container {
+        margin-top: 156px;
+        h1.section-head {
+            color: white;
+            &::after {
+                background-color: $white;
+            }
+        }
+        .col-3 {
+            text-align: center;
+            .number {
+                font-size: 96px;
+                color: #FFFFFF;
+                margin-bottom: 0;
+            }
+            .label {
+                font-size: 19px;
+                color: rgba(#FFFFFF, 0.5);
+                margin-top: 0;
+            }
+        }
+    }
+}
