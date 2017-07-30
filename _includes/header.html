@@ -19,14 +19,11 @@
       </div>
       <a href="#" class="hamburger"><span class="burger"></span></a>
       <ul class="links">
-        <li><a href="#" class="active" data-go="header">Home</a></li>
-        <li><a href="#about" data-go="#about">About</a></li>
-        <li><a href="#teams" data-go="#teams">Teams</a></li>
-        <li><a href="#stats" data-go="#stats">Stats</a></li>
-        <li><a href="#sponsors" data-go="#sponsors">Sponsors</a></li>
-        <li><a href="/media/">Media</a></li>
-        <li><a href="/blog/">Blog</a></li>
-        <li><a href="#contact" data-go="#contact">Contact</a></li>
+        {% for link in page.links %}
+        <li>
+          <a href="{{ link.href }}" {% if link.active %}class="active"{% endif %} {% if link.go %}data-go="{{ link.go }}"{% endif %} >{{ link.text }}</a>
+        </li>
+        {% endfor %}
       </ul>
     </nav>
     <div class="hero">

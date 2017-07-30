@@ -7,6 +7,46 @@ images:
     - https://images.unsplash.com/photo-1498477386155-805b90bf61f7?dpr=1&auto=format&fit=crop&w=1500&h=913&q=80&cs=tinysrgb
     - https://images.unsplash.com/photo-1499482624510-89fb8b6d0ded?dpr=1&auto=format&fit=crop&w=1500&h=1000&q=80&cs=tinysrgb
     - https://images.unsplash.com/photo-1496251713551-8cef3b476b0c?dpr=1&auto=format&fit=crop&w=1500&h=998&q=80&cs=tinysrgb
+
+links:
+    - text: Home
+      href: #
+      go: "header"
+      active: true
+    - text: About 
+      href: #about
+      go: "#about" 
+      active: false
+    - text: Teams 
+      href: #teams 
+      go: "#teams" 
+      active: false
+    - text: Stats
+      href: "#stats"
+      go: "#stats"
+      active: false
+    - text: Updates
+      href: "#updates"
+      go: "#updates"
+      active: false
+    - text: Contact
+      href: "#contact"
+      go: "#contact"
+      active: false
+
+sponsors:
+    - name: Palmetto Partners
+      picture: https://unsplash.it/90/90
+      short: >
+        Palmetto Partners gave team starting grants of $1500 to each our our three teams. We are indebted to them
+    - name: Palmetto Partners 
+      picture: https://unsplash.it/90/90 
+      short: > 
+        Palmetto Partners gave team starting grants of $1500 to each our our three teams. We are indebted to them
+    - name: Judy Zacahar
+      picture: https://unsplash.it/90/90
+      short: >
+        Palmetto Partners gave team starting grants of $1500 to each our our three teams. We are indebted to them
 ---
 
 <section id="about">
@@ -74,6 +114,25 @@ images:
             <div class="col-3">
                 <h1 class="number">4</h1>
                 <p class="label">tournaments hosted</p>
+            </div>
+        </div>
+    </div>
+</section>
+
+<section id="sponsors">
+    <div class="container">
+        <h1 class="section-head">Sponsors</h1>
+        <div class="row">
+                <div class="sponsor-list">
+                    {% for sponsor in page.sponsors %}
+                        <div class="col-1">
+                            <div href="#" class="sponsor">
+                                <img src="{{ sponsor.picture }}" alt="{{ sponsor.name }}" class="circle">
+                                <p class="name">{{ sponsor.name }}</p>
+                            </div>
+                        </div>
+                    {% endfor %}
+                </div>
             </div>
         </div>
     </div>
