@@ -1,6 +1,14 @@
-#teams .container .row {
-    @include same-height();
-    .card {
-        height: 100%;
+#teams .container {
+    width: 90%;
+    max-width: 100vw; 
+    .row {
+        @include same-height();
+        .col-4 {
+            display: flex;
+            .card {
+                flex: 1;
+            }
+        }
+
     }
 }
