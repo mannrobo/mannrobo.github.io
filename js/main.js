@@ -60,7 +60,6 @@ window.addEventListener("load", function() {
     var nav = $("header nav");
     function goScroll() {
         var scrollTop = (window.pageYOffset !== undefined) ? window.pageYOffset : (document.documentElement || document.body.parentNode || document.body).scrollTop;
-        console.log(scrollTop, nav);
         if (scrollTop >= 300) {
             nav.classList.add("fixed");
         } else {
