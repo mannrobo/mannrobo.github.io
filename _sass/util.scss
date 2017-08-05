@@ -144,6 +144,19 @@ a.button {
     &:hover {
         background: $grey1;
     }
+    &.icon {
+        border-radius: 100%;
+        padding: 12px !important;
+        height: 48px;
+        width: 48px;
+        text-align: center;
+        i {
+            color: #FFFFFF;
+            position: relative;
+            top: 18px;
+            transform: translateY(-50%);
+        }
+    }
 }
 
 
@@ -168,5 +181,25 @@ h1.section-head {
         left: 50%;
         margin-left: -40px;
         bottom: 0;
+    }
+}
+
+img {
+    max-width: 100%;
+    &.circle {
+        border-radius: 50%;
+    }
+}
+
+section.blue {
+    @include slant(before);
+    .container {
+        margin-top: 156px;
+    }
+    h1.section-head {
+        color: white;
+        &::after {
+            background-color: $white;
+        }
     }
 }

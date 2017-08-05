@@ -2,14 +2,10 @@
     @include slant(before);
     @include slant(after);
     margin-top: -128px; // Encroach the section a little
+    min-height: 100vh;
+    padding-bottom: 48px;
     .container {
         margin-top: 156px;
-        h1.section-head {
-            color: white;
-            &::after {
-                background-color: $white;
-            }
-        }
         .col-3 {
             text-align: center;
             .number {
