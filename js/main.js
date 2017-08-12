@@ -14,8 +14,26 @@ images.forEach(function(src) {
 
 function $(query) { return document.querySelector(query) }; // Like jQuery, but better
 
+window.load = (function () {
+    var loadFunctions = [];
+    function onload(fn) {
+        if (document.readyState == "complete") {
+            fn();
+        } else {
+            loadFunctions.push(fn);
+        }
+    }
+    window.addEventListener("load", function () {
+        for (var i = 0; i < loadFunctions.length; i++) {
+            loadFunctions[i]();
+        }
+    })
+    return onload;
+})();
+
+
 // Attach all the listeners
-window.addEventListener("load", function() {
+load(function() {
 
     $("header a.hamburger").addEventListener("click", function(e) {
         e.preventDefault();
