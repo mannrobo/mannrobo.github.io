@@ -1,0 +1,43 @@
+---
+---
+@import "variables";
+
+.calendar.card {
+    .state.one {
+        .events {
+            list-style-type: none;
+            padding: 0;
+            a.event {
+                background: $blue;
+                margin: 16px;
+                border-radius: 3px;
+                position: relative;
+                display: block;
+                padding: 0;
+                div {
+                    color: #FFF;
+                    margin-left: 8px;
+                    &.name {
+                        margin-top: 8px;
+                        font-weight: bold;
+                    }
+                    &.date {
+                        margin-bottom: 8px;
+                        font-style: normal;
+                    }
+                }
+                &::after {
+                    font-family: "Material Icons";
+                    content: "info";
+                    color: $white;
+                    font-size: 24px;
+                    height: 24px;
+                    width: 24px;
+                    position: absolute;
+                    right: 8px;
+                    top: 10px;
+                }
+            }
+        }
+    }
+}

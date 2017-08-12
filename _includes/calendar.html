@@ -1,0 +1,58 @@
+<script>
+    function apiURL(id, key) {
+        return "https://www.googleapis.com/calendar/v3/calendars/" + id + "/events?key=" + key
+    }
+    function getEvents(id, key) {
+        return fetch(apiURL(id, key))
+            .then( r => r.json() )
+            .then( r => r.items )
+    }
+    function populateDOM(events) {
+        console.log(events);
+        load(function() {
+            var eventList = document.getElementById("{{ include.id }}").querySelector(".state.one .events");
+            for (var i = 0; i < eventList.children.length; i++) {
+                var event = eventList.children[i];
+                var start = new Date(events[i].start.dateTime);
+                var end = new Date(events[i].end.dateTime);
+                event.querySelector(".name").innerText = events[i].summary;
+                if(end.getDate() != start.getDate()) {
+                    event.querySelector(".date").innerText = start.toLocaleDateString() + " — " + end.toLocaleDateString();  
+                } else {
+                    event.querySelector(".date").innerText = start.toLocaleDateString();         
+                }       
+            }
+            
+        });
+    }
+    (function(cal, apiKey) {
+        getEvents(cal, apiKey)
+            .then(e => e.sort( 
+                (a, b) => new Date(a.start.dateTime).getTime() - new Date(b.start.dateTime).getTime()
+             )) // It's not sorted right
+            .then(populateDOM)
+    })("{{include.id}}", "AIzaSyCeqavu-XBjsQnkM2qqmgF78_IY77NiQ0A");
+</script>
+<link rel="stylesheet" href="/css/calendar.css">
+<div class="calendar card" id="{{ include.id }}">
+    <div class="state one">
+        <h1 class="title">Upcoming Events:</h1>
+        <div class="events">
+            <a class="event button" href="#">
+                <div class="name">Loading...</div>
+                <div class="date">Loading...</div>
+            </a>
+            <a class="event button" href="#">
+                <div class="name">Loading...</div>
+                <div class="date">Loading...</div>
+            </a>
+            <a class="event button" href="#">
+                <div class="name">Loading...</div>
+                <div class="date">Loading...</div>
+            </a>
+        </div>
+    </div>
+    <div class="state two">
+
+    </div>
+</div>
