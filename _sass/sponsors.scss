@@ -1,0 +1,16 @@
+#sponsors {
+    .sponsor {
+        display: flex;
+        margin: 16px;
+        align-items: center;
+        justify-content: center;
+        flex-wrap: wrap;
+        width: 100%;
+        .profile {
+            text-align: center;
+            img {
+                width: 100%;
+            }
+        }
+    }
+}
