@@ -1,0 +1,22 @@
+---
+---
+article.post {
+    margin-top: 256px;
+}
+
+header.page-header {
+    margin-bottom: 0 !important;
+    h2 {
+        text-align: left;
+        p {
+            color: #ffffff;
+            font-size: 1.5rem;
+            i {
+                color: #ffffff;
+                position: relative;
+                top: 2px;
+                margin-right: 16px;
+            }
+        }
+    }
+}
