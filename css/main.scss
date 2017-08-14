@@ -3,6 +3,8 @@
 ---
 @charset "utf-8";
 
+$fa-font-path: "/assets/fonts/";
+
 @import "util";
 @import "header";
 @import "about";
@@ -11,7 +13,9 @@
 @import "sponsors";
 @import "simple-grid";
 @import "variables";
+@import "updates";
 @import "touch";
+@import "font-awesome/font-awesome";
 @import url('https://fonts.googleapis.com/css?family=Source+Sans+Pro|Material+Icons');
 
 body, html {
