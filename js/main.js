@@ -45,7 +45,6 @@ function activateSection() {
     for (var i = 0; i < navPoints.length; i++) {
         navPoints[i].classList.remove("active");
     }
-    console.log(id);
     $("header ul.links li a[data-go='#"+id+"']").classList.add("active");
     
 }
@@ -77,7 +76,6 @@ load(function() {
     }
 
     if(window.carosel) {
-        console.log("Carosel Activated");
         var i = 0;
         var top = $("header .bg .top");
         var bottom = $("header .bg .bottom");
