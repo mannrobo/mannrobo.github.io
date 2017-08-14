@@ -221,7 +221,6 @@ footer {
     p {
         text-align: center;
         color: $grey3;
-        margin-bottom: 32px;
     }
     div.social {
         margin: 16px auto 48px;
@@ -229,6 +228,68 @@ footer {
         text-align: center;
         a {
             margin: 32px;
+            i {
+                height: 28px;
+                width: 28px;
+                :before {
+                    font-size: 28px;
+                }
+            }
         }
     }
 }
+
+.social {
+    padding: 0;
+    margin: 0 auto 32px;
+    display: inline-block;
+    position: relative;
+    width: 100%;
+    text-align: center;
+    li {
+      list-style: none;
+      padding: 0;
+      margin: 16px;
+      display: inline-block;
+      a {
+        font-size: 16px;
+        text-align: center;
+        text-decoration: none;
+        display: table;
+        width: 40px;
+        height: 40px;
+        margin: 0 4px;
+        transition: $transition;
+        i {
+          display: table-cell;
+          vertical-align: middle;
+          color: #fff;
+        }
+        &:hover, &:active, &:focus {
+          text-decoration: none;
+          border-bottom: none;
+        }
+        &.social-box {
+          background: $blue;
+          color: #fff;
+        }
+        &.social-circle {
+          background: $blue;
+          color: #fff;
+          border-radius: 50%;
+        }
+        &:hover {
+          background: $grey1 !important;
+        }
+      }
+    }
+    &.social-box a {
+      background: $blue;
+      color: #fff;
+    }
+    &.social-circle a {
+      background: $blue;
+      color: #fff;
+      border-radius: 50%;
+    }
+  }
