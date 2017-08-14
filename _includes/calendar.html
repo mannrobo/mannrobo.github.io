@@ -37,7 +37,8 @@
     }
     function getEndDate(event) {
         if (event.end) {
-            return new Date(event.end.dateTime || event.end.date)
+            if(!event.end.dateTime) return new Date(event.start.date)
+            return new Date(event.end.dateTime)
         } else {
             return new Date(0);
         }
