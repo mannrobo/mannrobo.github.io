@@ -47,6 +47,7 @@ header {
             min-height: 130%; // Sometimes the header is wierd, make sure we're big enough to expand to it
             filter: brightness(50%);
             transition: 1s opacity ease-in-out 0s;
+            object-fit: cover;
             &.top { 
                 opacity: 1;
                 &.step {
