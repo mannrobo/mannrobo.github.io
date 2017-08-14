@@ -12,7 +12,7 @@ images.forEach(function(src) {
     img.src = src;
 });
 
-function $(query) { return document.querySelector(query) }; // Like jQuery, but better
+function $(query) { return document.querySelector(query) }; // Like jQuery, but better ;)
 
 window.load = (function () {
     var loadFunctions = [];
@@ -31,6 +31,24 @@ window.load = (function () {
     return onload;
 })();
 
+/**
+ * Gets the closest element to the top of the viewport
+ * @param {Element[]|ElementList} elements The elements to track
+ */
+function closestToTop(elements) {
+    return elements.sort((a, b) => Math.abs(a.getBoundingClientRect().top) - Math.abs(b.getBoundingClientRect().top))[0];
+}
+
+function activateSection() {
+    var navPoints = Array.from(document.querySelectorAll("header ul.links li a[data-go]"));
+    var id = closestToTop(navPoints.map(v => $(v.dataset.go))).id;
+    for (var i = 0; i < navPoints.length; i++) {
+        navPoints[i].classList.remove("active");
+    }
+    console.log(id);
+    $("header ul.links li a[data-go='#"+id+"']").classList.add("active");
+    
+}
 
 // Attach all the listeners
 load(function() {
@@ -84,7 +102,8 @@ load(function() {
             nav.classList.remove("fixed");
         }
         
-        var navPoints = document.querySelectorAll("header ul.links li a[data-go]");
+        activateSection();
+        
 
     }
     window.addEventListener("scroll", goScroll, false);
@@ -124,47 +143,11 @@ function scrollToElement(element, duration, callback) {
  * @param {Element} element 
  */
 function getYOffset(element) {
+    if(!element) return NaN;
     var rec = element.getBoundingClientRect();
     return rec.top + window.scrollY;
 }
-
-
-var ScrollEvents = (function() {
-    var events = {};
-    window.addEventListener("scroll", function() {
-        var current = window.scrollY;
-        Object.keys(events)
-            .filter( function(pixel) { return pixel < current && !events[pixel].run } ) // Goddamn Internet Explorer, not supporting Arrow Functions!
-            .forEach( function(pixel) { events[pixel].fn(); events[pixel].run = true } );
-    });
-    /**
-     * Adds a new scroll event at `value`
-     * @param {Number} value The pixel value to trigger this call
-     * @param {Function} fn The function to call
-     */
-    function add(value, fn) { 
-        return events[value] = {
-            fn: fn,
-            run: false
-        }
-    }
-
-    /**
-     * Removes a scroll event from execution
-     * @param {Number} value The pixel value of the trigger to be removed
-     */
-    function remove(value) {
-        delete events[value];
-    }
-
-    // I should really hook up babel so I don't have to use this nonsense anymore
-    return { 
-        add: add,
-        remove: remove
-    };
-})();
-
-
+// Touch Detection
 window.addEventListener("touchstart", function onFirstTouch() {
     document.body.classList.add("user-is-touching");  
     window.removeEventListener("touchstart", onFirstTouch, false);
