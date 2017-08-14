@@ -108,10 +108,15 @@ section {
         margin: 0;
     }
 
-
+    &.action-space {
+        padding-bottom: 60px;
+    }
     .actions {
         height: 60px;
         background: white;
+        position: absolute;
+        bottom: 0;
+        right: 0;
     }
 
 }
