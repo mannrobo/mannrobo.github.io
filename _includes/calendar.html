@@ -12,10 +12,11 @@
         load(function() {
             var eventList = document.getElementById("{{ include.id }}").querySelector(".state.one .events");
             for (var i = 0; i < eventList.children.length; i++) {
-                var event = eventList.children[i];
-                var start = new Date(events[i].start.dateTime);
-                var end = new Date(events[i].end.dateTime);
-                event.querySelector(".name").innerText = events[i].summary;
+                var event = eventList.children[i],
+                    data = events[i],
+                    start = getStartDate(data),
+                    end = getEndDate(data);
+                event.querySelector(".name").innerText = data.summary;
                 if(end.getDate() != start.getDate()) {
                     event.querySelector(".date").innerText = start.toLocaleDateString() + " — " + end.toLocaleDateString();  
                 } else {
@@ -25,10 +26,32 @@
             
         });
     }
+    function getStartDate(event) {
+        if(event.start) {
+            return new Date(event.start.dateTime || event.start.date)
+        } else if (event.origialStartTime) {
+            return new Date(event.originalStartTime.dateTime || event.originalStartTime.date)
+        } else {
+            return new Date(0);
+        }
+    }
+    function getEndDate(event) {
+        if (event.end) {
+            return new Date(event.end.dateTime || event.end.date)
+        } else {
+            return new Date(0);
+        }
+    }
+    function distanceFromToday(date) {
+        var now = new Date().getTime(),
+            then = date.getTime();
+        
+        return Math.abs(now - then)
+    }
     (function(cal, apiKey) {
         getEvents(cal, apiKey)
             .then(e => e.sort( 
-                (a, b) => new Date(a.start.dateTime).getTime() - new Date(b.start.dateTime).getTime()
+                (a, b) => distanceFromToday(getStartDate(a)) - distanceFromToday(getStartDate(b))
              )) // It's not sorted right
             .then(populateDOM)
     })("{{include.id}}", "AIzaSyCeqavu-XBjsQnkM2qqmgF78_IY77NiQ0A");
