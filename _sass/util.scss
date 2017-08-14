@@ -148,7 +148,27 @@ a.button {
             position: relative;
             top: 18px;
             transform: translateY(-50%);
+            font-size: 24px;
+            &:before {
+                color: #ffffff !important;
+            }
         }
+    }
+}
+
+a.social {
+    text-decoration: none;
+    i {
+        display: inline-block;
+        border-radius: 100%;
+        background: $blue;
+        padding: 16px !important;
+        color: #FFFFFF;
+        font-size: 24px;
+        transition: $transition;
+    }
+    &:hover i {
+        background: $grey1 !important;
     }
 }
 
@@ -193,6 +213,22 @@ section.blue {
         color: white;
         &::after {
             background-color: $white;
+        }
+    }
+}
+
+footer {
+    p {
+        text-align: center;
+        color: $grey3;
+        margin-bottom: 32px;
+    }
+    div.social {
+        margin: 16px auto 48px;
+        max-width: 560px;
+        text-align: center;
+        a {
+            margin: 32px;
         }
     }
 }
