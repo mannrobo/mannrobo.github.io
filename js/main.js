@@ -111,7 +111,7 @@ function scrollToElement(element, duration, callback) {
         if (delta < duration) {
             window.requestAnimationFrame(go);
         } else {
-            if (callback && typeof (callback) === 'function') {
+            if (callback && typeof (callback) === "function") {
                 // the animation is done so lets callback
                 callback();
             }
@@ -163,3 +163,9 @@ var ScrollEvents = (function() {
         remove: remove
     };
 })();
+
+
+window.addEventListener("touchstart", function onFirstTouch() {
+    document.body.classList.add("user-is-touching");  
+    window.removeEventListener("touchstart", onFirstTouch, false);
+  }, false);

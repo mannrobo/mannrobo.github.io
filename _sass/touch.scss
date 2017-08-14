@@ -1,0 +1,7 @@
+// For changes to styles when the user is using a touchscreen
+body.user-is-touching {
+    header nav a.hamburger:hover {
+        span.burger::before { top: -10px !important }
+        span.burger::after { top: 10px !important }
+    }
+}
