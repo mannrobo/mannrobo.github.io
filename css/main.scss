@@ -16,14 +16,14 @@ $fa-font-path: "/assets/fonts/";
 @import "updates";
 @import "contact";
 @import "touch";
-@import url('https://fonts.googleapis.com/css?family=Source+Sans+Pro|Material+Icons');
+@import url("https://fonts.googleapis.com/css?family=Source+Sans+Pro:400,300,600,400italic,700|Material+Icons");
 
 body, html {
     margin: 0;
     height: 100%;
     color: $grey3;
 
-    font-family: 'Source Sans Pro', sans-serif;
+    font-family: "Source Sans Pro", Arial, sans-serif;
     -webkit-overflow-scrolling: touch;
 }
 
