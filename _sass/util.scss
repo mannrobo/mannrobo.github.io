@@ -319,8 +319,9 @@ footer {
 
 .form-control {
     display: block;
+    box-sizing: border-box;
     width: 100%;
-    height: 42px !important;
+    height: 54px !important;
     padding: 10px 20px;
     font-size: 14px;
     line-height: 1.42857;
