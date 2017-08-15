@@ -9,11 +9,22 @@
             margin: 0 0 1.5em 0;
             padding-left: 50px;
             list-style: none;
-            * { color: $grey3 }
+            font-size: 20px;
+            font-weight: 300;
+            color: $grey4;
+            * { color: $grey4 }
             i {
                 position: absolute;
                 top: .2em;
                 left: 0;
+                font-weight: lighter;
+            }
+            a {
+                color: $blue;
+                text-decoration: none;
+                &:hover {
+                    text-decoration: underline
+                }
             }
         }
     }
