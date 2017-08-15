@@ -1,5 +1,7 @@
 #contact {
     padding-bottom: 4em;
+    @include slant(before);
+    margin-top: 0;
     ul.contact-info {
         padding: 0;
         margin: 0 0 1.5em 0;

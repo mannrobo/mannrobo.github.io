@@ -1,4 +1,6 @@
 #sponsors {
+    @include slant(before);
+    margin-top: 0;
     .section-head {
         margin-bottom: 64px;
     }
