@@ -197,6 +197,13 @@ h1.section-head {
     }
 }
 
+h1.section-head + h3 {
+    color: #929292;
+    margin-bottom: 100px;
+    text-align: center;
+    font-weight: 300;
+}
+
 img {
     max-width: 100%;
     &.circle {
