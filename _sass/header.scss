@@ -5,8 +5,6 @@ header {
 
     height: 70vh;
     margin-bottom: -148px;
-    background-color: $blue;
-    z-index: -1;
     @include break($break-tablet) {
         margin-bottom: -200px;
         height: 80vh;   
@@ -41,6 +39,8 @@ header {
         position: absolute;
         top: 0;
         bottom: 0;
+        z-index: -1;
+        background-color: $blue;
         z-index: -1;
         img {
             top: -25%;
