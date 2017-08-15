@@ -5,6 +5,8 @@ header {
 
     height: 70vh;
     margin-bottom: -148px;
+    background-color: $blue;
+    z-index: -1;
     @include break($break-tablet) {
         margin-bottom: -200px;
         height: 80vh;   
