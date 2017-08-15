@@ -260,10 +260,11 @@ footer {
         height: 40px;
         margin: 0 4px;
         transition: $transition;
-        i {
-          display: table-cell;
-          vertical-align: middle;
-          color: #fff;
+        svg {
+          height: 24px;
+          text-align: center;
+          position: relative;
+          top: 8px;
         }
         &:hover, &:active, &:focus {
           text-decoration: none;
