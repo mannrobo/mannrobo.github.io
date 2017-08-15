@@ -1,0 +1,17 @@
+---
+---
+{
+    "name": "{{ site.title }}",
+    "start_url": "{{ site.url }}",
+    "theme_color": "#8299E6",
+    "short_name": "{{ site.title }}",
+    "background-color": "#8299E6",
+    "description": "{{ site.description }}",
+    "display": "minimal-ui",
+    "icons": [{
+
+    }],
+    "lang": "en-US",
+    "orientation": "portrait-primary",
+    "scope": "{{ site.baseurl }}",
+}
