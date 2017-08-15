@@ -9,7 +9,7 @@ $transition: all 0.3s ease-in-out 0s;;
 
 @mixin slant($selector: after) {
     position: relative;
-    &::#{$selector} {
+    &::#{$selector}, &:#{$selector} {
         position: absolute;
         transform: rotate(-1.7deg);
         background-color: #fff;
