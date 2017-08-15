@@ -135,7 +135,6 @@ a.button, input.button {
     transition: $transition;
     border: none !important;
     cursor: pointer;
-    -webkit-appearance: button;
     &.right { float: right; right: 0 }
     &:hover {
         background: $grey1 !important;
@@ -366,4 +365,8 @@ footer {
   
   input[type="search"] {
     -webkit-appearance: none;
+  }
+
+  input[type="submit"] {
+    -webkit-appearance: button;
   }
