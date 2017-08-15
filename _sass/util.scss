@@ -199,7 +199,7 @@ h1.section-head {
     }
 }
 
-h1.section-head + h3 {
+h1.section-head + h3, section h3.subtitle {
     color: #929292;
     margin-bottom: 100px;
     text-align: center;
@@ -304,6 +304,11 @@ footer {
       border-radius: 50%;
     }
   }
+
+::selection {
+    color: #818892;
+    background: #f9f6f0;
+}
 
 
 // Forms

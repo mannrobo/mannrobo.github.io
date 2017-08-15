@@ -1,16 +1,26 @@
 #sponsors {
-    .sponsor {
-        display: flex;
-        margin: 16px;
-        align-items: center;
-        justify-content: center;
-        flex-wrap: wrap;
-        width: 100%;
-        .profile {
-            text-align: center;
-            img {
-                width: 100%;
-            }
+    .section-head {
+        margin-bottom: 64px;
+    }
+    .row {
+        text-align: center;
+        * { text-align: center; }
+        img {
+            margin-bottom: 16px;
+            height: 120px;
+        }
+        p {
+            color: $grey2;
+            font-size: 18px;
+        }
+        h3 {
+            margin-bottom: 32px;
+            margin-top: 48px;
+        }
+        a.button {
+            text-transform: uppercase;
+            font-weight: bold;
+            padding: 16px 64px;
         }
     }
 }

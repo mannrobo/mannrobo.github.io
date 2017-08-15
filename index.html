@@ -40,15 +40,15 @@ links:
 
 sponsors:
     - name: Palmetto Partners
-      picture: https://unsplash.it/90/90
+      picture: https://unsplash.it/120/120
       short: >
         Palmetto Partners gave team starting grants of $1500 to each our our three teams. We are indebted to them
     - name: Palmetto Partners 
-      picture: https://unsplash.it/90/90 
+      picture: https://unsplash.it/120/120 
       short: > 
         Palmetto Partners gave team starting grants of $1500 to each our our three teams. We are indebted to them
     - name: Judy Zacahar
-      picture: https://unsplash.it/90/90
+      picture: https://unsplash.it/120/120
       short: >
         Palmetto Partners gave team starting grants of $1500 to each our our three teams. We are indebted to them
 ---
@@ -126,6 +126,18 @@ sponsors:
 <section id="sponsors">
     <div class="container">
         <h1 class="section-head">Sponsors</h1>
+        <div class="row">
+            {% for sponsor in page.sponsors %}
+                <div class="col-4">
+                    <img src="{{ sponsor.picture }}" alt="{{ sponsor.name }}" class="picture circle">
+                    <p class="name">{{ sponsor.name }}</p>
+                </div>
+            {% endfor %}
+        </div>
+        <div class="row">
+            <h3 class="subtitle">Want to help us out?</h3>
+            <a href="/sponsor/" class="button">Sponsor Us</a>
+        </div>
     </div>
 </section>
 
