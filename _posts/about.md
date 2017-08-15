@@ -1,6 +1,6 @@
 ---
 layout: post
-title: About Mann Robotics
+title: About
 permalink: /about/
 
 links:
