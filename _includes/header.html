@@ -1,4 +1,4 @@
-<header class="{% if page.background == 'static' %}blue{% endif %} page-header" id="page-header">
+<header class="{% if page.background == 'static' %}{% if page.color == 'white' %}white{% else %}blue{% endif %}{% endif %} page-header" id="page-header">
   <div class="wrapper">
      {% if page.background == "carosel" %}
     <div class="bg">
@@ -29,6 +29,9 @@
       </ul>
     </nav>
     <div class="hero">
+      {% if page.hero %}
+        <img src="{{ page.hero.image }}" alt="Header Image" class="circle">
+      {% endif %}
       <h1>{{ page.title }}</h1>
       <h2>{% if page.subtitle %}
             {{ page.subtitle }}

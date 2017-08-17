@@ -18,6 +18,7 @@ links:
       active: false 
 
 background: static
+color: blue
 ---
 
 Lorem ipsum dolor sit amet, consectetur adipiscing elit. Integer eu turpis libero. Morbi luctus dictum leo, vel vulputate dui pharetra et. Aliquam vel consequat lacus, et bibendum erat. In commodo faucibus lacus sit amet mollis. Nulla sagittis urna elit, nec pretium ligula malesuada in. Proin nec vestibulum ante. Class aptent taciti sociosqu ad litora torquent per conubia nostra, per inceptos himenaeos. Donec pellentesque viverra commodo. Duis a posuere erat. Suspendisse elementum auctor nisl, ut semper ipsum congue id. Cras cursus tellus non faucibus vehicula. Maecenas ullamcorper tellus a sem vestibulum imperdiet.
