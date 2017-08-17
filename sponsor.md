@@ -59,4 +59,10 @@ Recipts for sponsorships should be returned for cash and check donations. If you
 
 # Transparency
 At Mann Robotics, we belive that you should know what your money is being spent on. As such, you can find our budget for the 2017-2018 school year on this [Google Spreadsheet](https://docs.google.com/spreadsheets/d/1PaVyNjX2b3Db1XfzeNdh-S5OnHGNq-XuBHTs9FcQtZ4/edit?usp=sharing)
-<iframe src="https://docs.google.com/spreadsheets/d/1PaVyNjX2b3Db1XfzeNdh-S5OnHGNq-XuBHTs9FcQtZ4/pubhtml?widget=true&amp;headers=false" style="width: 100%; min-height: 550px; border: none"></iframe>
+<script>
+load(function() {
+  console.log("Done loading page, async loading embeded spreadsheet");
+  sheet.src="https://docs.google.com/spreadsheets/d/1PaVyNjX2b3Db1XfzeNdh-S5OnHGNq-XuBHTs9FcQtZ4/pubhtml?widget=true&amp;headers=false"
+});
+</script>
+<iframe src="" id="sheet" style="width: 100%; min-height: 550px; border: none"></iframe>
