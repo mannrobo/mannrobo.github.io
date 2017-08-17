@@ -1,6 +1,6 @@
 $nav-height: 54px;
 
-header {
+header.page-header {
     position: relative;
 
     height: 70vh;
@@ -19,9 +19,48 @@ header {
             display: inline-block !important;
         }
     }
-    @include slant();
+    &:not(.white) {
+        @include slant();
+    }
 
     &.blue { background-color: $blue }
+    &.white { 
+        background-color: $white;
+        height: 100vh;
+        margin-bottom: 0;
+        svg .st1 {
+            fill: $grey1
+        } 
+        nav:not(.fixed) ul.links li a {
+            color: rgba($grey1, 0.5);
+            &:hover {
+                color: $grey1;
+            }
+            &::before {
+                background-color: rgba($grey1, 0.5) !important;
+            }
+        }
+        .hero {
+            h1 {
+                color: $grey1;
+                font-weight: 300
+            }
+            h2 {
+                color: $grey2;
+            }
+            img {
+                margin-bottom: 32px;
+            }
+            position: relative;
+            top: 48px;
+        }
+        nav a.hamburger span.burger {
+            background: $grey1;
+            &::after, &::before {
+                background: $grey1
+            }
+        }
+    }
 
     i.down {
         color: rgba($white, 0.5);
@@ -316,4 +355,8 @@ header .hero {
         color: rgba(255, 255, 255, 0.8);
         margin: 0;
     }
+}
+
+main {
+    min-height: 100vh;
 }
