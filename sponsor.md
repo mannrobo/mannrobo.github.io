@@ -1,6 +1,7 @@
 ---
 layout: post
-title: Sponsor Us!
+title: Sponsorship Information
+subtitle: Build the Future with us!
 permalink: /sponsor/
 
 links:
