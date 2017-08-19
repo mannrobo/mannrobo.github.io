@@ -13,5 +13,11 @@
                 flex: 0;
             }
         }
+        &.info {
+            padding-bottom: 60px;
+            @include break(800px) {
+                padding-bottom: 0px;
+            }
+        }
     }
 }
