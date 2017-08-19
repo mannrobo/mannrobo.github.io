@@ -281,10 +281,10 @@ header nav a.hamburger {
     margin-top: 4px;
     z-index: 99;
     span.burger { transition: $transition };
-    &:hover {
-        span.burger::before { top: -14px }
-        span.burger::after { top: 14px }
-    }
+    // &:hover {
+    //     span.burger::before { top: -14px }
+    //     span.burger::after { top: 14px }
+    // }
     &.active span.burger {
         width: 0;
         &::before { 
