@@ -7,3 +7,12 @@ section#stats {
         top: 64px;
     }
 }
+
+@media screen and (max-height: 700px) {
+    header .hero {
+        padding-top: 120px;
+    }
+    main {
+        margin-top: 64px;
+    }
+}
