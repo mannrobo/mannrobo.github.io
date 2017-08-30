@@ -34,7 +34,7 @@ At Mann Robotics, we are building important career skills such as the design pro
 So far, 100% of alumni students are pursuing STEM degress in college! That's right, every single one! Currently, out alumni are:
 
 - Patrick McGuire (grad. 2017) - Aerospace Engineering at University of Alabama Huntsville
-- Mackenzie O'Connel-Abed (grad. 2017) - Biochemistry/Biomechanical at Clemson University
+- Mackenzie O'Connel-Abed (grad. 2017) - Microbiology at Clemson University
 
 ### Profile: Mackenzie O'Connel-Abed
 
