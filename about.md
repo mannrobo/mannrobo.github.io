@@ -2,46 +2,54 @@
 layout: post
 title: About
 permalink: /about/
+subtitle: Learn more about Mann Robotics
 
 links:
-    - text: "Section 1"
-      go: "#section-1"
-      href: "#section-1"
+    - text: "Skyrise"
+      go: "#skyrise"
+      href: "#skyrise"
       active: false
-    - text: "Section 2"
-      go: "#section-2"
-      href: "#section-2"
+    - text: "Nothing But Net"
+      go: "#nothing-but-net"
+      href: "#nothing-but-net"
       active: false
-    - text: "Section 3"
-      go: "#section-3"
-      href: "#section-3"
+    - text: "StarStruck"
+      go: "#starstruck"
+      href: "#starstruck"
+      active: false 
+    - text: "In The Zone"
+      go: "#in-the-zone"
+      href: "#in-the-zone"
       active: false 
 
 background: static
 color: blue
 ---
 
-Lorem ipsum dolor sit amet, consectetur adipiscing elit. Integer eu turpis libero. Morbi luctus dictum leo, vel vulputate dui pharetra et. Aliquam vel consequat lacus, et bibendum erat. In commodo faucibus lacus sit amet mollis. Nulla sagittis urna elit, nec pretium ligula malesuada in. Proin nec vestibulum ante. Class aptent taciti sociosqu ad litora torquent per conubia nostra, per inceptos himenaeos. Donec pellentesque viverra commodo. Duis a posuere erat. Suspendisse elementum auctor nisl, ut semper ipsum congue id. Cras cursus tellus non faucibus vehicula. Maecenas ullamcorper tellus a sem vestibulum imperdiet.
+Mann Robotics was founded in VEX Skyrise as a program of 8 people, now we have more than 20. We started off as a single team, now we have 3. Mann Robotics has grown immensely since those years, and now is a force to be reckoned with in the region.
 
-# Section 1
-Lorem ipsum dolor sit amet, consectetur adipiscing elit. Integer eu turpis libero. Morbi luctus dictum leo, vel vulputate dui pharetra et. Aliquam vel consequat lacus, et bibendum erat. In commodo faucibus lacus sit amet mollis. Nulla sagittis urna elit, nec pretium ligula malesuada in. Proin nec vestibulum ante. Class aptent taciti sociosqu ad litora torquent per conubia nostra, per inceptos himenaeos. Donec pellentesque viverra commodo. Duis a posuere erat. Suspendisse elementum auctor nisl, ut semper ipsum congue id. Cras cursus tellus non faucibus vehicula. Maecenas ullamcorper tellus a sem vestibulum imperdiet.
+# Skyrise
+[Mann Made](/about/3796A/) (3796A) started out as the sole pioneer team for our club without much experience. During their first season, we designed a Skyrise robot that focused on bringing cubes back to their alliance station. They went to only one tournament that year and didn’t earn any awards. While the robot wasn’t as neat as that of other teams, it was a good starting point for us and gave us a lot of valuable experience.
 
-Lorem ipsum dolor sit amet, consectetur adipiscing elit. Integer eu turpis libero. Morbi luctus dictum leo, vel vulputate dui pharetra et. Aliquam vel consequat lacus, et bibendum erat. In commodo faucibus lacus sit amet mollis. Nulla sagittis urna elit, nec pretium ligula malesuada in. Proin nec vestibulum ante. Class aptent taciti sociosqu ad litora torquent per conubia nostra, per inceptos himenaeos. Donec pellentesque viverra commodo. Duis a posuere erat. Suspendisse elementum auctor nisl, ut semper ipsum congue id. Cras cursus tellus non faucibus vehicula. Maecenas ullamcorper tellus a sem vestibulum imperdiet.
+# Nothing but Net
 
-Lorem ipsum dolor sit amet, consectetur adipiscing elit. Integer eu turpis libero. Morbi luctus dictum leo, vel vulputate dui pharetra et. Aliquam vel consequat lacus, et bibendum erat. In commodo faucibus lacus sit amet mollis. Nulla sagittis urna elit, nec pretium ligula malesuada in. Proin nec vestibulum ante. Class aptent taciti sociosqu ad litora torquent per conubia nostra, per inceptos himenaeos. Donec pellentesque viverra commodo. Duis a posuere erat. Suspendisse elementum auctor nisl, ut semper ipsum congue id. Cras cursus tellus non faucibus vehicula. Maecenas ullamcorper tellus a sem vestibulum imperdiet.
+New Year, New Team
 
-# Section 2
-Lorem ipsum dolor sit amet, consectetur adipiscing elit. Integer eu turpis libero. Morbi luctus dictum leo, vel vulputate dui pharetra et. Aliquam vel consequat lacus, et bibendum erat. In commodo faucibus lacus sit amet mollis. Nulla sagittis urna elit, nec pretium ligula malesuada in. Proin nec vestibulum ante. Class aptent taciti sociosqu ad litora torquent per conubia nostra, per inceptos himenaeos. Donec pellentesque viverra commodo. Duis a posuere erat. Suspendisse elementum auctor nisl, ut semper ipsum congue id. Cras cursus tellus non faucibus vehicula. Maecenas ullamcorper tellus a sem vestibulum imperdiet.
+[Some Assembly Required](/about/3796B/) (3796B) joined the fray, made of a Junior, Patrick, his 8th grade brother, Brendan, and their friend Tyler. Small, but dedicated, they competed with a simple, but effective flywheel at the state tournament their first year.
 
-Lorem ipsum dolor sit amet, consectetur adipiscing elit. Integer eu turpis libero. Morbi luctus dictum leo, vel vulputate dui pharetra et. Aliquam vel consequat lacus, et bibendum erat. In commodo faucibus lacus sit amet mollis. Nulla sagittis urna elit, nec pretium ligula malesuada in. Proin nec vestibulum ante. Class aptent taciti sociosqu ad litora torquent per conubia nostra, per inceptos himenaeos. Donec pellentesque viverra commodo. Duis a posuere erat. Suspendisse elementum auctor nisl, ut semper ipsum congue id. Cras cursus tellus non faucibus vehicula. Maecenas ullamcorper tellus a sem vestibulum imperdiet.
-
-Lorem ipsum dolor sit amet, consectetur adipiscing elit. Integer eu turpis libero. Morbi luctus dictum leo, vel vulputate dui pharetra et. Aliquam vel consequat lacus, et bibendum erat. In commodo faucibus lacus sit amet mollis. Nulla sagittis urna elit, nec pretium ligula malesuada in. Proin nec vestibulum ante. Class aptent taciti sociosqu ad litora torquent per conubia nostra, per inceptos himenaeos. Donec pellentesque viverra commodo. Duis a posuere erat. Suspendisse elementum auctor nisl, ut semper ipsum congue id. Cras cursus tellus non faucibus vehicula. Maecenas ullamcorper tellus a sem vestibulum imperdiet.
+For [Mann Made](/about/3796A/), started again with an influx of new members. They designed a robot that could collect balls off of the ground and shoot them from anywhere on the field using a flywheel. Fortunately, their Nothing But Net robot was very successful − it worked and was a valuable asset for potential alliance partners.
 
 
+# StarStruck
 
-# Section 3
-Lorem ipsum dolor sit amet, consectetur adipiscing elit. Integer eu turpis libero. Morbi luctus dictum leo, vel vulputate dui pharetra et. Aliquam vel consequat lacus, et bibendum erat. In commodo faucibus lacus sit amet mollis. Nulla sagittis urna elit, nec pretium ligula malesuada in. Proin nec vestibulum ante. Class aptent taciti sociosqu ad litora torquent per conubia nostra, per inceptos himenaeos. Donec pellentesque viverra commodo. Duis a posuere erat. Suspendisse elementum auctor nisl, ut semper ipsum congue id. Cras cursus tellus non faucibus vehicula. Maecenas ullamcorper tellus a sem vestibulum imperdiet.
+Yet again, we started a new team, an outreach to bring young women to STEM, [Team Name](/about/3796C). Team Captain Lara led 8 new women to many victories and competed at the State Tournament in their first year. They had a simple linear lift to score stars.
 
-Lorem ipsum dolor sit amet, consectetur adipiscing elit. Integer eu turpis libero. Morbi luctus dictum leo, vel vulputate dui pharetra et. Aliquam vel consequat lacus, et bibendum erat. In commodo faucibus lacus sit amet mollis. Nulla sagittis urna elit, nec pretium ligula malesuada in. Proin nec vestibulum ante. Class aptent taciti sociosqu ad litora torquent per conubia nostra, per inceptos himenaeos. Donec pellentesque viverra commodo. Duis a posuere erat. Suspendisse elementum auctor nisl, ut semper ipsum congue id. Cras cursus tellus non faucibus vehicula. Maecenas ullamcorper tellus a sem vestibulum imperdiet.
+[Mann Made](/about/3796A/) kept up its success, and competed at many competitions including the state tournament. 
 
-Lorem ipsum dolor sit amet, consectetur adipiscing elit. Integer eu turpis libero. Morbi luctus dictum leo, vel vulputate dui pharetra et. Aliquam vel consequat lacus, et bibendum erat. In commodo faucibus lacus sit amet mollis. Nulla sagittis urna elit, nec pretium ligula malesuada in. Proin nec vestibulum ante. Class aptent taciti sociosqu ad litora torquent per conubia nostra, per inceptos himenaeos. Donec pellentesque viverra commodo. Duis a posuere erat. Suspendisse elementum auctor nisl, ut semper ipsum congue id. Cras cursus tellus non faucibus vehicula. Maecenas ullamcorper tellus a sem vestibulum imperdiet.
+[Some Assembly Required](/about/3796B/) was very successful in StarStruck, winning at many competitions, achieving a high skills score, going 5-1 at State and competiting in Semifinals. 
+
+# In The Zone
+
+As this season begins, our teams are finalizing our designs, and should compete in our first competition in mid-November or early December.
+
+Watch out for us at the [Falcon's Middle School Qualifier](https://www.robotevents.com/robot-competitions/vex-robotics-competition/RE-VRC-17-2607.html) at Sevier Middle School on November 4th, where many of us will serve as referees, advisors and as an emcee.
