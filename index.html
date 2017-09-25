@@ -40,17 +40,17 @@ links:
 
 sponsors:
     - name: Palmetto Partners
-      picture: https://unsplash.it/120/120
+      picture: /assets/palmetto.svg
       short: >
         Palmetto Partners gave team starting grants of $1500 to each our our three teams. We are indebted to them
-    - name: Palmetto Partners 
-      picture: https://unsplash.it/120/120 
+    - name: Moes
+      picture: https://www.moes.com/public/images/moes-logo.png 
       short: > 
-        Palmetto Partners gave team starting grants of $1500 to each our our three teams. We are indebted to them
+        Through, J.L. Mann's club sponsorship program, Moes gave $1000 to support us. We used this money to attend competitions that we otherwise couldn't have afforded sending our teams to, where some teams earned their state qualifications!
     - name: Judy Zacahar
       picture: https://unsplash.it/120/120
       short: >
-        Palmetto Partners gave team starting grants of $1500 to each our our three teams. We are indebted to them
+        Judy Zachar generously donated money to help 3796B get aluminum and other competitive products for the 2017 Season
 ---
 
 <section id="about">
@@ -66,9 +66,8 @@ sponsors:
             <div class="col-6">
                 <div class="info card">
                     <h1 class="title">About Mann Robotics</h1>
-                    <p class="text">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Saepe, debitis dicta labore! Consectetur
-                        omnis, recusandae quo! Vel, quaerat quia maxime et amet pariatur eum. Facere nisi, laudantium
-                        ab facilis dolorum.</p>
+                    <p class="text">We were founded in back 2015, to compete in VEX Skyrise, with only one team of 8, now we've grown to 3 teams and over 20 members. 
+                        In StarStruck, we've had 100% state qualification, including teams in elimination. </p>
                     <div class="actions">
                         <a href="/about/" class="right action button">More</a>
                     </div>
@@ -104,15 +103,15 @@ sponsors:
         <h1 class="section-head">Stats</h1>
         <div class="row">
             <div class="col-3">
-                <h1 class="number">35</h1>
+                <h1 class="number">23</h1>
                 <p class="label">members</p>
             </div>
             <div class="col-3">
-                <h1 class="number">3</h1>
+                <h1 class="number">2</h1>
                 <p class="label">mentors</p>
             </div>
             <div class="col-3">
-                <h1 class="number">16</h1>
+                <h1 class="number">4</h1>
                 <p class="label">awards</p>
             </div>
             <div class="col-3">
@@ -128,10 +127,11 @@ sponsors:
         <h1 class="section-head">Sponsors</h1>
         <div class="row">
             {% for sponsor in page.sponsors %}
-                <div class="col-4">
-                    <img src="{{ sponsor.picture }}" alt="{{ sponsor.name }}" class="picture circle">
-                    <p class="name">{{ sponsor.name }}</p>
-                </div>
+            <div class="col-4" data-modal-next>
+                <img src="{{ sponsor.picture }}" alt="{{ sponsor.name }}" class="picture circle">
+                <p class="name">{{ sponsor.name }}</p>
+            </div>
+            {% include modal.html body="modals/sponsor.html" data=sponsor %}
             {% endfor %}
         </div>
         <div class="row">

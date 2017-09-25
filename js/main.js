@@ -52,6 +52,18 @@ function activateSection() {
 // Attach all the listeners
 load(function() {
 
+    document.querySelectorAll("[data-modal-next]").forEach(function(trigger) {
+        var modal = trigger.nextElementSibling;
+        trigger.addEventListener("click", function() {
+            modal.classList.add("active")
+            modal.querySelector(".modal").classList.add("active")
+        })
+        modal.querySelector(".close-modal").addEventListener("click", function() {
+            modal.classList.remove("active")
+            modal.querySelector(".modal").classList.remove("active")
+        })
+    });
+
     $("header a.hamburger").addEventListener("click", function(e) {
         e.preventDefault();
         $("header a.hamburger").classList.toggle("active");

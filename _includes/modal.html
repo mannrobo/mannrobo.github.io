@@ -1,0 +1,10 @@
+<div class="modal-overlay">
+    <div class="modal">
+        <a class="close-modal">
+            {% include close.svg %}
+        </a>
+        <div class="modal-body">
+            {% include {{ include.body }} data=include.data %}
+        </div>
+    </div>
+</div>
