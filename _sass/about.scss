@@ -8,6 +8,8 @@
         &.map {
             iframe {
                 flex: 1;
+                border-left-width: 0;
+                border-top-width: 0;
             }
             p.text {
                 flex: 0;
