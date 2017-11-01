@@ -1,6 +1,6 @@
 <script>
     function apiURL(id, key) {
-        return "https://www.googleapis.com/calendar/v3/calendars/" + id + "/events?key=" + key + "&singleEvents=true"
+        return `https://www.googleapis.com/calendar/v3/calendars/${id}/events?key=${key}&singleEvents=true&orderBy=startTime&timeMin=${new Date().toISOString()}`
     }
     function getEvents(id, key) {
         return fetch(apiURL(id, key))
@@ -58,21 +58,12 @@
             return new Date(0);
         }
     }
-    function distanceFromToday(date) {
-        var now = new Date().getTime(),
-            then = date.getTime();
-
-        return now - then;
-    }
-    function closestToNow(a, b) {
-       let distA = distanceFromToday(getStartDate(a));
-       let distB = distanceFromToday(getStartDate(b));
-
-       return distA - distB;
+    function futureEvents(event) {
+        console.log(event.summary, getStartDate(event).toLocaleString());
+        return getStartDate(event) > new Date();
     }
     (function(cal, apiKey) {
         getEvents(cal, apiKey)
-            .then( a => a.sort(closestToNow) )
             .then(populateDOM)
     })("{{include.id}}", "AIzaSyCeqavu-XBjsQnkM2qqmgF78_IY77NiQ0A");
 </script>
