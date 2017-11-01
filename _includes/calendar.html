@@ -9,13 +9,12 @@
     }
     function populateDOM(events) {
         load(function() {
-            console.trace("populateDOM()");
-            var eventList = document.getElementById("{{ include.id }}").querySelector(".state.one .events");
-            for (var i = 0; i < eventList.children.length; i++) {
-                if (i % 2) {
+            var eventList = document.getElementById("{{ include.id }}").querySelectorAll(".state.one .events .event");
+            for (var i = 0; i < eventList.length; i++) {
                     // Fill in the event modal
-                    var modal = eventList.children[i],
-                        data = events[i - 1],
+                    var event = eventList[i],
+                        modal = eventList[i].nextElementSibling,
+                        data = events[i],
                         start = getStartDate(data),
                         end = getEndDate(data);
                     
@@ -24,19 +23,13 @@
                     modal.querySelector(".event-modal-location").innerText = data.location || "N/A"
                     modal.querySelector(".event-modal-date").innerText = `${start.toLocaleDateString()}`
                     modal.querySelector(".event-modal-times").innerText = `${start.toLocaleTimeString()}`
-                } else {
-                    // Fill in the event item on the calendar widget
-                    var event = eventList.children[i],
-                        data = events[i],
-                        start = getStartDate(data),
-                        end = getEndDate(data);
+                    
                     event.querySelector(".name").innerText = data.summary;
                     if(end.getDate() != start.getDate()) {
                         event.querySelector(".date").innerText = start.toLocaleDateString() + " — " + end.toLocaleDateString();  
                     } else {
                         event.querySelector(".date").innerText = start.toLocaleDateString();         
                     }  
-                }
             }
             
         });
