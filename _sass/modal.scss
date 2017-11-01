@@ -49,6 +49,17 @@
     transition: $transition;
     z-index: 99;
 
+    .modal-body {
+      width: 100%;
+    }
+
+    &[data-body="modals/event.html"] {
+      align-items: flex-start;
+      .modal-body {
+        margin-top: 2em;
+      }
+    }
+
     .close-modal {
       position: absolute;
       cursor: pointer;
@@ -87,29 +98,44 @@
   }
   
   
+/**
+ * Sponsor Modal
+ **/
+
+.modal .event-modal-meta {
+  list-style-type: none;
+  li {
+    display: flex;
+    align-items: center;
+    i {
+      margin-right: 3em;
+    }
+  }
+}
+
+
+/**
+  * Mobile styling
+  */
+@media only screen and (max-width: 39.9375em) {
   
-  /**
-   * Mobile styling
-   */
-  @media only screen and (max-width: 39.9375em) {
-    
-    h1 {
-      font-size: 1.5rem;
-    }
-    
-    .modal {
-      position: fixed;
-      top: 0;
-      left: 0;
-      width: 100%;
-      height: 100%;
-      -webkit-overflow-scrolling: touch;
-      border-radius: 0;
-      transform: scale(1.1);
-      padding: 0 !important;
-    }
-    
-    .close-modal {
-      right: 20px !important;
-    }
-  } // media query
+  h1 {
+    font-size: 1.5rem;
+  }
+  
+  .modal {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    -webkit-overflow-scrolling: touch;
+    border-radius: 0;
+    transform: scale(1.1);
+    padding: 0 !important;
+  }
+  
+  .close-modal {
+    right: 20px !important;
+  }
+} // media query

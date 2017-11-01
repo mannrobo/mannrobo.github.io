@@ -1,6 +1,6 @@
 <script>
     function apiURL(id, key) {
-        return "https://www.googleapis.com/calendar/v3/calendars/" + id + "/events?key=" + key
+        return "https://www.googleapis.com/calendar/v3/calendars/" + id + "/events?key=" + key + "&singleEvents=true"
     }
     function getEvents(id, key) {
         return fetch(apiURL(id, key))
@@ -8,20 +8,35 @@
             .then( r => r.items )
     }
     function populateDOM(events) {
-        console.log(events);
         load(function() {
+            console.trace("populateDOM()");
             var eventList = document.getElementById("{{ include.id }}").querySelector(".state.one .events");
             for (var i = 0; i < eventList.children.length; i++) {
-                var event = eventList.children[i],
-                    data = events[i],
-                    start = getStartDate(data),
-                    end = getEndDate(data);
-                event.querySelector(".name").innerText = data.summary;
-                if(end.getDate() != start.getDate()) {
-                    event.querySelector(".date").innerText = start.toLocaleDateString() + " — " + end.toLocaleDateString();  
+                if (i % 2) {
+                    // Fill in the event modal
+                    var modal = eventList.children[i],
+                        data = events[i - 1],
+                        start = getStartDate(data),
+                        end = getEndDate(data);
+                    
+                    modal.querySelector(".event-modal-summary").innerText = data.summary;
+                    modal.querySelector(".event-modal-link").href = data.htmlLink;
+                    modal.querySelector(".event-modal-location").innerText = data.location || "N/A"
+                    modal.querySelector(".event-modal-date").innerText = `${start.toLocaleDateString()}`
+                    modal.querySelector(".event-modal-times").innerText = `${start.toLocaleTimeString()}`
                 } else {
-                    event.querySelector(".date").innerText = start.toLocaleDateString();         
-                }       
+                    // Fill in the event item on the calendar widget
+                    var event = eventList.children[i],
+                        data = events[i],
+                        start = getStartDate(data),
+                        end = getEndDate(data);
+                    event.querySelector(".name").innerText = data.summary;
+                    if(end.getDate() != start.getDate()) {
+                        event.querySelector(".date").innerText = start.toLocaleDateString() + " — " + end.toLocaleDateString();  
+                    } else {
+                        event.querySelector(".date").innerText = start.toLocaleDateString();         
+                    }  
+                }
             }
             
         });
@@ -46,14 +61,18 @@
     function distanceFromToday(date) {
         var now = new Date().getTime(),
             then = date.getTime();
-        
-        return Math.abs(now - then)
+
+        return now - then;
+    }
+    function closestToNow(a, b) {
+       let distA = distanceFromToday(getStartDate(a));
+       let distB = distanceFromToday(getStartDate(b));
+
+       return distA - distB;
     }
     (function(cal, apiKey) {
         getEvents(cal, apiKey)
-            .then(e => e.sort( 
-                (a, b) => distanceFromToday(getStartDate(a)) - distanceFromToday(getStartDate(b))
-             )) // It's not sorted right
+            .then( a => a.sort(closestToNow) )
             .then(populateDOM)
     })("{{include.id}}", "AIzaSyCeqavu-XBjsQnkM2qqmgF78_IY77NiQ0A");
 </script>
@@ -62,18 +81,21 @@
     <div class="state one">
         <h1 class="title">Upcoming Events:</h1>
         <div class="events">
-            <a class="event button" href="#">
+            <a class="event button" data-modal-next>
                 <div class="name">Loading...</div>
                 <div class="date">Loading...</div>
             </a>
-            <a class="event button" href="#">
+            {% include modal.html body="modals/event.html" %}
+            <a class="event button" data-modal-next>
                 <div class="name">Loading...</div>
                 <div class="date">Loading...</div>
             </a>
-            <a class="event button" href="#">
+            {% include modal.html body="modals/event.html" %}
+            <a class="event button" data-modal-next>
                 <div class="name">Loading...</div>
                 <div class="date">Loading...</div>
             </a>
+            {% include modal.html body="modals/event.html" %}
         </div>
     </div>
     <div class="state two">
