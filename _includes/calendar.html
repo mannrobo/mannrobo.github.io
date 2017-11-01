@@ -25,7 +25,7 @@
                     modal.querySelector(".event-modal-times").innerText = `${start.toLocaleTimeString()}`
                     
                     event.querySelector(".name").innerText = data.summary;
-                    if(end.getDate() != start.getDate()) {
+                    if(end.getDate() != start.getDate() && !data.allDay) {
                         event.querySelector(".date").innerText = start.toLocaleDateString() + " — " + end.toLocaleDateString();  
                     } else {
                         event.querySelector(".date").innerText = start.toLocaleDateString();         
@@ -35,20 +35,23 @@
         });
     }
     function getStartDate(event) {
-        if(event.start) {
-            return new Date(event.start.dateTime || event.start.date)
-        } else if (event.origialStartTime) {
-            return new Date(event.originalStartTime.dateTime || event.originalStartTime.date)
-        } else {
-            return new Date(0);
+        if(event.start && event.start.dateTime) {
+            return new Date(event.start.dateTime)
+        } else if (event.originalStartTime && event.originalStartTime.dateTime) {
+            return new Date(event.originalStartTime.dateTime)
+        } else if ((event.originalStartTime && event.originalStartTime.date) || (event.start && event.start.date)) {
+           event.allDay = true;
+           return new Date((event.start.date || event.originalStartTime.date) + "T00:00:00");
         }
     }
     function getEndDate(event) {
-        if (event.end) {
-            if(!event.end.dateTime) return new Date(event.start.date)
+        if(event.end && event.end.dateTime) {
             return new Date(event.end.dateTime)
-        } else {
-            return new Date(0);
+        } else if (event.originalEndTime && event.originalEndTime.dateTime) {
+            return new Date(event.originalEndTime.dateTime)
+        } else if ((event.originalEndTime && event.originalEndTime.date) || (event.end && event.end.date)) {
+           event.allDay = true;
+           return new Date((event.end.date || event.originalEndTime.date) + "T00:00:00");
         }
     }
     function futureEvents(event) {
