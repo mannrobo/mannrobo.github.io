@@ -9,7 +9,7 @@
     }
     function populateDOM(events) {
         load(function() {
-            var eventList = document.getElementById("{{ include.id }}").querySelectorAll(".state.one .events .event");
+            var eventList = document.getElementById("{{ include.id }}").querySelectorAll(".events .event");
             for (var i = 0; i < eventList.length; i++) {
                     // Fill in the event modal
                     var event = eventList[i],
@@ -65,27 +65,22 @@
 </script>
 <link rel="stylesheet" href="/css/calendar.css">
 <div class="calendar card" id="{{ include.id }}">
-    <div class="state one">
-        <h1 class="title">Upcoming Events:</h1>
-        <div class="events">
-            <a class="event button" data-modal-next>
-                <div class="name">Loading...</div>
-                <div class="date">Loading...</div>
-            </a>
-            {% include modal.html body="modals/event.html" %}
-            <a class="event button" data-modal-next>
-                <div class="name">Loading...</div>
-                <div class="date">Loading...</div>
-            </a>
-            {% include modal.html body="modals/event.html" %}
-            <a class="event button" data-modal-next>
-                <div class="name">Loading...</div>
-                <div class="date">Loading...</div>
-            </a>
-            {% include modal.html body="modals/event.html" %}
-        </div>
-    </div>
-    <div class="state two">
-
+    <h1 class="title">Upcoming Events:</h1>
+    <div class="events">
+        <a class="event button" data-modal-next>
+            <div class="name">Loading...</div>
+            <div class="date">Loading...</div>
+        </a>
+        {% include modal.html body="modals/event.html" %}
+        <a class="event button" data-modal-next>
+            <div class="name">Loading...</div>
+            <div class="date">Loading...</div>
+        </a>
+        {% include modal.html body="modals/event.html" %}
+        <a class="event button" data-modal-next>
+            <div class="name">Loading...</div>
+            <div class="date">Loading...</div>
+        </a>
+        {% include modal.html body="modals/event.html" %}
     </div>
 </div>
