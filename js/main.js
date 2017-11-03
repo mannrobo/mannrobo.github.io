@@ -55,12 +55,15 @@ load(function() {
     document.querySelectorAll("[data-modal-next]").forEach(function(trigger) {
         var modal = trigger.nextElementSibling;
         trigger.addEventListener("click", function() {
-            modal.classList.add("active")
-            modal.querySelector(".modal").classList.add("active")
+            modal.classList.add("active");
+            modal.querySelector(".modal").classList.add("active");
+            modal.parentElement.parentElement.classList.add("child-active");
         })
         modal.querySelector(".close-modal").addEventListener("click", function() {
-            modal.classList.remove("active")
-            modal.querySelector(".modal").classList.remove("active")
+            modal.classList.remove("active");
+            modal.querySelector(".modal").classList.remove("active");
+            modal.parentElement.parentElement.classList.remove("child-active");
+            
         })
     });
 
