@@ -133,6 +133,9 @@
     border-radius: 0;
     transform: scale(1.1);
     padding: 0 !important;
+    .col-4 {
+      margin-left: 2em;
+    }
   }
   
   .close-modal {
