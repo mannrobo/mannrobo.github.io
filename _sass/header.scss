@@ -24,8 +24,13 @@ header.page-header {
             display: none !important;
         }
     }
-    &:not(.white) {
+    &:not(.white):not(.no-slant) {
         @include slant();
+    }
+
+    &.no-slant {
+        margin-bottom: 0 !important;
+        height: 100vh;
     }
 
     &.blue { background-color: $blue }

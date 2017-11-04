@@ -1,4 +1,4 @@
-<header class="{% if page.background == 'static' %}{% if page.color == 'white' %}white{% else %}blue{% endif %}{% endif %} page-header" id="page-header">
+<header class="{% if page.background == 'static' %}{% if page.color == 'white' %}white{% else %}blue{% endif %}{% endif %} page-header {% if include.noSlant %}no-slant{% endif %}" id="page-header">
   <div class="wrapper">
      {% if page.background == "carosel" %}
     <div class="bg">
@@ -42,6 +42,9 @@
             {{ site.description }}
           {% endif %}</h2>
     </div>
-    <i class="material-icons down">keyboard_arrow_down</i>
+    {% if page.hideDownIcon %}{% else %}
+      <i class="material-icons down">keyboard_arrow_down</i>
+    {% endif %}
+
   </div>
 </header>
