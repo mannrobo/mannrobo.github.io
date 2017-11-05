@@ -33,7 +33,23 @@
     </script>
 
   <script async src="{{ "/js/main.js " | prepend: site.baseurl }}"></script>
-  <link rel="stylesheet" href="{{ "/css/main.css" | prepend: site.baseurl }}">
+  <style>{% include critical.css %}</style>
+  <noscript id="deferred-styles">
+      <link rel="stylesheet" href="{{ "/css/main.css" | prepend: site.baseurl }}">
+  </noscript>
+  <script>
+      var loadDeferredStyles = function() {
+        var addStylesNode = document.getElementById("deferred-styles");
+        var replacement = document.createElement("div");
+        replacement.innerHTML = addStylesNode.textContent;
+        document.body.appendChild(replacement)
+        addStylesNode.parentElement.removeChild(addStylesNode);
+      };
+      var raf = requestAnimationFrame || mozRequestAnimationFrame ||
+          webkitRequestAnimationFrame || msRequestAnimationFrame;
+      if (raf) raf(function() { window.setTimeout(loadDeferredStyles, 0); });
+      else window.addEventListener('load', loadDeferredStyles);
+    </script>
   {% for file in layout.include %}
     {% if file.type == "css" %}
       <link rel="stylesheet" href="{{ file.file }}">
