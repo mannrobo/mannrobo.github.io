@@ -1,0 +1,2961 @@
+{
+  "nodes": {
+    "SitePage /dev-404-page/": {
+      "layout": "index",
+      "jsonName": "dev-404-page.json",
+      "internalComponentName": "ComponentDev404Page",
+      "path": "/dev-404-page/",
+      "component": "/Users/nain/Documents/mannrobo.github.io/.cache/dev-404-page.js",
+      "componentChunkName": "component---cache-dev-404-page-js",
+      "context": {},
+      "pluginCreator___NODE": "Plugin dev-404-page",
+      "pluginCreatorId": "Plugin dev-404-page",
+      "componentPath": "/Users/nain/Documents/mannrobo.github.io/.cache/dev-404-page.js",
+      "id": "SitePage /dev-404-page/",
+      "parent": "SOURCE",
+      "children": [],
+      "internal": {
+        "type": "SitePage",
+        "contentDigest": "ca78764e4cb845ab96c18c745825226f",
+        "description": "Plugin dev-404-page",
+        "owner": "internal-data-bridge"
+      }
+    },
+    "Plugin dev-404-page": {
+      "resolve": "/Users/nain/Documents/mannrobo.github.io/node_modules/gatsby/dist/internal-plugins/dev-404-page",
+      "id": "Plugin dev-404-page",
+      "name": "dev-404-page",
+      "version": "1.0.0",
+      "pluginOptions": {
+        "plugins": []
+      },
+      "nodeAPIs": [
+        "createPagesStatefully"
+      ],
+      "browserAPIs": [],
+      "ssrAPIs": [],
+      "pluginFilepath": "/Users/nain/Documents/mannrobo.github.io/node_modules/gatsby/dist/internal-plugins/dev-404-page",
+      "packageJson": {
+        "name": "dev-404-page",
+        "description": "Internal plugin to add a 404 page in development with helpful information",
+        "version": "1.0.0",
+        "main": "index.js",
+        "author": "Kyle Mathews <mathews.kyle@gmail.com>",
+        "license": "MIT",
+        "dependencies": [],
+        "devDependencies": [],
+        "peerDependencies": [],
+        "optionalDependecies": [],
+        "bundledDependecies": []
+      },
+      "parent": "SOURCE",
+      "children": [],
+      "internal": {
+        "contentDigest": "12424a3d2d3910c8753f6f16c1d82ccf",
+        "type": "SitePlugin",
+        "owner": "internal-data-bridge"
+      }
+    },
+    "Plugin component-layout-creator": {
+      "resolve": "/Users/nain/Documents/mannrobo.github.io/node_modules/gatsby/dist/internal-plugins/component-layout-creator",
+      "id": "Plugin component-layout-creator",
+      "name": "component-layout-creator",
+      "version": "1.0.0",
+      "pluginOptions": {
+        "plugins": []
+      },
+      "nodeAPIs": [
+        "createLayouts"
+      ],
+      "browserAPIs": [],
+      "ssrAPIs": [],
+      "pluginFilepath": "/Users/nain/Documents/mannrobo.github.io/node_modules/gatsby/dist/internal-plugins/component-layout-creator",
+      "packageJson": {
+        "name": "component-layout-creator",
+        "description": "An internal Gatsby plugin that creates pages from component files in src/layouts",
+        "version": "1.0.0",
+        "main": "index.js",
+        "keywords": [
+          "gatsby",
+          "gatsby-plugin"
+        ],
+        "author": "Kyle Mathews <mathews.kyle@gmail.com>",
+        "license": "MIT",
+        "dependencies": [],
+        "devDependencies": [],
+        "peerDependencies": [],
+        "optionalDependecies": [],
+        "bundledDependecies": []
+      },
+      "parent": "SOURCE",
+      "children": [],
+      "internal": {
+        "contentDigest": "38e76c507a4bf566dd1eed6f2144ff24",
+        "type": "SitePlugin",
+        "owner": "internal-data-bridge"
+      }
+    },
+    "Plugin internal-data-bridge": {
+      "resolve": "/Users/nain/Documents/mannrobo.github.io/node_modules/gatsby/dist/internal-plugins/internal-data-bridge",
+      "id": "Plugin internal-data-bridge",
+      "name": "internal-data-bridge",
+      "version": "1.0.0",
+      "pluginOptions": {
+        "plugins": []
+      },
+      "nodeAPIs": [
+        "sourceNodes",
+        "onCreatePage"
+      ],
+      "browserAPIs": [],
+      "ssrAPIs": [],
+      "pluginFilepath": "/Users/nain/Documents/mannrobo.github.io/node_modules/gatsby/dist/internal-plugins/internal-data-bridge",
+      "packageJson": {
+        "name": "internal-data-bridge",
+        "description": "An internal Gatsby plugin which creates data nodes from internal data",
+        "version": "1.0.0",
+        "main": "index.js",
+        "author": "Kyle Mathews <mathews.kyle@gmail.com>",
+        "license": "MIT",
+        "dependencies": [],
+        "devDependencies": [],
+        "peerDependencies": [],
+        "optionalDependecies": [],
+        "bundledDependecies": []
+      },
+      "parent": "SOURCE",
+      "children": [],
+      "internal": {
+        "contentDigest": "3ce0efeaa445dbdee32c37e68bcbb565",
+        "type": "SitePlugin",
+        "owner": "internal-data-bridge"
+      }
+    },
+    "Plugin prod-404": {
+      "resolve": "/Users/nain/Documents/mannrobo.github.io/node_modules/gatsby/dist/internal-plugins/prod-404",
+      "id": "Plugin prod-404",
+      "name": "prod-404",
+      "version": "1.0.0",
+      "pluginOptions": {
+        "plugins": []
+      },
+      "nodeAPIs": [
+        "onCreatePage"
+      ],
+      "browserAPIs": [],
+      "ssrAPIs": [],
+      "pluginFilepath": "/Users/nain/Documents/mannrobo.github.io/node_modules/gatsby/dist/internal-plugins/prod-404",
+      "packageJson": {
+        "name": "prod-404",
+        "description": "Internal plugin to detect various flavors of 404 pages and ensure there's a 404.html path created as well to ensure compatability with static hosts",
+        "version": "1.0.0",
+        "main": "index.js",
+        "author": "Kyle Mathews <mathews.kyle@gmail.com>",
+        "license": "MIT",
+        "dependencies": [],
+        "devDependencies": [],
+        "peerDependencies": [],
+        "optionalDependecies": [],
+        "bundledDependecies": []
+      },
+      "parent": "SOURCE",
+      "children": [],
+      "internal": {
+        "contentDigest": "6f65a92289c4454f33d8c509aac7a0ba",
+        "type": "SitePlugin",
+        "owner": "internal-data-bridge"
+      }
+    },
+    "Plugin query-runner": {
+      "resolve": "/Users/nain/Documents/mannrobo.github.io/node_modules/gatsby/dist/internal-plugins/query-runner",
+      "id": "Plugin query-runner",
+      "name": "query-runner",
+      "version": "1.0.0",
+      "pluginOptions": {
+        "plugins": []
+      },
+      "nodeAPIs": [
+        "onCreatePage",
+        "onCreateLayout"
+      ],
+      "browserAPIs": [],
+      "ssrAPIs": [],
+      "pluginFilepath": "/Users/nain/Documents/mannrobo.github.io/node_modules/gatsby/dist/internal-plugins/query-runner",
+      "packageJson": {
+        "name": "query-runner",
+        "description": "Internal plugin for running queries",
+        "version": "1.0.0",
+        "main": "index.js",
+        "author": "",
+        "license": "MIT",
+        "dependencies": [],
+        "devDependencies": [],
+        "peerDependencies": [],
+        "optionalDependecies": [],
+        "bundledDependecies": []
+      },
+      "parent": "SOURCE",
+      "children": [],
+      "internal": {
+        "contentDigest": "c9c85e81ffbb429490e18cd30c7be385",
+        "type": "SitePlugin",
+        "owner": "internal-data-bridge"
+      }
+    },
+    "Plugin gatsby-source-filesystem": {
+      "resolve": "/Users/nain/Documents/mannrobo.github.io/node_modules/gatsby-source-filesystem",
+      "id": "Plugin gatsby-source-filesystem",
+      "name": "gatsby-source-filesystem",
+      "version": "1.5.39",
+      "pluginOptions": {
+        "plugins": [],
+        "name": "data",
+        "path": "/Users/nain/Documents/mannrobo.github.io/data"
+      },
+      "nodeAPIs": [
+        "sourceNodes",
+        "setFieldsOnGraphQLNodeType"
+      ],
+      "browserAPIs": [],
+      "ssrAPIs": [],
+      "pluginFilepath": "/Users/nain/Documents/mannrobo.github.io/node_modules/gatsby-source-filesystem",
+      "packageJson": {
+        "name": "gatsby-source-filesystem",
+        "description": "Gatsby plugin which parses files within a directory for further parsing by other plugins",
+        "version": "1.5.39",
+        "keywords": [
+          "gatsby",
+          "gatsby-plugin"
+        ],
+        "author": "Kyle Mathews <mathews.kyle@gmail.com>",
+        "license": "MIT",
+        "dependencies": [
+          {
+            "name": "babel-cli",
+            "version": "^6.26.0"
+          },
+          {
+            "name": "babel-runtime",
+            "version": "^6.26.0"
+          },
+          {
+            "name": "better-queue",
+            "version": "^3.8.7"
+          },
+          {
+            "name": "bluebird",
+            "version": "^3.5.0"
+          },
+          {
+            "name": "chokidar",
+            "version": "^1.7.0"
+          },
+          {
+            "name": "fs-extra",
+            "version": "^4.0.1"
+          },
+          {
+            "name": "got",
+            "version": "^7.1.0"
+          },
+          {
+            "name": "md5-file",
+            "version": "^3.1.1"
+          },
+          {
+            "name": "mime",
+            "version": "^1.3.6"
+          },
+          {
+            "name": "pretty-bytes",
+            "version": "^4.0.2"
+          },
+          {
+            "name": "slash",
+            "version": "^1.0.0"
+          },
+          {
+            "name": "valid-url",
+            "version": "^1.0.9"
+          }
+        ],
+        "devDependencies": [
+          {
+            "name": "cross-env",
+            "version": "^5.0.5"
+          }
+        ],
+        "peerDependencies": [
+          {
+            "name": "gatsby",
+            "version": "^1.9.250"
+          }
+        ],
+        "optionalDependecies": [],
+        "bundledDependecies": []
+      },
+      "parent": "SOURCE",
+      "children": [],
+      "internal": {
+        "contentDigest": "97f8ae5c578c07a3567b52fd1b7e0111",
+        "type": "SitePlugin",
+        "owner": "internal-data-bridge"
+      }
+    },
+    "Plugin gatsby-plugin-google-analytics": {
+      "resolve": "/Users/nain/Documents/mannrobo.github.io/node_modules/gatsby-plugin-google-analytics",
+      "id": "Plugin gatsby-plugin-google-analytics",
+      "name": "gatsby-plugin-google-analytics",
+      "version": "1.0.31",
+      "pluginOptions": {
+        "plugins": [],
+        "trackingId": "YOUR_GOOGLE_ANALYTICS_TRACKING_ID",
+        "head": false,
+        "anonymize": true,
+        "respectDNT": true
+      },
+      "nodeAPIs": [],
+      "browserAPIs": [
+        "onRouteUpdate"
+      ],
+      "ssrAPIs": [
+        "onRenderBody"
+      ],
+      "pluginFilepath": "/Users/nain/Documents/mannrobo.github.io/node_modules/gatsby-plugin-google-analytics",
+      "packageJson": {
+        "name": "gatsby-plugin-google-analytics",
+        "description": "Gatsby plugin to add google analytics onto a site",
+        "version": "1.0.31",
+        "main": "index.js",
+        "keywords": [
+          "gatsby",
+          "gatsby-plugin",
+          "google analytics"
+        ],
+        "author": "Kyle Mathews <mathews.kyle@gmail.com>",
+        "license": "MIT",
+        "dependencies": [
+          {
+            "name": "babel-runtime",
+            "version": "^6.26.0"
+          }
+        ],
+        "devDependencies": [
+          {
+            "name": "babel-cli",
+            "version": "^6.26.0"
+          },
+          {
+            "name": "cross-env",
+            "version": "^5.0.5"
+          }
+        ],
+        "peerDependencies": [
+          {
+            "name": "gatsby",
+            "version": "^1.0.0"
+          }
+        ],
+        "optionalDependecies": [],
+        "bundledDependecies": []
+      },
+      "parent": "SOURCE",
+      "children": [],
+      "internal": {
+        "contentDigest": "7af2bc1241862970292134129c92ecea",
+        "type": "SitePlugin",
+        "owner": "internal-data-bridge"
+      }
+    },
+    "Plugin gatsby-transformer-remark": {
+      "resolve": "/Users/nain/Documents/mannrobo.github.io/node_modules/gatsby-transformer-remark",
+      "id": "Plugin gatsby-transformer-remark",
+      "name": "gatsby-transformer-remark",
+      "version": "1.7.44",
+      "pluginOptions": {
+        "plugins": [
+          {
+            "resolve": "/Users/nain/Documents/mannrobo.github.io/node_modules/gatsby-remark-images",
+            "id": "Plugin gatsby-remark-images",
+            "name": "gatsby-remark-images",
+            "version": "1.5.67",
+            "pluginOptions": {
+              "plugins": [],
+              "maxWidth": 690,
+              "backgroundColor": "#f7f0eb",
+              "wrapperStyle": "",
+              "linkImagesToOriginal": true,
+              "showCaptions": false,
+              "pathPrefix": ""
+            },
+            "nodeAPIs": [],
+            "browserAPIs": [],
+            "ssrAPIs": [],
+            "pluginFilepath": "/Users/nain/Documents/mannrobo.github.io/node_modules/gatsby-remark-images"
+          },
+          {
+            "resolve": "/Users/nain/Documents/mannrobo.github.io/node_modules/gatsby-remark-prismjs",
+            "id": "Plugin gatsby-remark-prismjs",
+            "name": "gatsby-remark-prismjs",
+            "version": "2.0.4",
+            "pluginOptions": {
+              "plugins": []
+            },
+            "nodeAPIs": [],
+            "browserAPIs": [],
+            "ssrAPIs": [],
+            "pluginFilepath": "/Users/nain/Documents/mannrobo.github.io/node_modules/gatsby-remark-prismjs"
+          },
+          {
+            "resolve": "/Users/nain/Documents/mannrobo.github.io/node_modules/gatsby-remark-copy-linked-files",
+            "id": "Plugin gatsby-remark-copy-linked-files",
+            "name": "gatsby-remark-copy-linked-files",
+            "version": "1.5.37",
+            "pluginOptions": {
+              "plugins": [],
+              "ignoreFileExtensions": [
+                "png",
+                "jpg",
+                "jpeg",
+                "bmp",
+                "tiff"
+              ]
+            },
+            "nodeAPIs": [],
+            "browserAPIs": [],
+            "ssrAPIs": [],
+            "pluginFilepath": "/Users/nain/Documents/mannrobo.github.io/node_modules/gatsby-remark-copy-linked-files"
+          },
+          {
+            "resolve": "/Users/nain/Documents/mannrobo.github.io/node_modules/gatsby-remark-autolink-headers",
+            "id": "Plugin gatsby-remark-autolink-headers",
+            "name": "gatsby-remark-autolink-headers",
+            "version": "1.4.19",
+            "pluginOptions": {
+              "plugins": []
+            },
+            "nodeAPIs": [],
+            "browserAPIs": [
+              "onClientEntry",
+              "onRouteUpdate"
+            ],
+            "ssrAPIs": [
+              "onRenderBody"
+            ],
+            "pluginFilepath": "/Users/nain/Documents/mannrobo.github.io/node_modules/gatsby-remark-autolink-headers"
+          }
+        ]
+      },
+      "nodeAPIs": [
+        "onCreateNode",
+        "setFieldsOnGraphQLNodeType"
+      ],
+      "browserAPIs": [],
+      "ssrAPIs": [],
+      "pluginFilepath": "/Users/nain/Documents/mannrobo.github.io/node_modules/gatsby-transformer-remark",
+      "packageJson": {
+        "name": "gatsby-transformer-remark",
+        "description": "Gatsby transformer plugin for Markdown using the Remark library and ecosystem",
+        "version": "1.7.44",
+        "keywords": [
+          "gatsby",
+          "gatsby-plugin",
+          "markdown",
+          "remark"
+        ],
+        "author": "Kyle Mathews <mathews.kyle@gmail.com>",
+        "license": "MIT",
+        "dependencies": [
+          {
+            "name": "babel-runtime",
+            "version": "^6.26.0"
+          },
+          {
+            "name": "bluebird",
+            "version": "^3.5.0"
+          },
+          {
+            "name": "graphql-type-json",
+            "version": "^0.1.4"
+          },
+          {
+            "name": "gray-matter",
+            "version": "^3.0.0"
+          },
+          {
+            "name": "hast-util-raw",
+            "version": "^2.0.2"
+          },
+          {
+            "name": "hast-util-to-html",
+            "version": "^3.0.0"
+          },
+          {
+            "name": "lodash",
+            "version": "^4.17.4"
+          },
+          {
+            "name": "mdast-util-to-hast",
+            "version": "^2.4.0"
+          },
+          {
+            "name": "mdast-util-toc",
+            "version": "^2.0.1"
+          },
+          {
+            "name": "remark",
+            "version": "^7.0.1"
+          },
+          {
+            "name": "remark-parse",
+            "version": "^4.0.0"
+          },
+          {
+            "name": "remark-retext",
+            "version": "^3.1.0"
+          },
+          {
+            "name": "remark-stringify",
+            "version": "^4.0.0"
+          },
+          {
+            "name": "retext-english",
+            "version": "^3.0.0"
+          },
+          {
+            "name": "sanitize-html",
+            "version": "^1.14.1"
+          },
+          {
+            "name": "underscore.string",
+            "version": "^3.3.4"
+          },
+          {
+            "name": "unified",
+            "version": "^6.1.5"
+          },
+          {
+            "name": "unist-util-remove-position",
+            "version": "^1.1.1"
+          },
+          {
+            "name": "unist-util-select",
+            "version": "^1.5.0"
+          },
+          {
+            "name": "unist-util-visit",
+            "version": "^1.1.1"
+          }
+        ],
+        "devDependencies": [
+          {
+            "name": "babel-cli",
+            "version": "^6.26.0"
+          },
+          {
+            "name": "babel-plugin-transform-object-rest-spread",
+            "version": "^6.20.2"
+          },
+          {
+            "name": "cross-env",
+            "version": "^5.0.5"
+          }
+        ],
+        "peerDependencies": [],
+        "optionalDependecies": [],
+        "bundledDependecies": []
+      },
+      "parent": "SOURCE",
+      "children": [],
+      "internal": {
+        "contentDigest": "01981fe296636e43118723ad154f7d32",
+        "type": "SitePlugin",
+        "owner": "internal-data-bridge"
+      }
+    },
+    "Plugin gatsby-remark-images": {
+      "resolve": "/Users/nain/Documents/mannrobo.github.io/node_modules/gatsby-remark-images",
+      "id": "Plugin gatsby-remark-images",
+      "name": "gatsby-remark-images",
+      "version": "1.5.67",
+      "pluginOptions": {
+        "plugins": [],
+        "maxWidth": 690,
+        "backgroundColor": "#f7f0eb",
+        "wrapperStyle": "",
+        "linkImagesToOriginal": true,
+        "showCaptions": false,
+        "pathPrefix": ""
+      },
+      "nodeAPIs": [],
+      "browserAPIs": [],
+      "ssrAPIs": [],
+      "pluginFilepath": "/Users/nain/Documents/mannrobo.github.io/node_modules/gatsby-remark-images",
+      "packageJson": {
+        "name": "gatsby-remark-images",
+        "description": "Processes images in markdown so they can be used in the production build.",
+        "version": "1.5.67",
+        "main": "index.js",
+        "keywords": [
+          "gatsby",
+          "gatsby-plugin",
+          "image",
+          "markdown",
+          "remark",
+          "responsive images"
+        ],
+        "author": "Kyle Mathews <mathews.kyle@gmail.com>",
+        "license": "MIT",
+        "dependencies": [
+          {
+            "name": "babel-runtime",
+            "version": "^6.26.0"
+          },
+          {
+            "name": "cheerio",
+            "version": "^1.0.0-rc.2"
+          },
+          {
+            "name": "gatsby-plugin-sharp",
+            "version": "^1.6.48"
+          },
+          {
+            "name": "is-relative-url",
+            "version": "^2.0.0"
+          },
+          {
+            "name": "lodash",
+            "version": "^4.17.4"
+          },
+          {
+            "name": "slash",
+            "version": "^1.0.0"
+          },
+          {
+            "name": "unist-util-select",
+            "version": "^1.5.0"
+          }
+        ],
+        "devDependencies": [
+          {
+            "name": "babel-cli",
+            "version": "^6.26.0"
+          },
+          {
+            "name": "cross-env",
+            "version": "^5.0.5"
+          }
+        ],
+        "peerDependencies": [],
+        "optionalDependecies": [],
+        "bundledDependecies": []
+      },
+      "parent": "SOURCE",
+      "children": [],
+      "internal": {
+        "contentDigest": "958f549ef35a8819e2f4020dac7701d7",
+        "type": "SitePlugin",
+        "owner": "internal-data-bridge"
+      }
+    },
+    "Plugin gatsby-remark-prismjs": {
+      "resolve": "/Users/nain/Documents/mannrobo.github.io/node_modules/gatsby-remark-prismjs",
+      "id": "Plugin gatsby-remark-prismjs",
+      "name": "gatsby-remark-prismjs",
+      "version": "2.0.4",
+      "pluginOptions": {
+        "plugins": []
+      },
+      "nodeAPIs": [],
+      "browserAPIs": [],
+      "ssrAPIs": [],
+      "pluginFilepath": "/Users/nain/Documents/mannrobo.github.io/node_modules/gatsby-remark-prismjs",
+      "packageJson": {
+        "name": "gatsby-remark-prismjs",
+        "description": "Adds syntax highlighting to code blocks at build time using PrismJS",
+        "version": "2.0.4",
+        "main": "index.js",
+        "keywords": [
+          "gatsby",
+          "gatsby-plugin",
+          "prismjs",
+          "remark"
+        ],
+        "author": "Kyle Mathews <mathews.kyle@gmail.com>",
+        "license": "MIT",
+        "dependencies": [
+          {
+            "name": "babel-runtime",
+            "version": "^6.26.0"
+          },
+          {
+            "name": "parse-numeric-range",
+            "version": "0.0.2"
+          },
+          {
+            "name": "unist-util-visit",
+            "version": "^1.3.0"
+          }
+        ],
+        "devDependencies": [
+          {
+            "name": "babel-cli",
+            "version": "^6.26.0"
+          },
+          {
+            "name": "cross-env",
+            "version": "^5.1.3"
+          },
+          {
+            "name": "prismjs",
+            "version": "^1.13.0"
+          },
+          {
+            "name": "remark",
+            "version": "^7.0.1"
+          }
+        ],
+        "peerDependencies": [
+          {
+            "name": "prismjs",
+            "version": "^1.13.0"
+          }
+        ],
+        "optionalDependecies": [],
+        "bundledDependecies": []
+      },
+      "parent": "SOURCE",
+      "children": [],
+      "internal": {
+        "contentDigest": "29cdbe845bd504795681662e8e0e6f60",
+        "type": "SitePlugin",
+        "owner": "internal-data-bridge"
+      }
+    },
+    "Plugin gatsby-remark-copy-linked-files": {
+      "resolve": "/Users/nain/Documents/mannrobo.github.io/node_modules/gatsby-remark-copy-linked-files",
+      "id": "Plugin gatsby-remark-copy-linked-files",
+      "name": "gatsby-remark-copy-linked-files",
+      "version": "1.5.37",
+      "pluginOptions": {
+        "plugins": [],
+        "ignoreFileExtensions": [
+          "png",
+          "jpg",
+          "jpeg",
+          "bmp",
+          "tiff"
+        ]
+      },
+      "nodeAPIs": [],
+      "browserAPIs": [],
+      "ssrAPIs": [],
+      "pluginFilepath": "/Users/nain/Documents/mannrobo.github.io/node_modules/gatsby-remark-copy-linked-files",
+      "packageJson": {
+        "name": "gatsby-remark-copy-linked-files",
+        "description": "Find files which are linked to from markdown and copy them to the public directory",
+        "version": "1.5.37",
+        "main": "index.js",
+        "keywords": [
+          "gatsby",
+          "gatsby-plugin",
+          "prismjs",
+          "remark"
+        ],
+        "author": "Kyle Mathews <mathews.kyle@gmail.com>",
+        "license": "MIT",
+        "dependencies": [
+          {
+            "name": "babel-runtime",
+            "version": "^6.26.0"
+          },
+          {
+            "name": "cheerio",
+            "version": "^1.0.0-rc.2"
+          },
+          {
+            "name": "fs-extra",
+            "version": "^4.0.1"
+          },
+          {
+            "name": "is-relative-url",
+            "version": "^2.0.0"
+          },
+          {
+            "name": "lodash",
+            "version": "^4.17.4"
+          },
+          {
+            "name": "path-is-inside",
+            "version": "^1.0.2"
+          },
+          {
+            "name": "probe-image-size",
+            "version": "^4.0.0"
+          },
+          {
+            "name": "unist-util-visit",
+            "version": "^1.1.1"
+          }
+        ],
+        "devDependencies": [
+          {
+            "name": "babel-cli",
+            "version": "^6.26.0"
+          },
+          {
+            "name": "cross-env",
+            "version": "^5.0.5"
+          }
+        ],
+        "peerDependencies": [],
+        "optionalDependecies": [],
+        "bundledDependecies": []
+      },
+      "parent": "SOURCE",
+      "children": [],
+      "internal": {
+        "contentDigest": "81961a0e97b893ada9b057b876e2f1d7",
+        "type": "SitePlugin",
+        "owner": "internal-data-bridge"
+      }
+    },
+    "Plugin gatsby-remark-autolink-headers": {
+      "resolve": "/Users/nain/Documents/mannrobo.github.io/node_modules/gatsby-remark-autolink-headers",
+      "id": "Plugin gatsby-remark-autolink-headers",
+      "name": "gatsby-remark-autolink-headers",
+      "version": "1.4.19",
+      "pluginOptions": {
+        "plugins": []
+      },
+      "nodeAPIs": [],
+      "browserAPIs": [
+        "onClientEntry",
+        "onRouteUpdate"
+      ],
+      "ssrAPIs": [
+        "onRenderBody"
+      ],
+      "pluginFilepath": "/Users/nain/Documents/mannrobo.github.io/node_modules/gatsby-remark-autolink-headers",
+      "packageJson": {
+        "name": "gatsby-remark-autolink-headers",
+        "description": "Gatsby plugin to autolink headers in markdown processed by Remark",
+        "version": "1.4.19",
+        "main": "index.js",
+        "keywords": [
+          "gatsby",
+          "gatsby-plugin",
+          "remark"
+        ],
+        "author": "Kyle Mathews <mathews.kyle@gmail.com>",
+        "license": "MIT",
+        "dependencies": [
+          {
+            "name": "babel-runtime",
+            "version": "^6.26.0"
+          },
+          {
+            "name": "github-slugger",
+            "version": "^1.1.1"
+          },
+          {
+            "name": "mdast-util-to-string",
+            "version": "^1.0.2"
+          },
+          {
+            "name": "unist-util-visit",
+            "version": "^1.1.1"
+          }
+        ],
+        "devDependencies": [
+          {
+            "name": "babel-cli",
+            "version": "^6.26.0"
+          },
+          {
+            "name": "cross-env",
+            "version": "^5.0.5"
+          }
+        ],
+        "peerDependencies": [],
+        "optionalDependecies": [],
+        "bundledDependecies": []
+      },
+      "parent": "SOURCE",
+      "children": [],
+      "internal": {
+        "contentDigest": "ae06066d720b22b48fd12214a8022837",
+        "type": "SitePlugin",
+        "owner": "internal-data-bridge"
+      }
+    },
+    "Plugin gatsby-transformer-sharp": {
+      "resolve": "/Users/nain/Documents/mannrobo.github.io/node_modules/gatsby-transformer-sharp",
+      "id": "Plugin gatsby-transformer-sharp",
+      "name": "gatsby-transformer-sharp",
+      "version": "1.6.27",
+      "pluginOptions": {
+        "plugins": []
+      },
+      "nodeAPIs": [
+        "onCreateNode",
+        "setFieldsOnGraphQLNodeType",
+        "onPreExtractQueries"
+      ],
+      "browserAPIs": [],
+      "ssrAPIs": [],
+      "pluginFilepath": "/Users/nain/Documents/mannrobo.github.io/node_modules/gatsby-transformer-sharp",
+      "packageJson": {
+        "name": "gatsby-transformer-sharp",
+        "description": "Gatsby transformer plugin for images using Sharp",
+        "version": "1.6.27",
+        "keywords": [
+          "gatsby",
+          "gatsby-plugin",
+          "image",
+          "sharp"
+        ],
+        "author": "Kyle Mathews <mathews.kyle@gmail.com>",
+        "license": "MIT",
+        "dependencies": [
+          {
+            "name": "babel-runtime",
+            "version": "^6.26.0"
+          },
+          {
+            "name": "bluebird",
+            "version": "^3.5.0"
+          },
+          {
+            "name": "fs-extra",
+            "version": "^4.0.2"
+          },
+          {
+            "name": "probe-image-size",
+            "version": "^4.0.0"
+          }
+        ],
+        "devDependencies": [
+          {
+            "name": "babel-cli",
+            "version": "^6.26.0"
+          },
+          {
+            "name": "cross-env",
+            "version": "^5.0.5"
+          }
+        ],
+        "peerDependencies": [],
+        "optionalDependecies": [],
+        "bundledDependecies": []
+      },
+      "parent": "SOURCE",
+      "children": [],
+      "internal": {
+        "contentDigest": "84f982b75e4e9d57263aa7ee08802529",
+        "type": "SitePlugin",
+        "owner": "internal-data-bridge"
+      }
+    },
+    "Plugin gatsby-plugin-sharp": {
+      "resolve": "/Users/nain/Documents/mannrobo.github.io/node_modules/gatsby-plugin-sharp",
+      "id": "Plugin gatsby-plugin-sharp",
+      "name": "gatsby-plugin-sharp",
+      "version": "1.6.48",
+      "pluginOptions": {
+        "plugins": []
+      },
+      "nodeAPIs": [],
+      "browserAPIs": [],
+      "ssrAPIs": [],
+      "pluginFilepath": "/Users/nain/Documents/mannrobo.github.io/node_modules/gatsby-plugin-sharp",
+      "packageJson": {
+        "name": "gatsby-plugin-sharp",
+        "description": "Wrapper of the Sharp image manipulation library for Gatsby plugins",
+        "version": "1.6.48",
+        "main": "index.js",
+        "keywords": [
+          "gatsby",
+          "gatsby-plugin",
+          "image",
+          "sharp"
+        ],
+        "author": "Kyle Mathews <mathews.kyle@gmail.com>",
+        "license": "MIT",
+        "dependencies": [
+          {
+            "name": "async",
+            "version": "^2.1.2"
+          },
+          {
+            "name": "babel-runtime",
+            "version": "^6.26.0"
+          },
+          {
+            "name": "bluebird",
+            "version": "^3.5.0"
+          },
+          {
+            "name": "imagemin",
+            "version": "^5.2.2"
+          },
+          {
+            "name": "imagemin-pngquant",
+            "version": "5.0.1"
+          },
+          {
+            "name": "imagemin-webp",
+            "version": "^4.0.0"
+          },
+          {
+            "name": "lodash",
+            "version": "^4.17.4"
+          },
+          {
+            "name": "mini-svg-data-uri",
+            "version": "^1.0.0"
+          },
+          {
+            "name": "potrace",
+            "version": "^2.1.1"
+          },
+          {
+            "name": "probe-image-size",
+            "version": "^4.0.0"
+          },
+          {
+            "name": "progress",
+            "version": "^1.1.8"
+          },
+          {
+            "name": "sharp",
+            "version": "^0.20.0"
+          },
+          {
+            "name": "svgo",
+            "version": "^0.7.2"
+          }
+        ],
+        "devDependencies": [
+          {
+            "name": "babel-cli",
+            "version": "^6.26.0"
+          },
+          {
+            "name": "cross-env",
+            "version": "^5.0.5"
+          }
+        ],
+        "peerDependencies": [
+          {
+            "name": "gatsby",
+            "version": "^1.0.0"
+          }
+        ],
+        "optionalDependecies": [],
+        "bundledDependecies": []
+      },
+      "parent": "SOURCE",
+      "children": [],
+      "internal": {
+        "contentDigest": "e00aafce1127e73833ac1c6ca932c309",
+        "type": "SitePlugin",
+        "owner": "internal-data-bridge"
+      }
+    },
+    "Plugin gatsby-transformer-json": {
+      "resolve": "/Users/nain/Documents/mannrobo.github.io/node_modules/gatsby-transformer-json",
+      "id": "Plugin gatsby-transformer-json",
+      "name": "gatsby-transformer-json",
+      "version": "1.0.20",
+      "pluginOptions": {
+        "plugins": []
+      },
+      "nodeAPIs": [
+        "onCreateNode"
+      ],
+      "browserAPIs": [],
+      "ssrAPIs": [],
+      "pluginFilepath": "/Users/nain/Documents/mannrobo.github.io/node_modules/gatsby-transformer-json",
+      "packageJson": {
+        "name": "gatsby-transformer-json",
+        "description": "Gatsby transformer plugin for JSON files",
+        "version": "1.0.20",
+        "keywords": [
+          "gatsby",
+          "gatsby-plugin",
+          "json"
+        ],
+        "author": "Kyle Mathews <mathews.kyle@gmail.com>",
+        "license": "MIT",
+        "dependencies": [
+          {
+            "name": "babel-runtime",
+            "version": "^6.26.0"
+          },
+          {
+            "name": "bluebird",
+            "version": "^3.5.0"
+          }
+        ],
+        "devDependencies": [
+          {
+            "name": "babel-cli",
+            "version": "^6.26.0"
+          },
+          {
+            "name": "cross-env",
+            "version": "^5.0.5"
+          }
+        ],
+        "peerDependencies": [],
+        "optionalDependecies": [],
+        "bundledDependecies": []
+      },
+      "parent": "SOURCE",
+      "children": [],
+      "internal": {
+        "contentDigest": "998a1e8429a1f5e0aca9a705794c06cb",
+        "type": "SitePlugin",
+        "owner": "internal-data-bridge"
+      }
+    },
+    "Plugin gatsby-plugin-typescript": {
+      "resolve": "/Users/nain/Documents/mannrobo.github.io/node_modules/gatsby-plugin-typescript",
+      "id": "Plugin gatsby-plugin-typescript",
+      "name": "gatsby-plugin-typescript",
+      "version": "1.4.20",
+      "pluginOptions": {
+        "plugins": []
+      },
+      "nodeAPIs": [
+        "resolvableExtensions",
+        "modifyWebpackConfig",
+        "preprocessSource"
+      ],
+      "browserAPIs": [],
+      "ssrAPIs": [],
+      "pluginFilepath": "/Users/nain/Documents/mannrobo.github.io/node_modules/gatsby-plugin-typescript",
+      "packageJson": {
+        "name": "gatsby-plugin-typescript",
+        "description": "Adds TypeScript support for Gatsby layouts and pages.",
+        "version": "1.4.20",
+        "main": "index.js",
+        "keywords": [
+          "gatsby",
+          "gatsby-plugin",
+          "typescript"
+        ],
+        "author": "Kyle Mathews <mathews.kyle@gmail.com>",
+        "license": "MIT",
+        "dependencies": [
+          {
+            "name": "babel-runtime",
+            "version": "^6.26.0"
+          },
+          {
+            "name": "ts-loader",
+            "version": "^2.0.3"
+          },
+          {
+            "name": "typescript",
+            "version": "^2.2.1"
+          }
+        ],
+        "devDependencies": [
+          {
+            "name": "babel-cli",
+            "version": "^6.26.0"
+          },
+          {
+            "name": "cross-env",
+            "version": "^5.0.5"
+          }
+        ],
+        "peerDependencies": [
+          {
+            "name": "gatsby",
+            "version": "^1.0.0"
+          }
+        ],
+        "optionalDependecies": [],
+        "bundledDependecies": []
+      },
+      "parent": "SOURCE",
+      "children": [],
+      "internal": {
+        "contentDigest": "2dd8cd1d3dde676efb9d4e92680d87cb",
+        "type": "SitePlugin",
+        "owner": "internal-data-bridge"
+      }
+    },
+    "Plugin gatsby-plugin-manifest": {
+      "resolve": "/Users/nain/Documents/mannrobo.github.io/node_modules/gatsby-plugin-manifest",
+      "id": "Plugin gatsby-plugin-manifest",
+      "name": "gatsby-plugin-manifest",
+      "version": "1.0.27",
+      "pluginOptions": {
+        "plugins": [],
+        "name": "Gatsby website",
+        "short_name": "Gatsby website",
+        "start_url": "/",
+        "background_color": "#f7f7f7",
+        "theme_color": "#191919",
+        "display": "minimal-ui"
+      },
+      "nodeAPIs": [
+        "onPostBuild"
+      ],
+      "browserAPIs": [],
+      "ssrAPIs": [
+        "onRenderBody"
+      ],
+      "pluginFilepath": "/Users/nain/Documents/mannrobo.github.io/node_modules/gatsby-plugin-manifest",
+      "packageJson": {
+        "name": "gatsby-plugin-manifest",
+        "description": "Gatsby plugin which adds a manifest.webmanifest to make sites progressive web apps",
+        "version": "1.0.27",
+        "main": "index.js",
+        "keywords": [
+          "gatsby",
+          "gatsby-plugin",
+          "favicon",
+          "icons",
+          "manifest.webmanifest",
+          "progressive-web-app",
+          "pwa"
+        ],
+        "author": "Kyle Mathews <mathews.kyle@gmail.com>",
+        "license": "MIT",
+        "dependencies": [
+          {
+            "name": "babel-runtime",
+            "version": "^6.26.0"
+          },
+          {
+            "name": "bluebird",
+            "version": "^3.5.0"
+          },
+          {
+            "name": "sharp",
+            "version": "^0.20.1"
+          }
+        ],
+        "devDependencies": [
+          {
+            "name": "babel-cli",
+            "version": "^6.26.0"
+          },
+          {
+            "name": "cross-env",
+            "version": "^5.0.5"
+          }
+        ],
+        "peerDependencies": [
+          {
+            "name": "gatsby",
+            "version": "^1.0.0"
+          }
+        ],
+        "optionalDependecies": [],
+        "bundledDependecies": []
+      },
+      "parent": "SOURCE",
+      "children": [],
+      "internal": {
+        "contentDigest": "ce8e1c2a2e9aa9fd5371946b5c93f41d",
+        "type": "SitePlugin",
+        "owner": "internal-data-bridge"
+      }
+    },
+    "Plugin gatsby-plugin-offline": {
+      "resolve": "/Users/nain/Documents/mannrobo.github.io/node_modules/gatsby-plugin-offline",
+      "id": "Plugin gatsby-plugin-offline",
+      "name": "gatsby-plugin-offline",
+      "version": "1.0.18",
+      "pluginOptions": {
+        "plugins": []
+      },
+      "nodeAPIs": [
+        "createPages",
+        "onPostBuild"
+      ],
+      "browserAPIs": [
+        "registerServiceWorker"
+      ],
+      "ssrAPIs": [],
+      "pluginFilepath": "/Users/nain/Documents/mannrobo.github.io/node_modules/gatsby-plugin-offline",
+      "packageJson": {
+        "name": "gatsby-plugin-offline",
+        "description": "Gatsby plugin which sets up a site to be able to run offline",
+        "version": "1.0.18",
+        "main": "index.js",
+        "keywords": [
+          "gatsby",
+          "gatsby-plugin",
+          "offline",
+          "precache",
+          "service-worker"
+        ],
+        "author": "Kyle Mathews <mathews.kyle@gmail.com>",
+        "license": "MIT",
+        "dependencies": [
+          {
+            "name": "babel-runtime",
+            "version": "^6.26.0"
+          },
+          {
+            "name": "sw-precache",
+            "version": "^5.0.0"
+          }
+        ],
+        "devDependencies": [
+          {
+            "name": "babel-cli",
+            "version": "^6.26.0"
+          },
+          {
+            "name": "cross-env",
+            "version": "^5.0.5"
+          }
+        ],
+        "peerDependencies": [
+          {
+            "name": "gatsby",
+            "version": "^1.0.0"
+          }
+        ],
+        "optionalDependecies": [],
+        "bundledDependecies": []
+      },
+      "parent": "SOURCE",
+      "children": [],
+      "internal": {
+        "contentDigest": "1a6f64da7f33bf13c43d41f2e5105c36",
+        "type": "SitePlugin",
+        "owner": "internal-data-bridge"
+      }
+    },
+    "Plugin default-site-plugin": {
+      "resolve": "/Users/nain/Documents/mannrobo.github.io",
+      "id": "Plugin default-site-plugin",
+      "name": "default-site-plugin",
+      "version": "90fc47653c32ab6474f5293f170d264d",
+      "pluginOptions": {
+        "plugins": []
+      },
+      "nodeAPIs": [
+        "modifyWebpackConfig",
+        "onCreateNode",
+        "createPages"
+      ],
+      "browserAPIs": [],
+      "ssrAPIs": [],
+      "pluginFilepath": "/Users/nain/Documents/mannrobo.github.io",
+      "packageJson": {
+        "name": "gatsby-starter",
+        "description": "Gatsby 1.0 starter",
+        "version": "1.0.0",
+        "keywords": [
+          "gatsby",
+          "starter"
+        ],
+        "author": "fabien0102 <fabien0102@gmail.com>",
+        "license": "MIT",
+        "dependencies": [
+          {
+            "name": "@types/lodash",
+            "version": "^4.14.63"
+          },
+          {
+            "name": "@types/react",
+            "version": "^16.0.20"
+          },
+          {
+            "name": "@types/react-dom",
+            "version": "^16.0.2"
+          },
+          {
+            "name": "@types/react-helmet",
+            "version": "5.0.0"
+          },
+          {
+            "name": "@types/react-redux",
+            "version": "^5.0.9"
+          },
+          {
+            "name": "@types/react-router",
+            "version": "^4.0.14"
+          },
+          {
+            "name": "@types/react-router-dom",
+            "version": "^4.0.8"
+          },
+          {
+            "name": "babel-eslint",
+            "version": "^7.2.1"
+          },
+          {
+            "name": "change-case",
+            "version": "^3.0.1"
+          },
+          {
+            "name": "codeclimate-test-reporter",
+            "version": "^0.4.1"
+          },
+          {
+            "name": "disqus-react",
+            "version": "^1.0.5"
+          },
+          {
+            "name": "gatsby",
+            "version": "latest"
+          },
+          {
+            "name": "gatsby-link",
+            "version": "latest"
+          },
+          {
+            "name": "gatsby-plugin-glamor",
+            "version": "latest"
+          },
+          {
+            "name": "gatsby-plugin-google-analytics",
+            "version": "latest"
+          },
+          {
+            "name": "gatsby-plugin-manifest",
+            "version": "latest"
+          },
+          {
+            "name": "gatsby-plugin-offline",
+            "version": "latest"
+          },
+          {
+            "name": "gatsby-plugin-sharp",
+            "version": "latest"
+          },
+          {
+            "name": "gatsby-plugin-typescript",
+            "version": "latest"
+          },
+          {
+            "name": "gatsby-remark-autolink-headers",
+            "version": "latest"
+          },
+          {
+            "name": "gatsby-remark-copy-linked-files",
+            "version": "latest"
+          },
+          {
+            "name": "gatsby-remark-images",
+            "version": "latest"
+          },
+          {
+            "name": "gatsby-remark-prismjs",
+            "version": "latest"
+          },
+          {
+            "name": "gatsby-source-filesystem",
+            "version": "latest"
+          },
+          {
+            "name": "gatsby-transformer-json",
+            "version": "latest"
+          },
+          {
+            "name": "gatsby-transformer-remark",
+            "version": "latest"
+          },
+          {
+            "name": "gatsby-transformer-sharp",
+            "version": "latest"
+          },
+          {
+            "name": "graphql-code-generator",
+            "version": "^0.5.2"
+          },
+          {
+            "name": "gray-matter",
+            "version": "^2.1.1"
+          },
+          {
+            "name": "lodash",
+            "version": "^4.17.4"
+          },
+          {
+            "name": "react",
+            "version": "^16.0.0"
+          },
+          {
+            "name": "react-dom",
+            "version": "^16.0.0"
+          },
+          {
+            "name": "react-helmet",
+            "version": "5.0.3"
+          },
+          {
+            "name": "react-redux",
+            "version": "^5.0.6"
+          },
+          {
+            "name": "redux-devtools-extension",
+            "version": "^2.13.2"
+          },
+          {
+            "name": "semantic-ui-react",
+            "version": "^0.74.2"
+          },
+          {
+            "name": "slash",
+            "version": "1.0.0"
+          },
+          {
+            "name": "ts-loader",
+            "version": "^2.3.7"
+          },
+          {
+            "name": "typescript",
+            "version": "2.5.3"
+          }
+        ],
+        "devDependencies": [
+          {
+            "name": "@storybook/addon-actions",
+            "version": "^3.2.14"
+          },
+          {
+            "name": "@storybook/addon-knobs",
+            "version": "^3.2.14"
+          },
+          {
+            "name": "@storybook/addon-notes",
+            "version": "^3.2.10"
+          },
+          {
+            "name": "@storybook/addon-options",
+            "version": "^3.2.14"
+          },
+          {
+            "name": "@storybook/react",
+            "version": "^3.2.14"
+          },
+          {
+            "name": "@types/enzyme",
+            "version": "^2.8.9"
+          },
+          {
+            "name": "@types/jest",
+            "version": "^19.2.2"
+          },
+          {
+            "name": "@types/node",
+            "version": "^7.0.15"
+          },
+          {
+            "name": "@types/react-test-renderer",
+            "version": "^16.0.0"
+          },
+          {
+            "name": "@types/storybook__addon-actions",
+            "version": "^3.0.1"
+          },
+          {
+            "name": "@types/storybook__addon-knobs",
+            "version": "^3.2.0"
+          },
+          {
+            "name": "@types/storybook__addon-notes",
+            "version": "^3.0.1"
+          },
+          {
+            "name": "@types/storybook__addon-options",
+            "version": "^3.2.0"
+          },
+          {
+            "name": "@types/storybook__react",
+            "version": "^3.0.5"
+          },
+          {
+            "name": "@types/webpack-env",
+            "version": "^1.13.1"
+          },
+          {
+            "name": "enzyme",
+            "version": "^3.0.0"
+          },
+          {
+            "name": "enzyme-adapter-react-16",
+            "version": "^1.0.0"
+          },
+          {
+            "name": "eslint-config-xo-react",
+            "version": "0.11.1"
+          },
+          {
+            "name": "eslint-plugin-react",
+            "version": "6.10.3"
+          },
+          {
+            "name": "flat",
+            "version": "^2.0.1"
+          },
+          {
+            "name": "husky",
+            "version": "0.13.3"
+          },
+          {
+            "name": "jest",
+            "version": "19.0.2"
+          },
+          {
+            "name": "lint-staged",
+            "version": "3.4.0"
+          },
+          {
+            "name": "mkdirp",
+            "version": "^0.5.1"
+          },
+          {
+            "name": "plop",
+            "version": "^1.7.4"
+          },
+          {
+            "name": "raw-loader",
+            "version": "^0.5.1"
+          },
+          {
+            "name": "react-addons-test-utils",
+            "version": "^15.5.1"
+          },
+          {
+            "name": "react-test-renderer",
+            "version": "16"
+          },
+          {
+            "name": "remark-cli",
+            "version": "^3.0.1"
+          },
+          {
+            "name": "remark-preset-lint-recommended",
+            "version": "^2.0.0"
+          },
+          {
+            "name": "storybook-readme",
+            "version": "^3.0.6"
+          },
+          {
+            "name": "stylelint",
+            "version": "^7.10.1"
+          },
+          {
+            "name": "stylelint-config-standard",
+            "version": "^16.0.0"
+          },
+          {
+            "name": "ts-jest",
+            "version": "19.0.8"
+          },
+          {
+            "name": "ts-lint",
+            "version": "4.5.1"
+          },
+          {
+            "name": "xo",
+            "version": "^0.18.1"
+          }
+        ],
+        "peerDependencies": [],
+        "optionalDependecies": [],
+        "bundledDependecies": []
+      },
+      "parent": "SOURCE",
+      "children": [],
+      "internal": {
+        "contentDigest": "81e199511a4b8be476da4ccd76de4503",
+        "type": "SitePlugin",
+        "owner": "internal-data-bridge"
+      }
+    },
+    "Plugin gatsby-plugin-page-creator": {
+      "resolve": "/Users/nain/Documents/mannrobo.github.io/node_modules/gatsby-plugin-page-creator",
+      "id": "Plugin gatsby-plugin-page-creator",
+      "name": "gatsby-plugin-page-creator",
+      "version": "1.0.1",
+      "pluginOptions": {
+        "plugins": [],
+        "path": "/Users/nain/Documents/mannrobo.github.io/src/pages",
+        "pathCheck": false
+      },
+      "nodeAPIs": [
+        "createPagesStatefully"
+      ],
+      "browserAPIs": [],
+      "ssrAPIs": [],
+      "pluginFilepath": "/Users/nain/Documents/mannrobo.github.io/node_modules/gatsby-plugin-page-creator",
+      "packageJson": {
+        "name": "gatsby-plugin-page-creator",
+        "description": "Gatsby plugin that automatically creates pages from React components in specified directories",
+        "version": "1.0.1",
+        "main": "index.js",
+        "keywords": [
+          "gatsby",
+          "gatsby-plugin"
+        ],
+        "author": "Kyle Mathews <mathews.kyle@gmail.com>",
+        "license": "MIT",
+        "dependencies": [
+          {
+            "name": "babel-runtime",
+            "version": "^6.26.0"
+          },
+          {
+            "name": "bluebird",
+            "version": "^3.5.0"
+          },
+          {
+            "name": "chokidar",
+            "version": "^1.7.0"
+          },
+          {
+            "name": "glob",
+            "version": "^7.1.1"
+          },
+          {
+            "name": "lodash",
+            "version": "^4.17.4"
+          },
+          {
+            "name": "parse-filepath",
+            "version": "^1.0.1"
+          },
+          {
+            "name": "slash",
+            "version": "^1.0.0"
+          }
+        ],
+        "devDependencies": [
+          {
+            "name": "babel-cli",
+            "version": "^6.26.0"
+          },
+          {
+            "name": "cross-env",
+            "version": "^5.0.5"
+          }
+        ],
+        "peerDependencies": [],
+        "optionalDependecies": [],
+        "bundledDependecies": []
+      },
+      "parent": "SOURCE",
+      "children": [],
+      "internal": {
+        "contentDigest": "65fa7f6c5b4d7ddb88eb556ffe666d1d",
+        "type": "SitePlugin",
+        "owner": "internal-data-bridge"
+      }
+    },
+    "Site": {
+      "siteMetadata": {
+        "title": "My website",
+        "googleVerification": "abcdefz",
+        "disqus": "gatsby-typescript"
+      },
+      "port": "8000",
+      "host": "localhost",
+      "mapping": {
+        "MarkdownRemark.frontmatter.author": "AuthorJson"
+      },
+      "pathPrefix": "",
+      "polyfill": true,
+      "buildTime": "2018-07-16T08:21:37.076Z",
+      "id": "Site",
+      "parent": "SOURCE",
+      "children": [],
+      "internal": {
+        "contentDigest": "28c55cb91a9e36c94baec46d647df14a",
+        "type": "Site",
+        "owner": "internal-data-bridge"
+      }
+    },
+    "/Users/nain/Documents/mannrobo.github.io/data absPath of file": {
+      "id": "/Users/nain/Documents/mannrobo.github.io/data absPath of file",
+      "children": [],
+      "parent": "___SOURCE___",
+      "internal": {
+        "contentDigest": "59cddf7d5c08807a229cae899212edf2",
+        "type": "Directory",
+        "description": "Directory \"data\"",
+        "owner": "gatsby-source-filesystem"
+      },
+      "sourceInstanceName": "data",
+      "absolutePath": "/Users/nain/Documents/mannrobo.github.io/data",
+      "relativePath": "",
+      "extension": "",
+      "size": 170,
+      "prettySize": "170 B",
+      "modifiedTime": "2018-07-16T07:56:30.000Z",
+      "accessTime": "2018-07-16T08:23:10.000Z",
+      "changeTime": "2018-07-16T07:56:30.000Z",
+      "birthTime": "2018-07-16T07:56:30.000Z",
+      "root": "/",
+      "dir": "/Users/nain/Documents/mannrobo.github.io",
+      "base": "data",
+      "ext": "",
+      "name": "data",
+      "relativeDirectory": "..",
+      "dev": 16777220,
+      "mode": 16877,
+      "nlink": 5,
+      "uid": 501,
+      "gid": 20,
+      "rdev": 0,
+      "blksize": 4096,
+      "ino": 9953687,
+      "blocks": 0,
+      "atimeMs": 1531729390000,
+      "mtimeMs": 1531727790000,
+      "ctimeMs": 1531727790000,
+      "birthtimeMs": 1531727790000,
+      "atime": "2018-07-16T08:23:10.000Z",
+      "mtime": "2018-07-16T07:56:30.000Z",
+      "ctime": "2018-07-16T07:56:30.000Z",
+      "birthtime": "2018-07-16T07:56:30.000Z"
+    },
+    "/Users/nain/Documents/mannrobo.github.io/data/avatars absPath of file": {
+      "id": "/Users/nain/Documents/mannrobo.github.io/data/avatars absPath of file",
+      "children": [],
+      "parent": "___SOURCE___",
+      "internal": {
+        "contentDigest": "a891a06e331ca962f1c6d34371d1cedb",
+        "type": "Directory",
+        "description": "Directory \"data/avatars\"",
+        "owner": "gatsby-source-filesystem"
+      },
+      "sourceInstanceName": "data",
+      "absolutePath": "/Users/nain/Documents/mannrobo.github.io/data/avatars",
+      "relativePath": "avatars",
+      "extension": "",
+      "size": 102,
+      "prettySize": "102 B",
+      "modifiedTime": "2018-07-16T07:56:30.000Z",
+      "accessTime": "2018-07-16T08:23:10.000Z",
+      "changeTime": "2018-07-16T07:56:30.000Z",
+      "birthTime": "2018-07-16T07:56:30.000Z",
+      "root": "/",
+      "dir": "/Users/nain/Documents/mannrobo.github.io/data",
+      "base": "avatars",
+      "ext": "",
+      "name": "avatars",
+      "relativeDirectory": "",
+      "dev": 16777220,
+      "mode": 16877,
+      "nlink": 3,
+      "uid": 501,
+      "gid": 20,
+      "rdev": 0,
+      "blksize": 4096,
+      "ino": 9953689,
+      "blocks": 0,
+      "atimeMs": 1531729390000,
+      "mtimeMs": 1531727790000,
+      "ctimeMs": 1531727790000,
+      "birthtimeMs": 1531727790000,
+      "atime": "2018-07-16T08:23:10.000Z",
+      "mtime": "2018-07-16T07:56:30.000Z",
+      "ctime": "2018-07-16T07:56:30.000Z",
+      "birthtime": "2018-07-16T07:56:30.000Z"
+    },
+    "/Users/nain/Documents/mannrobo.github.io/data/blog absPath of file": {
+      "id": "/Users/nain/Documents/mannrobo.github.io/data/blog absPath of file",
+      "children": [],
+      "parent": "___SOURCE___",
+      "internal": {
+        "contentDigest": "b722c201f2a15b18698a2a70f2dd3518",
+        "type": "Directory",
+        "description": "Directory \"data/blog\"",
+        "owner": "gatsby-source-filesystem"
+      },
+      "sourceInstanceName": "data",
+      "absolutePath": "/Users/nain/Documents/mannrobo.github.io/data/blog",
+      "relativePath": "blog",
+      "extension": "",
+      "size": 170,
+      "prettySize": "170 B",
+      "modifiedTime": "2018-07-16T07:56:30.000Z",
+      "accessTime": "2018-07-16T08:23:10.000Z",
+      "changeTime": "2018-07-16T07:56:30.000Z",
+      "birthTime": "2018-07-16T07:56:30.000Z",
+      "root": "/",
+      "dir": "/Users/nain/Documents/mannrobo.github.io/data",
+      "base": "blog",
+      "ext": "",
+      "name": "blog",
+      "relativeDirectory": "",
+      "dev": 16777220,
+      "mode": 16877,
+      "nlink": 5,
+      "uid": 501,
+      "gid": 20,
+      "rdev": 0,
+      "blksize": 4096,
+      "ino": 9953691,
+      "blocks": 0,
+      "atimeMs": 1531729390000,
+      "mtimeMs": 1531727790000,
+      "ctimeMs": 1531727790000,
+      "birthtimeMs": 1531727790000,
+      "atime": "2018-07-16T08:23:10.000Z",
+      "mtime": "2018-07-16T07:56:30.000Z",
+      "ctime": "2018-07-16T07:56:30.000Z",
+      "birthtime": "2018-07-16T07:56:30.000Z"
+    },
+    "/Users/nain/Documents/mannrobo.github.io/data/blog/2017-05-02--article-1 absPath of file": {
+      "id": "/Users/nain/Documents/mannrobo.github.io/data/blog/2017-05-02--article-1 absPath of file",
+      "children": [],
+      "parent": "___SOURCE___",
+      "internal": {
+        "contentDigest": "f365660a6e3e6081055eb40508bdb652",
+        "type": "Directory",
+        "description": "Directory \"data/blog/2017-05-02--article-1\"",
+        "owner": "gatsby-source-filesystem"
+      },
+      "sourceInstanceName": "data",
+      "absolutePath": "/Users/nain/Documents/mannrobo.github.io/data/blog/2017-05-02--article-1",
+      "relativePath": "blog/2017-05-02--article-1",
+      "extension": "",
+      "size": 136,
+      "prettySize": "136 B",
+      "modifiedTime": "2018-07-16T07:56:30.000Z",
+      "accessTime": "2018-07-16T08:23:10.000Z",
+      "changeTime": "2018-07-16T07:56:30.000Z",
+      "birthTime": "2018-07-16T07:56:30.000Z",
+      "root": "/",
+      "dir": "/Users/nain/Documents/mannrobo.github.io/data/blog",
+      "base": "2017-05-02--article-1",
+      "ext": "",
+      "name": "2017-05-02--article-1",
+      "relativeDirectory": "blog",
+      "dev": 16777220,
+      "mode": 16877,
+      "nlink": 4,
+      "uid": 501,
+      "gid": 20,
+      "rdev": 0,
+      "blksize": 4096,
+      "ino": 9953695,
+      "blocks": 0,
+      "atimeMs": 1531729390000,
+      "mtimeMs": 1531727790000,
+      "ctimeMs": 1531727790000,
+      "birthtimeMs": 1531727790000,
+      "atime": "2018-07-16T08:23:10.000Z",
+      "mtime": "2018-07-16T07:56:30.000Z",
+      "ctime": "2018-07-16T07:56:30.000Z",
+      "birthtime": "2018-07-16T07:56:30.000Z"
+    },
+    "/Users/nain/Documents/mannrobo.github.io/data/blog/2017-04-18--welcoming absPath of file": {
+      "id": "/Users/nain/Documents/mannrobo.github.io/data/blog/2017-04-18--welcoming absPath of file",
+      "children": [],
+      "parent": "___SOURCE___",
+      "internal": {
+        "contentDigest": "5ad3bf43d72dad21430fbe9ce25480bf",
+        "type": "Directory",
+        "description": "Directory \"data/blog/2017-04-18--welcoming\"",
+        "owner": "gatsby-source-filesystem"
+      },
+      "sourceInstanceName": "data",
+      "absolutePath": "/Users/nain/Documents/mannrobo.github.io/data/blog/2017-04-18--welcoming",
+      "relativePath": "blog/2017-04-18--welcoming",
+      "extension": "",
+      "size": 136,
+      "prettySize": "136 B",
+      "modifiedTime": "2018-07-16T07:56:30.000Z",
+      "accessTime": "2018-07-16T08:23:10.000Z",
+      "changeTime": "2018-07-16T07:56:30.000Z",
+      "birthTime": "2018-07-16T07:56:30.000Z",
+      "root": "/",
+      "dir": "/Users/nain/Documents/mannrobo.github.io/data/blog",
+      "base": "2017-04-18--welcoming",
+      "ext": "",
+      "name": "2017-04-18--welcoming",
+      "relativeDirectory": "blog",
+      "dev": 16777220,
+      "mode": 16877,
+      "nlink": 4,
+      "uid": 501,
+      "gid": 20,
+      "rdev": 0,
+      "blksize": 4096,
+      "ino": 9953692,
+      "blocks": 0,
+      "atimeMs": 1531729390000,
+      "mtimeMs": 1531727790000,
+      "ctimeMs": 1531727790000,
+      "birthtimeMs": 1531727790000,
+      "atime": "2018-07-16T08:23:10.000Z",
+      "mtime": "2018-07-16T07:56:30.000Z",
+      "ctime": "2018-07-16T07:56:30.000Z",
+      "birthtime": "2018-07-16T07:56:30.000Z"
+    },
+    "/Users/nain/Documents/mannrobo.github.io/data/blog/2017-05-02--article-2 absPath of file": {
+      "id": "/Users/nain/Documents/mannrobo.github.io/data/blog/2017-05-02--article-2 absPath of file",
+      "children": [],
+      "parent": "___SOURCE___",
+      "internal": {
+        "contentDigest": "a2d7d293d3277ff7ffd990bc86dabc7f",
+        "type": "Directory",
+        "description": "Directory \"data/blog/2017-05-02--article-2\"",
+        "owner": "gatsby-source-filesystem"
+      },
+      "sourceInstanceName": "data",
+      "absolutePath": "/Users/nain/Documents/mannrobo.github.io/data/blog/2017-05-02--article-2",
+      "relativePath": "blog/2017-05-02--article-2",
+      "extension": "",
+      "size": 136,
+      "prettySize": "136 B",
+      "modifiedTime": "2018-07-16T07:56:30.000Z",
+      "accessTime": "2018-07-16T08:23:10.000Z",
+      "changeTime": "2018-07-16T07:56:30.000Z",
+      "birthTime": "2018-07-16T07:56:30.000Z",
+      "root": "/",
+      "dir": "/Users/nain/Documents/mannrobo.github.io/data/blog",
+      "base": "2017-05-02--article-2",
+      "ext": "",
+      "name": "2017-05-02--article-2",
+      "relativeDirectory": "blog",
+      "dev": 16777220,
+      "mode": 16877,
+      "nlink": 4,
+      "uid": 501,
+      "gid": 20,
+      "rdev": 0,
+      "blksize": 4096,
+      "ino": 9953698,
+      "blocks": 0,
+      "atimeMs": 1531729390000,
+      "mtimeMs": 1531727790000,
+      "ctimeMs": 1531727790000,
+      "birthtimeMs": 1531727790000,
+      "atime": "2018-07-16T08:23:10.000Z",
+      "mtime": "2018-07-16T07:56:30.000Z",
+      "ctime": "2018-07-16T07:56:30.000Z",
+      "birthtime": "2018-07-16T07:56:30.000Z"
+    },
+    "/Users/nain/Documents/mannrobo.github.io/data/author.json absPath of file": {
+      "id": "/Users/nain/Documents/mannrobo.github.io/data/author.json absPath of file",
+      "children": [
+        "Fabien BERNARD"
+      ],
+      "parent": "___SOURCE___",
+      "internal": {
+        "contentDigest": "51d40a6dfa98bac26181f9799bfc1c0b",
+        "mediaType": "application/json",
+        "type": "File",
+        "description": "File \"data/author.json\"",
+        "owner": "gatsby-source-filesystem"
+      },
+      "sourceInstanceName": "data",
+      "absolutePath": "/Users/nain/Documents/mannrobo.github.io/data/author.json",
+      "relativePath": "author.json",
+      "extension": "json",
+      "size": 228,
+      "prettySize": "228 B",
+      "modifiedTime": "2018-07-16T07:56:30.000Z",
+      "accessTime": "2018-07-16T07:56:30.000Z",
+      "changeTime": "2018-07-16T07:56:30.000Z",
+      "birthTime": "2018-07-16T07:56:30.000Z",
+      "root": "/",
+      "dir": "/Users/nain/Documents/mannrobo.github.io/data",
+      "base": "author.json",
+      "ext": ".json",
+      "name": "author",
+      "relativeDirectory": "",
+      "dev": 16777220,
+      "mode": 33188,
+      "nlink": 1,
+      "uid": 501,
+      "gid": 20,
+      "rdev": 0,
+      "blksize": 4096,
+      "ino": 9953688,
+      "blocks": 8,
+      "atimeMs": 1531727790000,
+      "mtimeMs": 1531727790000,
+      "ctimeMs": 1531727790000,
+      "birthtimeMs": 1531727790000,
+      "atime": "2018-07-16T07:56:30.000Z",
+      "mtime": "2018-07-16T07:56:30.000Z",
+      "ctime": "2018-07-16T07:56:30.000Z",
+      "birthtime": "2018-07-16T07:56:30.000Z"
+    },
+    "/Users/nain/Documents/mannrobo.github.io/data/avatars/fabien0102.jpg absPath of file": {
+      "id": "/Users/nain/Documents/mannrobo.github.io/data/avatars/fabien0102.jpg absPath of file",
+      "children": [
+        "/Users/nain/Documents/mannrobo.github.io/data/avatars/fabien0102.jpg absPath of file >> ImageSharp"
+      ],
+      "parent": "___SOURCE___",
+      "internal": {
+        "contentDigest": "b6ef9775fbd80f749a9fed792fe4e01f",
+        "mediaType": "image/jpeg",
+        "type": "File",
+        "description": "File \"data/avatars/fabien0102.jpg\"",
+        "owner": "gatsby-source-filesystem"
+      },
+      "sourceInstanceName": "data",
+      "absolutePath": "/Users/nain/Documents/mannrobo.github.io/data/avatars/fabien0102.jpg",
+      "relativePath": "avatars/fabien0102.jpg",
+      "extension": "jpg",
+      "size": 29441,
+      "prettySize": "29.4 kB",
+      "modifiedTime": "2018-07-16T07:56:30.000Z",
+      "accessTime": "2018-07-16T07:56:30.000Z",
+      "changeTime": "2018-07-16T07:56:30.000Z",
+      "birthTime": "2018-07-16T07:56:30.000Z",
+      "root": "/",
+      "dir": "/Users/nain/Documents/mannrobo.github.io/data/avatars",
+      "base": "fabien0102.jpg",
+      "ext": ".jpg",
+      "name": "fabien0102",
+      "relativeDirectory": "avatars",
+      "dev": 16777220,
+      "mode": 33188,
+      "nlink": 1,
+      "uid": 501,
+      "gid": 20,
+      "rdev": 0,
+      "blksize": 4096,
+      "ino": 9953690,
+      "blocks": 64,
+      "atimeMs": 1531727790000,
+      "mtimeMs": 1531727790000,
+      "ctimeMs": 1531727790000,
+      "birthtimeMs": 1531727790000,
+      "atime": "2018-07-16T07:56:30.000Z",
+      "mtime": "2018-07-16T07:56:30.000Z",
+      "ctime": "2018-07-16T07:56:30.000Z",
+      "birthtime": "2018-07-16T07:56:30.000Z"
+    },
+    "/Users/nain/Documents/mannrobo.github.io/data/blog/2017-05-02--article-1/index.md absPath of file": {
+      "id": "/Users/nain/Documents/mannrobo.github.io/data/blog/2017-05-02--article-1/index.md absPath of file",
+      "children": [
+        "/Users/nain/Documents/mannrobo.github.io/data/blog/2017-05-02--article-1/index.md absPath of file >>> MarkdownRemark"
+      ],
+      "parent": "___SOURCE___",
+      "internal": {
+        "contentDigest": "353caef7b2aceed5cf47c116059d99b1",
+        "mediaType": "text/markdown",
+        "type": "File",
+        "description": "File \"data/blog/2017-05-02--article-1/index.md\"",
+        "owner": "gatsby-source-filesystem"
+      },
+      "sourceInstanceName": "data",
+      "absolutePath": "/Users/nain/Documents/mannrobo.github.io/data/blog/2017-05-02--article-1/index.md",
+      "relativePath": "blog/2017-05-02--article-1/index.md",
+      "extension": "md",
+      "size": 247,
+      "prettySize": "247 B",
+      "modifiedTime": "2018-07-16T07:56:30.000Z",
+      "accessTime": "2018-07-16T07:56:30.000Z",
+      "changeTime": "2018-07-16T07:56:30.000Z",
+      "birthTime": "2018-07-16T07:56:30.000Z",
+      "root": "/",
+      "dir": "/Users/nain/Documents/mannrobo.github.io/data/blog/2017-05-02--article-1",
+      "base": "index.md",
+      "ext": ".md",
+      "name": "index",
+      "relativeDirectory": "blog/2017-05-02--article-1",
+      "dev": 16777220,
+      "mode": 33188,
+      "nlink": 1,
+      "uid": 501,
+      "gid": 20,
+      "rdev": 0,
+      "blksize": 4096,
+      "ino": 9953696,
+      "blocks": 8,
+      "atimeMs": 1531727790000,
+      "mtimeMs": 1531727790000,
+      "ctimeMs": 1531727790000,
+      "birthtimeMs": 1531727790000,
+      "atime": "2018-07-16T07:56:30.000Z",
+      "mtime": "2018-07-16T07:56:30.000Z",
+      "ctime": "2018-07-16T07:56:30.000Z",
+      "birthtime": "2018-07-16T07:56:30.000Z"
+    },
+    "/Users/nain/Documents/mannrobo.github.io/data/blog/2017-04-18--welcoming/index.md absPath of file": {
+      "id": "/Users/nain/Documents/mannrobo.github.io/data/blog/2017-04-18--welcoming/index.md absPath of file",
+      "children": [
+        "/Users/nain/Documents/mannrobo.github.io/data/blog/2017-04-18--welcoming/index.md absPath of file >>> MarkdownRemark"
+      ],
+      "parent": "___SOURCE___",
+      "internal": {
+        "contentDigest": "6dfa2056f872f43227129885aa4b11ee",
+        "mediaType": "text/markdown",
+        "type": "File",
+        "description": "File \"data/blog/2017-04-18--welcoming/index.md\"",
+        "owner": "gatsby-source-filesystem"
+      },
+      "sourceInstanceName": "data",
+      "absolutePath": "/Users/nain/Documents/mannrobo.github.io/data/blog/2017-04-18--welcoming/index.md",
+      "relativePath": "blog/2017-04-18--welcoming/index.md",
+      "extension": "md",
+      "size": 3004,
+      "prettySize": "3 kB",
+      "modifiedTime": "2018-07-16T07:56:30.000Z",
+      "accessTime": "2018-07-16T07:56:30.000Z",
+      "changeTime": "2018-07-16T07:56:30.000Z",
+      "birthTime": "2018-07-16T07:56:30.000Z",
+      "root": "/",
+      "dir": "/Users/nain/Documents/mannrobo.github.io/data/blog/2017-04-18--welcoming",
+      "base": "index.md",
+      "ext": ".md",
+      "name": "index",
+      "relativeDirectory": "blog/2017-04-18--welcoming",
+      "dev": 16777220,
+      "mode": 33188,
+      "nlink": 1,
+      "uid": 501,
+      "gid": 20,
+      "rdev": 0,
+      "blksize": 4096,
+      "ino": 9953693,
+      "blocks": 8,
+      "atimeMs": 1531727790000,
+      "mtimeMs": 1531727790000,
+      "ctimeMs": 1531727790000,
+      "birthtimeMs": 1531727790000,
+      "atime": "2018-07-16T07:56:30.000Z",
+      "mtime": "2018-07-16T07:56:30.000Z",
+      "ctime": "2018-07-16T07:56:30.000Z",
+      "birthtime": "2018-07-16T07:56:30.000Z"
+    },
+    "/Users/nain/Documents/mannrobo.github.io/data/avatars/fabien0102.jpg absPath of file >> ImageSharp": {
+      "id": "/Users/nain/Documents/mannrobo.github.io/data/avatars/fabien0102.jpg absPath of file >> ImageSharp",
+      "children": [],
+      "parent": "/Users/nain/Documents/mannrobo.github.io/data/avatars/fabien0102.jpg absPath of file",
+      "internal": {
+        "contentDigest": "b6ef9775fbd80f749a9fed792fe4e01f",
+        "type": "ImageSharp",
+        "owner": "gatsby-transformer-sharp"
+      }
+    },
+    "/Users/nain/Documents/mannrobo.github.io/data/blog/2017-05-02--article-2/index.md absPath of file": {
+      "id": "/Users/nain/Documents/mannrobo.github.io/data/blog/2017-05-02--article-2/index.md absPath of file",
+      "children": [
+        "/Users/nain/Documents/mannrobo.github.io/data/blog/2017-05-02--article-2/index.md absPath of file >>> MarkdownRemark"
+      ],
+      "parent": "___SOURCE___",
+      "internal": {
+        "contentDigest": "d70e941252be834d7a3abee1f5cadd5e",
+        "mediaType": "text/markdown",
+        "type": "File",
+        "description": "File \"data/blog/2017-05-02--article-2/index.md\"",
+        "owner": "gatsby-source-filesystem"
+      },
+      "sourceInstanceName": "data",
+      "absolutePath": "/Users/nain/Documents/mannrobo.github.io/data/blog/2017-05-02--article-2/index.md",
+      "relativePath": "blog/2017-05-02--article-2/index.md",
+      "extension": "md",
+      "size": 270,
+      "prettySize": "270 B",
+      "modifiedTime": "2018-07-16T07:56:30.000Z",
+      "accessTime": "2018-07-16T07:56:30.000Z",
+      "changeTime": "2018-07-16T07:56:30.000Z",
+      "birthTime": "2018-07-16T07:56:30.000Z",
+      "root": "/",
+      "dir": "/Users/nain/Documents/mannrobo.github.io/data/blog/2017-05-02--article-2",
+      "base": "index.md",
+      "ext": ".md",
+      "name": "index",
+      "relativeDirectory": "blog/2017-05-02--article-2",
+      "dev": 16777220,
+      "mode": 33188,
+      "nlink": 1,
+      "uid": 501,
+      "gid": 20,
+      "rdev": 0,
+      "blksize": 4096,
+      "ino": 9953700,
+      "blocks": 8,
+      "atimeMs": 1531727790000,
+      "mtimeMs": 1531727790000,
+      "ctimeMs": 1531727790000,
+      "birthtimeMs": 1531727790000,
+      "atime": "2018-07-16T07:56:30.000Z",
+      "mtime": "2018-07-16T07:56:30.000Z",
+      "ctime": "2018-07-16T07:56:30.000Z",
+      "birthtime": "2018-07-16T07:56:30.000Z"
+    },
+    "/Users/nain/Documents/mannrobo.github.io/data/blog/2017-05-02--article-1/index.md absPath of file >>> MarkdownRemark": {
+      "id": "/Users/nain/Documents/mannrobo.github.io/data/blog/2017-05-02--article-1/index.md absPath of file >>> MarkdownRemark",
+      "children": [],
+      "parent": "/Users/nain/Documents/mannrobo.github.io/data/blog/2017-05-02--article-1/index.md absPath of file",
+      "internal": {
+        "content": "---\ntitle: 'Article #1'\ncreatedDate: '2017-05-02'\nupdatedDate: '2017-05-06'\nauthor: Fabien BERNARD\ntags:\n  - test\nimage: pexels-photo-59628.jpeg\ndraft: false\n---\n\nMy awesome article\n\n## TODO\n\n-   [x] Replace image\n-   [ ] Write an awesome article\n",
+        "type": "MarkdownRemark",
+        "contentDigest": "44a4fa2a81d8e39316262762c6449dd6",
+        "owner": "gatsby-transformer-remark",
+        "fieldOwners": {
+          "slug": "default-site-plugin"
+        }
+      },
+      "frontmatter": {
+        "title": "Article #1",
+        "createdDate": "2017-05-02",
+        "updatedDate": "2017-05-06",
+        "author": "Fabien BERNARD",
+        "tags": [
+          "test"
+        ],
+        "image": "pexels-photo-59628.jpeg",
+        "draft": false,
+        "_PARENT": "/Users/nain/Documents/mannrobo.github.io/data/blog/2017-05-02--article-1/index.md absPath of file",
+        "parent": "/Users/nain/Documents/mannrobo.github.io/data/blog/2017-05-02--article-1/index.md absPath of file"
+      },
+      "excerpt": "",
+      "rawMarkdownBody": "\nMy awesome article\n\n## TODO\n\n-   [x] Replace image\n-   [ ] Write an awesome article\n",
+      "fileAbsolutePath": "/Users/nain/Documents/mannrobo.github.io/data/blog/2017-05-02--article-1/index.md",
+      "fields": {
+        "slug": "/blog/2017-05-02--article-1/"
+      }
+    },
+    "/Users/nain/Documents/mannrobo.github.io/data/blog/2017-04-18--welcoming/index.md absPath of file >>> MarkdownRemark": {
+      "id": "/Users/nain/Documents/mannrobo.github.io/data/blog/2017-04-18--welcoming/index.md absPath of file >>> MarkdownRemark",
+      "children": [],
+      "parent": "/Users/nain/Documents/mannrobo.github.io/data/blog/2017-04-18--welcoming/index.md absPath of file",
+      "internal": {
+        "content": "---\ntitle: Welcoming\ncreatedDate: '2017-04-18'\nupdatedDate: '2017-05-06'\nauthor: Fabien BERNARD\ntags:\n  - starter\n  - gatsby\nimage: pexels-photo-253092.jpeg\ndraft: false\n---\n\nWelcome to gatsby-starter!\n\nLorem ipsum dolor sit amet, consectetur adipiscing elit. Quisque tristique lacus vitae diam posuere faucibus. In hac habitasse platea dictumst. Ut id arcu non risus tincidunt commodo. Sed felis leo, pharetra non porttitor sodales, sodales dictum tortor. Vivamus vel neque interdum, egestas urna ac, finibus tellus. Morbi et rhoncus ligula, nec volutpat dolor. Cras efficitur ipsum a facilisis laoreet. Duis ut libero eget mi convallis maximus. Vestibulum ante ipsum primis in faucibus orci luctus et ultrices posuere cubilia Curae; Pellentesque blandit sit amet erat vel semper.\n\nUt egestas nisl in nunc accumsan, et interdum erat finibus. Fusce commodo ex nec imperdiet fermentum. Suspendisse non nulla eu eros rutrum vestibulum. Curabitur sit amet tortor venenatis, efficitur felis non, commodo urna. Aliquam ut auctor risus. Nullam nec felis pellentesque, tincidunt erat ut, aliquam neque. Ut elementum aliquam leo.\n\nPellentesque sit amet purus a erat tincidunt elementum. Mauris lobortis egestas tellus, vel blandit tortor pellentesque at. Suspendisse potenti. Aenean vehicula, dolor ac interdum fermentum, velit elit fermentum nisi, in hendrerit nisi dolor semper est. Cras ullamcorper eros nec lacus maximus, a tincidunt ipsum feugiat. Quisque dignissim bibendum orci nec vestibulum. Phasellus accumsan eleifend posuere. Aliquam urna neque, auctor id accumsan nec, viverra vel tortor. Lorem ipsum dolor sit amet, consectetur adipiscing elit. Maecenas sagittis libero ut porttitor lobortis. Nam nec felis tellus. Praesent ipsum ipsum, consectetur non hendrerit non, egestas et felis.\n\nDonec pretium facilisis orci, vitae blandit ex gravida a. Etiam a augue urna. Orci varius natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus. Fusce finibus urna lectus, eu iaculis massa tempus non. Maecenas in lectus massa. In ut ipsum eleifend, condimentum libero ut, ultricies massa. Integer viverra fringilla sem. Mauris nulla mi, accumsan sed hendrerit ut, tincidunt quis neque. Nullam egestas sem neque, id porta nunc sagittis quis.\n\nMorbi libero sem, molestie nec volutpat ac, volutpat eget dui. Phasellus ante turpis, blandit accumsan facilisis volutpat, bibendum vehicula metus. Fusce pellentesque orci ac imperdiet vestibulum. Aenean aliquam et elit sit amet eleifend. Vivamus libero lacus, porta quis neque a, tincidunt cursus lorem. Nulla placerat gravida nulla, in vestibulum risus lobortis ut. Proin sit amet varius arcu. Sed tincidunt vitae lectus vitae pretium. Fusce malesuada nec diam blandit pharetra. Vivamus fringilla elit ut odio sollicitudin, a convallis nulla dictum. Proin porta nisi eu cursus hendrerit. Donec vel tortor at magna maximus placerat gravida nec ligula.\n\n```javascript\nconst plop = \"coucou\";\nconst toto = \"tata\";\n```\n\ncoucou `plop` comment tu vas ?\n",
+        "type": "MarkdownRemark",
+        "contentDigest": "dfa3beb9d23f0180ef90f2b06f634698",
+        "owner": "gatsby-transformer-remark",
+        "fieldOwners": {
+          "slug": "default-site-plugin"
+        }
+      },
+      "frontmatter": {
+        "title": "Welcoming",
+        "createdDate": "2017-04-18",
+        "updatedDate": "2017-05-06",
+        "author": "Fabien BERNARD",
+        "tags": [
+          "starter",
+          "gatsby"
+        ],
+        "image": "pexels-photo-253092.jpeg",
+        "draft": false,
+        "_PARENT": "/Users/nain/Documents/mannrobo.github.io/data/blog/2017-04-18--welcoming/index.md absPath of file",
+        "parent": "/Users/nain/Documents/mannrobo.github.io/data/blog/2017-04-18--welcoming/index.md absPath of file"
+      },
+      "excerpt": "",
+      "rawMarkdownBody": "\nWelcome to gatsby-starter!\n\nLorem ipsum dolor sit amet, consectetur adipiscing elit. Quisque tristique lacus vitae diam posuere faucibus. In hac habitasse platea dictumst. Ut id arcu non risus tincidunt commodo. Sed felis leo, pharetra non porttitor sodales, sodales dictum tortor. Vivamus vel neque interdum, egestas urna ac, finibus tellus. Morbi et rhoncus ligula, nec volutpat dolor. Cras efficitur ipsum a facilisis laoreet. Duis ut libero eget mi convallis maximus. Vestibulum ante ipsum primis in faucibus orci luctus et ultrices posuere cubilia Curae; Pellentesque blandit sit amet erat vel semper.\n\nUt egestas nisl in nunc accumsan, et interdum erat finibus. Fusce commodo ex nec imperdiet fermentum. Suspendisse non nulla eu eros rutrum vestibulum. Curabitur sit amet tortor venenatis, efficitur felis non, commodo urna. Aliquam ut auctor risus. Nullam nec felis pellentesque, tincidunt erat ut, aliquam neque. Ut elementum aliquam leo.\n\nPellentesque sit amet purus a erat tincidunt elementum. Mauris lobortis egestas tellus, vel blandit tortor pellentesque at. Suspendisse potenti. Aenean vehicula, dolor ac interdum fermentum, velit elit fermentum nisi, in hendrerit nisi dolor semper est. Cras ullamcorper eros nec lacus maximus, a tincidunt ipsum feugiat. Quisque dignissim bibendum orci nec vestibulum. Phasellus accumsan eleifend posuere. Aliquam urna neque, auctor id accumsan nec, viverra vel tortor. Lorem ipsum dolor sit amet, consectetur adipiscing elit. Maecenas sagittis libero ut porttitor lobortis. Nam nec felis tellus. Praesent ipsum ipsum, consectetur non hendrerit non, egestas et felis.\n\nDonec pretium facilisis orci, vitae blandit ex gravida a. Etiam a augue urna. Orci varius natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus. Fusce finibus urna lectus, eu iaculis massa tempus non. Maecenas in lectus massa. In ut ipsum eleifend, condimentum libero ut, ultricies massa. Integer viverra fringilla sem. Mauris nulla mi, accumsan sed hendrerit ut, tincidunt quis neque. Nullam egestas sem neque, id porta nunc sagittis quis.\n\nMorbi libero sem, molestie nec volutpat ac, volutpat eget dui. Phasellus ante turpis, blandit accumsan facilisis volutpat, bibendum vehicula metus. Fusce pellentesque orci ac imperdiet vestibulum. Aenean aliquam et elit sit amet eleifend. Vivamus libero lacus, porta quis neque a, tincidunt cursus lorem. Nulla placerat gravida nulla, in vestibulum risus lobortis ut. Proin sit amet varius arcu. Sed tincidunt vitae lectus vitae pretium. Fusce malesuada nec diam blandit pharetra. Vivamus fringilla elit ut odio sollicitudin, a convallis nulla dictum. Proin porta nisi eu cursus hendrerit. Donec vel tortor at magna maximus placerat gravida nec ligula.\n\n```javascript\nconst plop = \"coucou\";\nconst toto = \"tata\";\n```\n\ncoucou `plop` comment tu vas ?\n",
+      "fileAbsolutePath": "/Users/nain/Documents/mannrobo.github.io/data/blog/2017-04-18--welcoming/index.md",
+      "fields": {
+        "slug": "/blog/2017-04-18--welcoming/"
+      }
+    },
+    "Fabien BERNARD": {
+      "id": "Fabien BERNARD",
+      "bio": "JavaScript Developer with ♥ #Craftman #Lean #JS #FRP. Member at @GatsbyJS.",
+      "avatar": "avatars/fabien0102.jpg",
+      "twitter": "@fabien0102",
+      "github": "@fabien0102",
+      "children": [],
+      "parent": "/Users/nain/Documents/mannrobo.github.io/data/author.json absPath of file",
+      "internal": {
+        "contentDigest": "dc1455a1c82a011fdf3546f11f189e17",
+        "type": "AuthorJson",
+        "owner": "gatsby-transformer-json"
+      }
+    },
+    "/Users/nain/Documents/mannrobo.github.io/data/blog/2017-05-02--article-2/index.md absPath of file >>> MarkdownRemark": {
+      "id": "/Users/nain/Documents/mannrobo.github.io/data/blog/2017-05-02--article-2/index.md absPath of file >>> MarkdownRemark",
+      "children": [],
+      "parent": "/Users/nain/Documents/mannrobo.github.io/data/blog/2017-05-02--article-2/index.md absPath of file",
+      "internal": {
+        "content": "---\ntitle: 'Article #2'\ncreatedDate: '2017-05-02'\nupdatedDate: '2017-05-06'\nauthor: Fabien BERNARD\ntags:\n  - test\nimage: cup-of-coffee-laptop-office-macbook-89786.jpeg\ndraft: false\n---\n\nMy awesome article\n\n## TODO\n\n-   [x] Replace image\n-   [ ] Write an awesome article\n",
+        "type": "MarkdownRemark",
+        "contentDigest": "557d0ecd8a53caf24fb67a371184cf1b",
+        "owner": "gatsby-transformer-remark",
+        "fieldOwners": {
+          "slug": "default-site-plugin"
+        }
+      },
+      "frontmatter": {
+        "title": "Article #2",
+        "createdDate": "2017-05-02",
+        "updatedDate": "2017-05-06",
+        "author": "Fabien BERNARD",
+        "tags": [
+          "test"
+        ],
+        "image": "cup-of-coffee-laptop-office-macbook-89786.jpeg",
+        "draft": false,
+        "_PARENT": "/Users/nain/Documents/mannrobo.github.io/data/blog/2017-05-02--article-2/index.md absPath of file",
+        "parent": "/Users/nain/Documents/mannrobo.github.io/data/blog/2017-05-02--article-2/index.md absPath of file"
+      },
+      "excerpt": "",
+      "rawMarkdownBody": "\nMy awesome article\n\n## TODO\n\n-   [x] Replace image\n-   [ ] Write an awesome article\n",
+      "fileAbsolutePath": "/Users/nain/Documents/mannrobo.github.io/data/blog/2017-05-02--article-2/index.md",
+      "fields": {
+        "slug": "/blog/2017-05-02--article-2/"
+      }
+    },
+    "/Users/nain/Documents/mannrobo.github.io/data/blog/2017-05-02--article-2/cup-of-coffee-laptop-office-macbook-89786.jpeg absPath of file": {
+      "id": "/Users/nain/Documents/mannrobo.github.io/data/blog/2017-05-02--article-2/cup-of-coffee-laptop-office-macbook-89786.jpeg absPath of file",
+      "children": [
+        "/Users/nain/Documents/mannrobo.github.io/data/blog/2017-05-02--article-2/cup-of-coffee-laptop-office-macbook-89786.jpeg absPath of file >> ImageSharp"
+      ],
+      "parent": "___SOURCE___",
+      "internal": {
+        "contentDigest": "98bc53d2012296d56b37cad2ff328b5a",
+        "mediaType": "image/jpeg",
+        "type": "File",
+        "description": "File \"data/blog/2017-05-02--article-2/cup-of-coffee-laptop-office-macbook-89786.jpeg\"",
+        "owner": "gatsby-source-filesystem"
+      },
+      "sourceInstanceName": "data",
+      "absolutePath": "/Users/nain/Documents/mannrobo.github.io/data/blog/2017-05-02--article-2/cup-of-coffee-laptop-office-macbook-89786.jpeg",
+      "relativePath": "blog/2017-05-02--article-2/cup-of-coffee-laptop-office-macbook-89786.jpeg",
+      "extension": "jpeg",
+      "size": 1386432,
+      "prettySize": "1.39 MB",
+      "modifiedTime": "2018-07-16T07:56:30.000Z",
+      "accessTime": "2018-07-16T07:56:30.000Z",
+      "changeTime": "2018-07-16T07:56:30.000Z",
+      "birthTime": "2018-07-16T07:56:30.000Z",
+      "root": "/",
+      "dir": "/Users/nain/Documents/mannrobo.github.io/data/blog/2017-05-02--article-2",
+      "base": "cup-of-coffee-laptop-office-macbook-89786.jpeg",
+      "ext": ".jpeg",
+      "name": "cup-of-coffee-laptop-office-macbook-89786",
+      "relativeDirectory": "blog/2017-05-02--article-2",
+      "dev": 16777220,
+      "mode": 33188,
+      "nlink": 1,
+      "uid": 501,
+      "gid": 20,
+      "rdev": 0,
+      "blksize": 4096,
+      "ino": 9953699,
+      "blocks": 2712,
+      "atimeMs": 1531727790000,
+      "mtimeMs": 1531727790000,
+      "ctimeMs": 1531727790000,
+      "birthtimeMs": 1531727790000,
+      "atime": "2018-07-16T07:56:30.000Z",
+      "mtime": "2018-07-16T07:56:30.000Z",
+      "ctime": "2018-07-16T07:56:30.000Z",
+      "birthtime": "2018-07-16T07:56:30.000Z"
+    },
+    "/Users/nain/Documents/mannrobo.github.io/data/blog/2017-05-02--article-2/cup-of-coffee-laptop-office-macbook-89786.jpeg absPath of file >> ImageSharp": {
+      "id": "/Users/nain/Documents/mannrobo.github.io/data/blog/2017-05-02--article-2/cup-of-coffee-laptop-office-macbook-89786.jpeg absPath of file >> ImageSharp",
+      "children": [],
+      "parent": "/Users/nain/Documents/mannrobo.github.io/data/blog/2017-05-02--article-2/cup-of-coffee-laptop-office-macbook-89786.jpeg absPath of file",
+      "internal": {
+        "contentDigest": "98bc53d2012296d56b37cad2ff328b5a",
+        "type": "ImageSharp",
+        "owner": "gatsby-transformer-sharp"
+      }
+    },
+    "/Users/nain/Documents/mannrobo.github.io/data/blog/2017-05-02--article-1/pexels-photo-59628.jpeg absPath of file": {
+      "id": "/Users/nain/Documents/mannrobo.github.io/data/blog/2017-05-02--article-1/pexels-photo-59628.jpeg absPath of file",
+      "children": [
+        "/Users/nain/Documents/mannrobo.github.io/data/blog/2017-05-02--article-1/pexels-photo-59628.jpeg absPath of file >> ImageSharp"
+      ],
+      "parent": "___SOURCE___",
+      "internal": {
+        "contentDigest": "091745cd48ceb8313ea81d0049393dc9",
+        "mediaType": "image/jpeg",
+        "type": "File",
+        "description": "File \"data/blog/2017-05-02--article-1/pexels-photo-59628.jpeg\"",
+        "owner": "gatsby-source-filesystem"
+      },
+      "sourceInstanceName": "data",
+      "absolutePath": "/Users/nain/Documents/mannrobo.github.io/data/blog/2017-05-02--article-1/pexels-photo-59628.jpeg",
+      "relativePath": "blog/2017-05-02--article-1/pexels-photo-59628.jpeg",
+      "extension": "jpeg",
+      "size": 3928991,
+      "prettySize": "3.93 MB",
+      "modifiedTime": "2018-07-16T07:56:30.000Z",
+      "accessTime": "2018-07-16T07:56:30.000Z",
+      "changeTime": "2018-07-16T07:56:30.000Z",
+      "birthTime": "2018-07-16T07:56:30.000Z",
+      "root": "/",
+      "dir": "/Users/nain/Documents/mannrobo.github.io/data/blog/2017-05-02--article-1",
+      "base": "pexels-photo-59628.jpeg",
+      "ext": ".jpeg",
+      "name": "pexels-photo-59628",
+      "relativeDirectory": "blog/2017-05-02--article-1",
+      "dev": 16777220,
+      "mode": 33188,
+      "nlink": 1,
+      "uid": 501,
+      "gid": 20,
+      "rdev": 0,
+      "blksize": 4096,
+      "ino": 9953697,
+      "blocks": 7680,
+      "atimeMs": 1531727790000,
+      "mtimeMs": 1531727790000,
+      "ctimeMs": 1531727790000,
+      "birthtimeMs": 1531727790000,
+      "atime": "2018-07-16T07:56:30.000Z",
+      "mtime": "2018-07-16T07:56:30.000Z",
+      "ctime": "2018-07-16T07:56:30.000Z",
+      "birthtime": "2018-07-16T07:56:30.000Z"
+    },
+    "/Users/nain/Documents/mannrobo.github.io/data/blog/2017-05-02--article-1/pexels-photo-59628.jpeg absPath of file >> ImageSharp": {
+      "id": "/Users/nain/Documents/mannrobo.github.io/data/blog/2017-05-02--article-1/pexels-photo-59628.jpeg absPath of file >> ImageSharp",
+      "children": [],
+      "parent": "/Users/nain/Documents/mannrobo.github.io/data/blog/2017-05-02--article-1/pexels-photo-59628.jpeg absPath of file",
+      "internal": {
+        "contentDigest": "091745cd48ceb8313ea81d0049393dc9",
+        "type": "ImageSharp",
+        "owner": "gatsby-transformer-sharp"
+      }
+    },
+    "/Users/nain/Documents/mannrobo.github.io/data/blog/2017-04-18--welcoming/pexels-photo-253092.jpeg absPath of file": {
+      "id": "/Users/nain/Documents/mannrobo.github.io/data/blog/2017-04-18--welcoming/pexels-photo-253092.jpeg absPath of file",
+      "children": [
+        "/Users/nain/Documents/mannrobo.github.io/data/blog/2017-04-18--welcoming/pexels-photo-253092.jpeg absPath of file >> ImageSharp"
+      ],
+      "parent": "___SOURCE___",
+      "internal": {
+        "contentDigest": "1687ff8f3ef6dfcb7c7674f9248bf6af",
+        "mediaType": "image/jpeg",
+        "type": "File",
+        "description": "File \"data/blog/2017-04-18--welcoming/pexels-photo-253092.jpeg\"",
+        "owner": "gatsby-source-filesystem"
+      },
+      "sourceInstanceName": "data",
+      "absolutePath": "/Users/nain/Documents/mannrobo.github.io/data/blog/2017-04-18--welcoming/pexels-photo-253092.jpeg",
+      "relativePath": "blog/2017-04-18--welcoming/pexels-photo-253092.jpeg",
+      "extension": "jpeg",
+      "size": 9113245,
+      "prettySize": "9.11 MB",
+      "modifiedTime": "2018-07-16T07:56:30.000Z",
+      "accessTime": "2018-07-16T07:56:30.000Z",
+      "changeTime": "2018-07-16T07:56:30.000Z",
+      "birthTime": "2018-07-16T07:56:30.000Z",
+      "root": "/",
+      "dir": "/Users/nain/Documents/mannrobo.github.io/data/blog/2017-04-18--welcoming",
+      "base": "pexels-photo-253092.jpeg",
+      "ext": ".jpeg",
+      "name": "pexels-photo-253092",
+      "relativeDirectory": "blog/2017-04-18--welcoming",
+      "dev": 16777220,
+      "mode": 33188,
+      "nlink": 1,
+      "uid": 501,
+      "gid": 20,
+      "rdev": 0,
+      "blksize": 4096,
+      "ino": 9953694,
+      "blocks": 17800,
+      "atimeMs": 1531727790000,
+      "mtimeMs": 1531727790000,
+      "ctimeMs": 1531727790000,
+      "birthtimeMs": 1531727790000,
+      "atime": "2018-07-16T07:56:30.000Z",
+      "mtime": "2018-07-16T07:56:30.000Z",
+      "ctime": "2018-07-16T07:56:30.000Z",
+      "birthtime": "2018-07-16T07:56:30.000Z"
+    },
+    "/Users/nain/Documents/mannrobo.github.io/data/blog/2017-04-18--welcoming/pexels-photo-253092.jpeg absPath of file >> ImageSharp": {
+      "id": "/Users/nain/Documents/mannrobo.github.io/data/blog/2017-04-18--welcoming/pexels-photo-253092.jpeg absPath of file >> ImageSharp",
+      "children": [],
+      "parent": "/Users/nain/Documents/mannrobo.github.io/data/blog/2017-04-18--welcoming/pexels-photo-253092.jpeg absPath of file",
+      "internal": {
+        "contentDigest": "1687ff8f3ef6dfcb7c7674f9248bf6af",
+        "type": "ImageSharp",
+        "owner": "gatsby-transformer-sharp"
+      }
+    },
+    "SitePage /blog/2017-05-02--article-1/": {
+      "layout": "index",
+      "jsonName": "blog-2017-05-02-article-1.json",
+      "internalComponentName": "ComponentBlog20170502Article1",
+      "path": "/blog/2017-05-02--article-1/",
+      "component": "/Users/nain/Documents/mannrobo.github.io/src/templates/blog-post.tsx",
+      "componentChunkName": "component---src-templates-blog-post-tsx",
+      "context": {
+        "slug": "/blog/2017-05-02--article-1/"
+      },
+      "pluginCreator___NODE": "Plugin default-site-plugin",
+      "pluginCreatorId": "Plugin default-site-plugin",
+      "componentPath": "/Users/nain/Documents/mannrobo.github.io/src/templates/blog-post.tsx",
+      "id": "SitePage /blog/2017-05-02--article-1/",
+      "parent": "SOURCE",
+      "children": [],
+      "internal": {
+        "type": "SitePage",
+        "contentDigest": "442c53815d691308370b611bd141b1bd",
+        "description": "Your site's \"gatsby-node.js\"",
+        "owner": "internal-data-bridge"
+      }
+    },
+    "SitePage /blog/2017-04-18--welcoming/": {
+      "layout": "index",
+      "jsonName": "blog-2017-04-18-welcoming.json",
+      "internalComponentName": "ComponentBlog20170418Welcoming",
+      "path": "/blog/2017-04-18--welcoming/",
+      "component": "/Users/nain/Documents/mannrobo.github.io/src/templates/blog-post.tsx",
+      "componentChunkName": "component---src-templates-blog-post-tsx",
+      "context": {
+        "slug": "/blog/2017-04-18--welcoming/"
+      },
+      "pluginCreator___NODE": "Plugin default-site-plugin",
+      "pluginCreatorId": "Plugin default-site-plugin",
+      "componentPath": "/Users/nain/Documents/mannrobo.github.io/src/templates/blog-post.tsx",
+      "id": "SitePage /blog/2017-04-18--welcoming/",
+      "parent": "SOURCE",
+      "children": [],
+      "internal": {
+        "type": "SitePage",
+        "contentDigest": "9fadb2bcc2df5cf37be2a6d758467a28",
+        "description": "Your site's \"gatsby-node.js\"",
+        "owner": "internal-data-bridge"
+      }
+    },
+    "SitePage /blog/2017-05-02--article-2/": {
+      "layout": "index",
+      "jsonName": "blog-2017-05-02-article-2.json",
+      "internalComponentName": "ComponentBlog20170502Article2",
+      "path": "/blog/2017-05-02--article-2/",
+      "component": "/Users/nain/Documents/mannrobo.github.io/src/templates/blog-post.tsx",
+      "componentChunkName": "component---src-templates-blog-post-tsx",
+      "context": {
+        "slug": "/blog/2017-05-02--article-2/"
+      },
+      "pluginCreator___NODE": "Plugin default-site-plugin",
+      "pluginCreatorId": "Plugin default-site-plugin",
+      "componentPath": "/Users/nain/Documents/mannrobo.github.io/src/templates/blog-post.tsx",
+      "id": "SitePage /blog/2017-05-02--article-2/",
+      "parent": "SOURCE",
+      "children": [],
+      "internal": {
+        "type": "SitePage",
+        "contentDigest": "85f408754aa321c9a5ea830a53299b84",
+        "description": "Your site's \"gatsby-node.js\"",
+        "owner": "internal-data-bridge"
+      }
+    },
+    "SitePage /blog/tags/test/": {
+      "layout": "index",
+      "jsonName": "blog-tags-test.json",
+      "internalComponentName": "ComponentBlogTagsTest",
+      "path": "/blog/tags/test/",
+      "component": "/Users/nain/Documents/mannrobo.github.io/src/templates/tags-page.tsx",
+      "componentChunkName": "component---src-templates-tags-page-tsx",
+      "context": {
+        "tag": "test"
+      },
+      "pluginCreator___NODE": "Plugin default-site-plugin",
+      "pluginCreatorId": "Plugin default-site-plugin",
+      "componentPath": "/Users/nain/Documents/mannrobo.github.io/src/templates/tags-page.tsx",
+      "id": "SitePage /blog/tags/test/",
+      "parent": "SOURCE",
+      "children": [],
+      "internal": {
+        "type": "SitePage",
+        "contentDigest": "e132ec48bc88703183ad24cc6b8e871c",
+        "description": "Your site's \"gatsby-node.js\"",
+        "owner": "internal-data-bridge"
+      }
+    },
+    "SitePage /blog/tags/starter/": {
+      "layout": "index",
+      "jsonName": "blog-tags-starter.json",
+      "internalComponentName": "ComponentBlogTagsStarter",
+      "path": "/blog/tags/starter/",
+      "component": "/Users/nain/Documents/mannrobo.github.io/src/templates/tags-page.tsx",
+      "componentChunkName": "component---src-templates-tags-page-tsx",
+      "context": {
+        "tag": "starter"
+      },
+      "pluginCreator___NODE": "Plugin default-site-plugin",
+      "pluginCreatorId": "Plugin default-site-plugin",
+      "componentPath": "/Users/nain/Documents/mannrobo.github.io/src/templates/tags-page.tsx",
+      "id": "SitePage /blog/tags/starter/",
+      "parent": "SOURCE",
+      "children": [],
+      "internal": {
+        "type": "SitePage",
+        "contentDigest": "b54941a5428cd056dff05b79011dc4a0",
+        "description": "Your site's \"gatsby-node.js\"",
+        "owner": "internal-data-bridge"
+      }
+    },
+    "SitePage /blog/tags/gatsby/": {
+      "layout": "index",
+      "jsonName": "blog-tags-gatsby.json",
+      "internalComponentName": "ComponentBlogTagsGatsby",
+      "path": "/blog/tags/gatsby/",
+      "component": "/Users/nain/Documents/mannrobo.github.io/src/templates/tags-page.tsx",
+      "componentChunkName": "component---src-templates-tags-page-tsx",
+      "context": {
+        "tag": "gatsby"
+      },
+      "pluginCreator___NODE": "Plugin default-site-plugin",
+      "pluginCreatorId": "Plugin default-site-plugin",
+      "componentPath": "/Users/nain/Documents/mannrobo.github.io/src/templates/tags-page.tsx",
+      "id": "SitePage /blog/tags/gatsby/",
+      "parent": "SOURCE",
+      "children": [],
+      "internal": {
+        "type": "SitePage",
+        "contentDigest": "5a775eb89e95a1280f066f6a0568fef7",
+        "description": "Your site's \"gatsby-node.js\"",
+        "owner": "internal-data-bridge"
+      }
+    },
+    "SitePage /blog/page/1/": {
+      "layout": "index",
+      "jsonName": "blog-page-1.json",
+      "internalComponentName": "ComponentBlogPage1",
+      "path": "/blog/page/1/",
+      "component": "/Users/nain/Documents/mannrobo.github.io/src/templates/blog-page.tsx",
+      "componentChunkName": "component---src-templates-blog-page-tsx",
+      "context": {
+        "skip": 0
+      },
+      "pluginCreator___NODE": "Plugin default-site-plugin",
+      "pluginCreatorId": "Plugin default-site-plugin",
+      "componentPath": "/Users/nain/Documents/mannrobo.github.io/src/templates/blog-page.tsx",
+      "id": "SitePage /blog/page/1/",
+      "parent": "SOURCE",
+      "children": [],
+      "internal": {
+        "type": "SitePage",
+        "contentDigest": "c92a14559c60c8abc615d302ce74b080",
+        "description": "Your site's \"gatsby-node.js\"",
+        "owner": "internal-data-bridge"
+      }
+    },
+    "SitePage /404/": {
+      "layout": "index",
+      "jsonName": "404.json",
+      "internalComponentName": "Component404",
+      "path": "/404/",
+      "component": "/Users/nain/Documents/mannrobo.github.io/src/pages/404.tsx",
+      "componentChunkName": "component---src-pages-404-tsx",
+      "context": {},
+      "pluginCreator___NODE": "Plugin gatsby-plugin-page-creator",
+      "pluginCreatorId": "Plugin gatsby-plugin-page-creator",
+      "componentPath": "/Users/nain/Documents/mannrobo.github.io/src/pages/404.tsx",
+      "id": "SitePage /404/",
+      "parent": "SOURCE",
+      "children": [],
+      "internal": {
+        "type": "SitePage",
+        "contentDigest": "c3087f66d146e99a90b6218ad3aa2f5f",
+        "description": "Plugin gatsby-plugin-page-creator",
+        "owner": "internal-data-bridge"
+      }
+    },
+    "SitePage /about/": {
+      "layout": "index",
+      "jsonName": "about.json",
+      "internalComponentName": "ComponentAbout",
+      "path": "/about/",
+      "component": "/Users/nain/Documents/mannrobo.github.io/src/pages/about.tsx",
+      "componentChunkName": "component---src-pages-about-tsx",
+      "context": {},
+      "pluginCreator___NODE": "Plugin gatsby-plugin-page-creator",
+      "pluginCreatorId": "Plugin gatsby-plugin-page-creator",
+      "componentPath": "/Users/nain/Documents/mannrobo.github.io/src/pages/about.tsx",
+      "id": "SitePage /about/",
+      "parent": "SOURCE",
+      "children": [],
+      "internal": {
+        "type": "SitePage",
+        "contentDigest": "48df9cadb9e0b10b8c32421c4aa7f521",
+        "description": "Plugin gatsby-plugin-page-creator",
+        "owner": "internal-data-bridge"
+      }
+    },
+    "SitePage /blog/": {
+      "layout": "index",
+      "jsonName": "blog.json",
+      "internalComponentName": "ComponentBlog",
+      "path": "/blog/",
+      "component": "/Users/nain/Documents/mannrobo.github.io/src/pages/blog.tsx",
+      "componentChunkName": "component---src-pages-blog-tsx",
+      "context": {},
+      "pluginCreator___NODE": "Plugin gatsby-plugin-page-creator",
+      "pluginCreatorId": "Plugin gatsby-plugin-page-creator",
+      "componentPath": "/Users/nain/Documents/mannrobo.github.io/src/pages/blog.tsx",
+      "id": "SitePage /blog/",
+      "parent": "SOURCE",
+      "children": [],
+      "internal": {
+        "type": "SitePage",
+        "contentDigest": "8352205c9ce4602149041535cb741311",
+        "description": "Plugin gatsby-plugin-page-creator",
+        "owner": "internal-data-bridge"
+      }
+    },
+    "SitePage /": {
+      "layout": "index",
+      "jsonName": "index.json",
+      "internalComponentName": "ComponentIndex",
+      "path": "/",
+      "component": "/Users/nain/Documents/mannrobo.github.io/src/pages/index.tsx",
+      "componentChunkName": "component---src-pages-index-tsx",
+      "context": {},
+      "pluginCreator___NODE": "Plugin gatsby-plugin-page-creator",
+      "pluginCreatorId": "Plugin gatsby-plugin-page-creator",
+      "componentPath": "/Users/nain/Documents/mannrobo.github.io/src/pages/index.tsx",
+      "id": "SitePage /",
+      "parent": "SOURCE",
+      "children": [],
+      "internal": {
+        "type": "SitePage",
+        "contentDigest": "57c37b3ebc900340c34bdf0065f2beee",
+        "description": "Plugin gatsby-plugin-page-creator",
+        "owner": "internal-data-bridge"
+      }
+    },
+    "SitePage /404.html": {
+      "layout": "index",
+      "jsonName": "404-html.json",
+      "internalComponentName": "Component404Html",
+      "path": "/404.html",
+      "component": "/Users/nain/Documents/mannrobo.github.io/src/pages/404.tsx",
+      "componentChunkName": "component---src-pages-404-tsx",
+      "context": {},
+      "pluginCreator___NODE": "Plugin prod-404",
+      "pluginCreatorId": "Plugin prod-404",
+      "componentPath": "/Users/nain/Documents/mannrobo.github.io/src/pages/404.tsx",
+      "id": "SitePage /404.html",
+      "parent": "SOURCE",
+      "children": [],
+      "internal": {
+        "type": "SitePage",
+        "contentDigest": "4a8c7c2cc971e60384629e2e52c0fc7a",
+        "description": "Plugin prod-404",
+        "owner": "internal-data-bridge"
+      }
+    }
+  },
+  "status": {
+    "plugins": {},
+    "PLUGINS_HASH": "3d232b22e8d918a7ecafe25433c9fda5"
+  },
+  "componentDataDependencies": {
+    "nodes": {
+      "Site": [
+        "/blog/2017-05-02--article-2/",
+        "/blog/2017-04-18--welcoming/",
+        "/blog/2017-05-02--article-1/"
+      ],
+      "/Users/nain/Documents/mannrobo.github.io/data/blog/2017-05-02--article-2/index.md absPath of file >>> MarkdownRemark": [
+        "/blog/2017-05-02--article-2/"
+      ],
+      "Fabien BERNARD": [
+        "/blog/2017-05-02--article-2/",
+        "/blog/2017-04-18--welcoming/",
+        "/blog/2017-05-02--article-1/",
+        "/blog/tags/test/",
+        "/blog/tags/starter/",
+        "/blog/tags/gatsby/",
+        "/blog/page/1/",
+        "/blog/"
+      ],
+      "/Users/nain/Documents/mannrobo.github.io/data/avatars/fabien0102.jpg absPath of file": [
+        "/blog/2017-05-02--article-2/",
+        "/blog/2017-04-18--welcoming/",
+        "/blog/2017-05-02--article-1/",
+        "/blog/tags/test/",
+        "/blog/tags/starter/",
+        "/blog/tags/gatsby/",
+        "/blog/page/1/",
+        "/blog/"
+      ],
+      "/Users/nain/Documents/mannrobo.github.io/data/avatars/fabien0102.jpg absPath of file >> ImageSharp": [
+        "/blog/2017-05-02--article-2/",
+        "/blog/2017-04-18--welcoming/",
+        "/blog/2017-05-02--article-1/",
+        "/blog/tags/test/",
+        "/blog/tags/starter/",
+        "/blog/tags/gatsby/",
+        "/blog/page/1/",
+        "/blog/"
+      ],
+      "/Users/nain/Documents/mannrobo.github.io/data/blog/2017-05-02--article-2/cup-of-coffee-laptop-office-macbook-89786.jpeg absPath of file": [
+        "/blog/2017-05-02--article-2/",
+        "/blog/2017-04-18--welcoming/",
+        "/blog/2017-05-02--article-1/",
+        "/blog/tags/test/",
+        "/blog/page/1/",
+        "/blog/"
+      ],
+      "/Users/nain/Documents/mannrobo.github.io/data/blog/2017-05-02--article-2/cup-of-coffee-laptop-office-macbook-89786.jpeg absPath of file >> ImageSharp": [
+        "/blog/2017-05-02--article-2/",
+        "/blog/2017-04-18--welcoming/",
+        "/blog/2017-05-02--article-1/",
+        "/blog/tags/test/",
+        "/blog/page/1/",
+        "/blog/"
+      ],
+      "/Users/nain/Documents/mannrobo.github.io/data/blog/2017-05-02--article-1/pexels-photo-59628.jpeg absPath of file": [
+        "/blog/2017-05-02--article-2/",
+        "/blog/2017-04-18--welcoming/",
+        "/blog/2017-05-02--article-1/",
+        "/blog/tags/test/",
+        "/blog/page/1/",
+        "/blog/"
+      ],
+      "/Users/nain/Documents/mannrobo.github.io/data/blog/2017-05-02--article-1/pexels-photo-59628.jpeg absPath of file >> ImageSharp": [
+        "/blog/2017-05-02--article-2/",
+        "/blog/2017-04-18--welcoming/",
+        "/blog/2017-05-02--article-1/",
+        "/blog/tags/test/",
+        "/blog/page/1/",
+        "/blog/"
+      ],
+      "/Users/nain/Documents/mannrobo.github.io/data/blog/2017-04-18--welcoming/pexels-photo-253092.jpeg absPath of file": [
+        "/blog/2017-05-02--article-2/",
+        "/blog/2017-04-18--welcoming/",
+        "/blog/2017-05-02--article-1/",
+        "/blog/tags/starter/",
+        "/blog/tags/gatsby/",
+        "/blog/page/1/",
+        "/blog/"
+      ],
+      "/Users/nain/Documents/mannrobo.github.io/data/blog/2017-04-18--welcoming/pexels-photo-253092.jpeg absPath of file >> ImageSharp": [
+        "/blog/2017-05-02--article-2/",
+        "/blog/2017-04-18--welcoming/",
+        "/blog/2017-05-02--article-1/",
+        "/blog/tags/starter/",
+        "/blog/tags/gatsby/",
+        "/blog/page/1/",
+        "/blog/"
+      ],
+      "/Users/nain/Documents/mannrobo.github.io/data/blog/2017-04-18--welcoming/index.md absPath of file >>> MarkdownRemark": [
+        "/blog/2017-04-18--welcoming/"
+      ],
+      "/Users/nain/Documents/mannrobo.github.io/data/blog/2017-05-02--article-1/index.md absPath of file >>> MarkdownRemark": [
+        "/blog/2017-05-02--article-1/"
+      ]
+    },
+    "connections": {
+      "MarkdownRemark": [
+        "/blog/2017-05-02--article-2/",
+        "/blog/2017-04-18--welcoming/",
+        "/blog/2017-05-02--article-1/",
+        "/blog/tags/test/",
+        "/blog/tags/starter/",
+        "/blog/tags/gatsby/",
+        "/blog/page/1/",
+        "/blog/"
+      ],
+      "SitePage": [
+        "/dev-404-page/"
+      ]
+    }
+  }
+}
