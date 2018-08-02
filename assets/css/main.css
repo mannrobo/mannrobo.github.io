@@ -1,0 +1,461 @@
+@import url("https://fonts.googleapis.com/css?family=Roboto:300,600|Material+Icons");
+
+/**
+ * General
+ */
+img {
+  max-width: 100%;
+  max-height: 100%;
+}
+
+:root {
+  --blue: #8299e6;
+  --blue-channels: 130, 153, 230;
+  --grey: #898989;
+  --dark-grey: #1a1a1a;
+  --transition: 0.2s all ease-in-out;
+  --transition-quick: 0.1s all ease-in-out;
+}
+body,
+html {
+  font-family: "Roboto";
+  font-weight: 300;
+  color: var(--grey);
+  margin: 0;
+  min-height: 100%;
+  overflow-x: hidden;
+}
+
+a {
+  color: var(--blue);
+  text-decoration: none;
+}
+a:hover {
+  text-decoration: underline;
+}
+
+.container {
+  width: 90%;
+  max-width: 760px;
+  margin: 0 auto;
+}
+.heading {
+  text-transform: uppercase;
+  text-align: center;
+  color: var(--dark-grey);
+}
+
+/**
+ * Buttton
+ */
+.button {
+  padding: 8px 32px;
+  margin: 8px;
+  text-decoration: none;
+  text-transform: uppercase;
+  font-weight: 600;
+  background: var(--blue);
+  color: #ffffff;
+  border-radius: 3px;
+  cursor: pointer;
+  outline: none;
+}
+input.button {
+  background: var(--blue);
+  color: #fff;
+  text-decoration: none;
+  padding: 8px 32px;
+  margin: 8px;
+  border-radius: 3px;
+  border: none !important;
+  cursor: pointer;
+  font-weight: 300;
+  -webkit-appearance: button;
+}
+.button:hover,
+.button:active {
+  background: var(--grey) !important;
+}
+.button:hover {
+  text-decoration: none;
+  transition: var(--transition-quick);
+  background-color: var(--grey);
+}
+.button.center {
+  margin: 0 auto;
+}
+.button.right {
+  float: right;
+  right: 0;
+}
+
+/**
+ * Header
+ */
+nav#global {
+  position: fixed;
+  left: 0;
+  right: 0;
+  top: 0;
+  height: 6rem;
+  display: flex;
+  align-items: center;
+}
+
+header.page.scrolled ~ nav#global .st1 {
+  fill: var(--blue);
+}
+header.page.scrolled.white-bg ~ nav#global {
+  background: #fff;
+  box-shadow: 0px 4px 6px rgba(0, 0, 0, 0.4);
+  z-index: 99;
+  height: 4rem;
+}
+
+header.page.scrolled.white-bg ~ nav#global svg {
+  margin-left: 8px;
+}
+
+header.page.scrolled.white-bg ~ nav#global a {
+  height: 3rem;
+}
+
+
+nav#global svg {
+  height: 3rem;
+  margin-left: 2rem;
+}
+
+header.page {
+  position: relative;
+  height: 70vh;
+  background-attachment: fixed;
+  background-size: cover;
+  z-index: -2;
+}
+
+header.page::after {
+  position: absolute;
+  transform: rotate(-3deg);
+  content: "";
+  background-color: #fff;
+  display: inline-block;
+  height: 70px;
+  padding: 0;
+  right: -5px;
+  left: -5px;
+  margin-bottom: -35px;
+  bottom: 0;
+  z-index: -1;
+}
+
+nav#global a.burger {
+  position: absolute;
+  right: 2rem;
+  height: 26px !important;
+  width: 32px;
+}
+
+nav#global a.burger span.burger, nav#global a.burger span.burger::after, nav#global a.burger span.burger::before {
+  content: "";
+  position: absolute;
+  background: #fff;
+  height: 3px;
+  width: 36px;
+  transition: 0.2s all ease-in-out
+
+}
+
+header.page.scrolled ~ nav#global a.burger span.burger, header.page.scrolled ~ nav#global a.burger span.burger::before, header.page.scrolled ~ nav#global a.burger span.burger::after {
+  background: var(--blue)
+}
+
+nav#global a.burger span.burger::before {
+  top: -12px;
+}
+
+nav#global a.burger span.burger {
+  top: 12px;
+}
+
+nav#global a.burger span.burger::after {
+  top: 12px;
+}
+
+nav#global a.burger.active span.burger::before {
+  transform: rotate(45deg);
+  top: 0;
+}
+
+nav#global a.burger.active span.burger::after {
+  transform: rotate(-45deg);
+  top: 0;
+}
+
+nav#global a.burger.active span.burger {
+  width: 0;
+}
+
+/**
+ * About
+ */
+
+#about .map {
+  border-radius: 6px;
+  box-shadow: 0px 4px 6px #e5e5e5;
+  overflow: hidden;
+  width: 100%;
+  z-index: 1;
+}
+#about .map iframe {
+  border: none;
+  width: 100%;
+}
+#about .map p {
+  background: #ffffff;
+  margin: 0;
+  padding: 16px;
+  padding-top: 12px;
+}
+#about {
+  display: flex;
+  flex-wrap: wrap-reverse;
+}
+#about .about {
+  flex: 3;
+  margin-left: 2rem;
+  padding-bottom: 3rem;
+  position: relative;
+  min-width: 240px;
+}
+
+#about .about p {
+  margin-top: 0;
+}
+
+#about .button {
+  position: absolute;
+  bottom: 1rem;
+}
+@media (max-width: 600px) {
+  #about .about {
+    margin-left: 0;
+  }
+  #about .map-wrapper {
+    width: 100%;
+  }
+}
+
+/**
+ * Teams
+ */
+#teams .teamlist {
+  display: flex;
+  flex-wrap: wrap;
+}
+@media (max-width: 600px) {
+  #teams .teamlist {
+    flex-direction: column;
+  }
+}
+#teams .team {
+  position: relative;
+  height: 120px;
+  min-width: 160px;
+  background-color: rgba(var(--blue-channels), 0.6);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  cursor: pointer;
+  transition: var(--transition);
+  margin: 8px 8px;
+  flex: 1;
+}
+#teams .team:hover {
+  background-color: rgba(var(--blue-channels), 1);
+}
+#teams .team::after {
+  content: "";
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  left: 0;
+  z-index: -1;
+  background-size: cover;
+}
+#teams .team.a::after {
+  background-image: url(https://github.com/mannrobo/mannrobo.github.io/raw/master/assets/teams/3796A.jpg);
+  background-position-y: 50%;
+}
+#teams .team.b::after {
+  background-image: url(https://github.com/mannrobo/mannrobo.github.io/raw/master/assets/teams/3796B.jpg);
+  background-position-y: 20%;
+}
+#teams .team.c::after {
+  background-image: url(https://github.com/mannrobo/mannrobo.github.io/raw/master/assets/teams/3796C.jpg);
+  background-position-y: 15%;
+}
+#teams .team a {
+  font-size: 2.4rem;
+  color: white;
+  flex: 1;
+  height: 100%;
+  text-align: center;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+#teams .team a:hover {
+  text-decoration: none;
+}
+
+/**
+ * CALENDAR
+ */
+
+#calendar {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.calendar section {
+  max-width: 360px;
+  margin: 8px auto;
+}
+.calendar section header {
+  background-color: var(--blue);
+  width: 100%;
+  height: 56px;
+  border-radius: 8px;
+  box-shadow: 0px 4px 6px #e5e5e5;
+  text-align: left;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  position: relative;
+  cursor: pointer;
+  margin: 0;
+  transition-delay: 0.2s;
+}
+
+.calendar section header i {
+  position: absolute;
+  right: 1rem;
+  color: #ffffff;
+  transition: var(--transition);
+  bottom: calc((56px - 24px) / 2);
+}
+.calendar section header p {
+  margin: 0;
+  margin-left: 16px;
+  color: #fff;
+}
+.calendar section header p.date {
+  font-size: 80%;
+}
+.calendar section .calendar-body {
+  background: #fff;
+  border-bottom-right-radius: 8px;
+  border-bottom-left-radius: 8px;
+  box-shadow: 0px 4px 6px #e5e5e5;
+  width: 100%;
+  padding-top: auto;
+  height: 0;
+  overflow: hidden;
+  transition: var(--transition);
+  display: flex;
+  flex-direction: column;
+  justify-content: space-around
+}
+.calendar section .calendar-body > * {
+  padding-left: 16px;
+  padding-right: 16px;
+}
+/* OPEN */
+.calendar section.open header i {
+  transform: rotate(180deg);
+}
+.calendar section.open header {
+  border-bottom-left-radius: 0px;
+  border-bottom-right-radius: 0px;
+  box-shadow: none;
+  transition-delay: 0s;
+}
+.calendar section.open .calendar-body {
+  height: 120px;
+  padding-top: 1rem;
+}
+.calendar .button {
+  margin-top: 16px;
+}
+
+.calendar section .calendar-time::before {
+  font-family: "Material Icons";
+  content: "access_time";
+  color: #1a1a1a;
+  position: absolute;
+  left: 0;
+}
+
+.calendar section .calendar-location::before {
+  font-family: "Material Icons";
+  content: "location_on";
+  color: #1a1a1a;
+  position: absolute;
+  left: 0;
+}
+
+.calendar section .calendar-meta {
+  margin-left: 16px;
+  position: relative;
+}
+
+.calendar section .calendar-meta > * {
+  margin-left: 1vw;
+}
+
+#updates div > a {
+  background-color: var(--blue);
+  color: #ffffff;
+  text-decoration: none;
+  transition: var(--transition-quick);
+  border-radius: 8px;
+  margin: 4px 0;
+  flex: 1;
+  height: 56px;
+  max-width: 360px;
+  margin: 8px auto;
+  display: flex;
+  align-items: center;
+  position: relative;
+}
+#updates div > a i {
+  position: absolute;
+  right: 1rem;
+  bottom: calc((56px - 24px) / 2);
+}
+#updates div > a:first-child {
+  margin-top: 8px;
+}
+#updates div > a div {
+  display: flex;
+  flex-direction: column;
+  margin-left: 16px;
+}
+#updates div > a div p {
+  margin: 0;
+  padding: 0;
+}
+#updates div > a div p[aria-label="date"] {
+  font-size: 75%;
+  margin-bottom: 4px;
+}
+#updates {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+#updates .updates {
+  width: 100%;
+}

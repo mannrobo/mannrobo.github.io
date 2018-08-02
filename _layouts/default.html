@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>{{ page.title }} | {{ site.title }}</title>
+    <link rel="stylesheet" href="/assets/css/main.css" />
+    <script src="/assets/main.js" async></script> {% seo %}
+    {% if page.embedScript %}
+    <script>
+    {% include {{ page.embedScript }} %}
+    </script>
+    {% endif %}
+    
+    <style>
+    {% if page.embedStyle %}
+    {% include {{ page.embedStyle }} %}
+    {% endif %}
+    header.page {
+          background-image: linear-gradient(rgba(0, 0, 0, 0.8), rgba(0, 0, 0, 0.5)),
+    url({{ page.headerImage }});
+    }
+    </style>
+</head>
+
+<body>
+    {% include header.html %}
+    <main class="container">
+        {{ page.content }}
+    </main>
+</body>
+
+</html>

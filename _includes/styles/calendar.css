@@ -1,0 +1,19 @@
+nav[for="calendar"] {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    max-width: 480px;
+    margin: 0 auto;
+}
+
+nav[for="calendar"] i {
+    font-size: 2rem;
+}
+
+#calendar {
+    min-height: 60vh;
+}
+
+.past-event header {
+    background-color: var(--grey) !important
+}

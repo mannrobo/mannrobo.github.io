@@ -1,0 +1,129 @@
+---
+title: Home
+layout: default
+headerImage: assets/images/organization.jpg
+
+embedScript: scripts/index.js
+---
+
+<section id="about">
+    <div class="map-wrapper">
+        <aside class="map">
+            <iframe title="J.L. Mann Map" class="media" src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3275.956983383068!2d-82.33944544889792!3d34.80702408031115!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x88582f7a5ef8f53f%3A0x9e4e59e25ed8c4f4!2sJ.L.+Mann+High+School!5e0!3m2!1sen!2sus!4v1501165105671">
+                frameborder="0"></iframe>
+            <p class="text">160 Fairforest Way, Greenville, S.C. 29607</p>
+        </aside>
+    </div>
+    <div class="about">
+        <p>Mann Robotics is a competitive robotics organization at J.L. Mann High School, in Greenville, SC. We compete in the VEX Robotics Competition, and have done so for the past 5 years. During that time, our program has taught planning, teamwork, professional and STEM skills to over 50 students and alumni.</p>
+        <p>Currenly, we have three teams (3796A, 3796B, and 3796C)</p>
+        <a href="/about/" class="button primary center">More</a>
+    </div>
+</section>
+
+<section id="teams">
+    <div class="teamlist">
+        <section class="a team">
+            <a href="/team/3796A/">
+                <span>3796A</span>
+            </a>
+        </section>
+        <section class="b team">
+            <a href="/team/3796B/">
+                <span>3796B</span>
+            </a>
+        </section>
+        <section class="c team">
+            <a href="/team/3796C/">
+                <span>3796C</span>
+            </a>
+        </section>
+    </div>
+</section>
+
+<section id="calendar">
+    <h1 class="heading">UPCOMING EVENTS</h1>
+    <div class="calendar" role="tablist">
+        <section aria-label="Calendar Item">
+            <header aria-haspopup="true">
+                <p class="title"></p>
+                <p class="date"></p>
+                <i class="material-icons">expand_more</i>
+            </header>
+            <div class="calendar-body">
+                <div class="calendar-meta">
+                    <div class="calendar-time"></div>
+                    <div class="calendar-location"></div>
+                </div>
+                <div class="calendar-desc">
+                    Lorem ipsum dolor sit amet consectetur adipisicing elit. Ullam, quo. Ipsam voluptatibus cupiditate optio ut suscipit reprehenderit
+                    dignissimos tempora nisi quae soluta explicabo sed ab debitis quasi, provident quo a!
+                </div>
+            </div>
+        </section>
+        <section aria-label="Calendar Item">
+            <header aria-haspopup="true">
+                <p class="title"></p>
+                <p class="date"></p>
+                <i class="material-icons">expand_more</i>
+            </header>
+            <div class="calendar-body">
+                <div class="calendar-meta">
+                    <div class="calendar-time"></div>
+                    <div class="calendar-location"></div>
+                </div>
+                <div class="calendar-desc">
+                    Lorem ipsum dolor sit amet consectetur adipisicing elit. Ullam, quo. Ipsam voluptatibus cupiditate optio ut suscipit reprehenderit
+                    dignissimos tempora nisi quae soluta explicabo sed ab debitis quasi, provident quo a!
+                </div>
+            </div>
+        </section>
+        <section aria-label="Calendar Item">
+            <header aria-haspopup="true">
+                <p class="title"></p>
+                <p class="date"></p>
+                <i class="material-icons">expand_more</i>
+            </header>
+            <div class="calendar-body">
+                <div class="calendar-meta">
+                    <div class="calendar-time"></div>
+                    <div class="calendar-location"></div>
+                </div>
+                <div class="calendar-desc">
+                    Lorem ipsum dolor sit amet consectetur adipisicing elit. Ullam, quo. Ipsam voluptatibus cupiditate optio ut suscipit reprehenderit
+                    dignissimos tempora nisi quae soluta explicabo sed ab debitis quasi, provident quo a!
+                </div>
+            </div>
+        </section>
+    </div>
+    <a href="/calendar/" class="button primary centered">Full Calendar</a>
+</section>
+
+<section id="updates">
+    <h1 class="heading">UPDATES</h1>
+    <div class="updates" role="tablist">
+        <a href="/post/a">
+            <div class="post">
+                <p>3796C wins Amaze at VEX Worlds!</p>
+                <p aria-label="date">4/28/18</p>
+                <i class="material-icons">navigate_next</i>
+            </div>
+        </a>
+        <a href="/post/a">
+            <div class="post">
+                <p>3796C is going to Worlds!</p>
+                <p aria-label="date">3/10/18</p>
+                <i class="material-icons">navigate_next</i>
+            </div>
+        </a>
+        <a href="/post/a">
+            <div class="post">
+                <p>The Final Countdown VEX Viking Duels</p>
+                <p aria-label="date">2/24/18</p>
+                <i class="material-icons">navigate_next</i>
+            </div>
+        </a>
+    </div>
+    <a href="/posts/" class="button primary centered">All Posts</a>
+</section>
+</section>
