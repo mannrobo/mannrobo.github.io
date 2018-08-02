@@ -131,7 +131,17 @@ header.page {
   height: 70vh;
   background-attachment: fixed;
   background-size: cover;
+  background-position: center top;
   z-index: -2;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+header.page h1 {
+  position: absolute;
+  font-size: 2rem;
+
 }
 
 header.page::after {
@@ -284,16 +294,22 @@ nav#global a.burger.active span.burger {
   background-size: cover;
 }
 #teams .team.a::after {
-  background-image: url(https://github.com/mannrobo/mannrobo.github.io/raw/master/assets/teams/3796A.jpg);
-  background-position-y: 50%;
+  background-image: url(/assets/images/teams/3796A.jpg);
+  background-size: 200%;
+  background-position: center;
+  background-position-y: 30%;
 }
 #teams .team.b::after {
-  background-image: url(https://github.com/mannrobo/mannrobo.github.io/raw/master/assets/teams/3796B.jpg);
-  background-position-y: 20%;
+  background-image: url(/assets/images/teams/3796B.jpg);
+  background-size: 200%;
+  background-position: center;
+  background-position-y: 30%;
 }
 #teams .team.c::after {
-  background-image: url(https://github.com/mannrobo/mannrobo.github.io/raw/master/assets/teams/3796C.jpg);
-  background-position-y: 15%;
+  background-image: url(/assets/images/teams/3796C.jpg);
+  background-size: 200%;
+  background-position: center;
+  background-position-y: 30%;
 }
 #teams .team a {
   font-size: 2.4rem;
@@ -412,7 +428,7 @@ nav#global a.burger.active span.burger {
 }
 
 .calendar section .calendar-meta > * {
-  margin-left: 1vw;
+  margin: 8px 1vw;
 }
 
 #updates div > a {
