@@ -10,6 +10,13 @@
     <script src="/assets/main.js" async></script> {% seo %}
     {% if page.embedScript %}
     <script>
+    const ELEMENTS = {
+        burger: null,
+        header: null,
+        navLinks: null,
+        calendarItems: null,
+        main: null,
+    };
     {% include {{ page.embedScript }} %}
     </script>
     {% endif %}

@@ -1,11 +1,3 @@
-const ELEMENTS = {
-  burger: null,
-  header: null,
-  navLinks: null,
-  calendarItems: null,
-  main: null,
-};
-
 let sizeEvent;
 let smallScreen = false;
 window.addEventListener(
