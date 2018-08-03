@@ -1,9 +1,9 @@
 const ELEMENTS = {
   burger: null,
   header: null,
-  navLinks: null,
+  navExpandos: null,
   calendarItems: null,
-  main: null,
+  main: null
 };
 const gcal = {
   key: "AIzaSyCeqavu-XBjsQnkM2qqmgF78_IY77NiQ0A",
@@ -12,31 +12,58 @@ const gcal = {
 
   cache: {},
 
-  events(after = new Date(), before = new Date(Date.now() + 365 * 24 * 60 * 60 * 1000)) {
+  events(
+    after = new Date(),
+    before = new Date(Date.now() + 365 * 24 * 60 * 60 * 1000)
+  ) {
     if (this.cache[after.toISOString() + "-" + before.toISOString()]) {
-      return Promise.resolve(this.cache[after.toISOString() + "-" + before.toISOString()]);
+      return Promise.resolve(
+        this.cache[after.toISOString() + "-" + before.toISOString()]
+      );
     }
     return fetch(
       `https://www.googleapis.com/calendar/v3/calendars/${gcal.id}/events?key=${
-      gcal.key
+        gcal.key
       }&singleEvents=true&orderBy=startTime&timeMin=${after.toISOString()}&timeMax=${before.toISOString()}`
     )
       .then(r => r.json())
-      .then(res => (this.cache[after.toISOString() + "-" + before.toISOString()] = res.items, res))
+      .then(
+        res => (
+          (this.cache[after.toISOString() + "-" + before.toISOString()] =
+            res.items),
+          res
+        )
+      )
       .then(res => res.items);
   }
 };
 
 function formatTime(start, end) {
-  start = new Date(start),
-    end = new Date(end);
-
+  (start = new Date(start)), (end = new Date(end));
 
   if (start.getDate() === end.getDate()) {
-    return start.toLocaleTimeString([], { hour: "2-digit", minute: "2-digit" }) + "—" + end.toLocaleTimeString([], { hour: "2-digit", minute: "2-digit" })
+    return (
+      start.toLocaleTimeString([], { hour: "2-digit", minute: "2-digit" }) +
+      "—" +
+      end.toLocaleTimeString([], { hour: "2-digit", minute: "2-digit" })
+    );
   }
 
-  return start.toLocaleString([], { hour: "2-digit", minute: "2-digit", day: "2-digit", month: "short" }) + "—" + end.toLocaleString([], { hour: "2-digit", minute: "2-digit", day: "2-digit", month: "short" })
+  return (
+    start.toLocaleString([], {
+      hour: "2-digit",
+      minute: "2-digit",
+      day: "2-digit",
+      month: "short"
+    }) +
+    "—" +
+    end.toLocaleString([], {
+      hour: "2-digit",
+      minute: "2-digit",
+      day: "2-digit",
+      month: "short"
+    })
+  );
 }
 
 let sizeEvent;
@@ -44,28 +71,22 @@ let smallScreen = false;
 window.addEventListener(
   "resize",
   (sizeEvent = function sizeEvent() {
-    smallScreen =
-      Math.max(document.documentElement.clientWidth, window.innerWidth || 0) <
-      600;
-    if (smallScreen) {
-      ELEMENTS.burger.setAttribute("aria-hidden", "false");
-      ELEMENTS.header.classList.add("smol");
-    } else {
-      ELEMENTS.burger.setAttribute("aria-hidden", "true");
-      ELEMENTS.header.classList.remove("smol");
-    }
-
     if (document.documentElement.clientWidth < 1090) {
       ELEMENTS.header.classList.add("white-bg");
+      ELEMENTS.burger.classList.remove("hidden");
     } else {
       ELEMENTS.header.classList.remove("white-bg");
+      ELEMENTS.burger.classList.add("hidden");
     }
   })
 );
 
-window.addEventListener("scroll", function () {
+window.addEventListener("scroll", function scrollEvent() {
   if (ELEMENTS.main) {
-    if (this.scrollY > window.pageYOffset + ELEMENTS.main.getBoundingClientRect().top) {
+    if (
+      this.scrollY >
+      window.pageYOffset + ELEMENTS.main.getBoundingClientRect().top - 64
+    ) {
       ELEMENTS.header.classList.add("scrolled");
     } else {
       ELEMENTS.header.classList.remove("scrolled");
@@ -73,21 +94,21 @@ window.addEventListener("scroll", function () {
   }
 });
 
-window.addEventListener("load", function () {
+window.addEventListener("load", function() {
   ELEMENTS.burger = document.querySelector("nav a.burger");
   ELEMENTS.header = document.querySelector("header");
-  ELEMENTS.navLinks = document.querySelectorAll("header nav ul li");
-  ELEMENTS.burger.addEventListener("click", function (e) {
+  ELEMENTS.navExpandos = document.querySelectorAll("nav#global li.expando");
+  ELEMENTS.burger.addEventListener("click", function(e) {
     e.preventDefault();
     ELEMENTS.burger.classList.toggle("active");
-  });
-  ELEMENTS.navLinks.forEach(function (link) {
-    link.addEventListener("click", function () {
-      if (smallScreen) {
-        ELEMENTS.burger.classList.toggle("active");
-      }
-    });
+    ELEMENTS.header.classList.toggle("phoneNavOpen");
   });
   ELEMENTS.main = document.querySelector("main.container");
+  ELEMENTS.navExpandos.forEach(function(expando) {
+    expando.addEventListener("click", function() {
+      expando.classList.toggle("open");
+    });
+  });
   sizeEvent();
+  scrollEvent();
 });

@@ -39,6 +39,7 @@ a:hover {
   max-width: 760px;
   margin: 0 auto;
 }
+
 .heading {
   text-transform: uppercase;
   text-align: center;
@@ -100,30 +101,45 @@ nav#global {
   height: 6rem;
   display: flex;
   align-items: center;
+  z-index: 1000;
 }
 
-header.page.scrolled ~ nav#global .st1 {
+header.page.scrolled ~ nav#global .st1,
+header.page.phoneNavOpen ~ nav#global .st1 {
   fill: var(--blue);
 }
-header.page.scrolled.white-bg ~ nav#global {
+header.page.scrolled.white-bg ~ nav#global,
+header.page.phoneNavOpen ~ nav#global {
   background: #fff;
   box-shadow: 0px 4px 6px rgba(0, 0, 0, 0.4);
   z-index: 99;
   height: 4rem;
 }
 
-header.page.scrolled.white-bg ~ nav#global svg {
+header.page.scrolled.white-bg ~ nav#global svg,
+header.page.phoneNavOpen ~ nav#global svg {
   margin-left: 8px;
 }
 
-header.page.scrolled.white-bg ~ nav#global a {
+header.page.scrolled.white-bg ~ nav#global a,
+header.page.phoneNavOpen ~ nav#global a {
   height: 3rem;
 }
 
-
 nav#global svg {
   height: 3rem;
-  margin-left: 2rem;
+  margin: 0 auto;
+  display: block;
+}
+
+nav#global a:first-child {
+  width: calc((100vw - 720px) / 2 - 2vw);
+}
+
+@media (max-width: 1090px) {
+  nav#global a:first-child {
+    width: 50vw;
+  }
 }
 
 header.page {
@@ -141,7 +157,6 @@ header.page {
 header.page h1 {
   position: absolute;
   font-size: 2rem;
-
 }
 
 header.page::after {
@@ -166,18 +181,28 @@ nav#global a.burger {
   width: 32px;
 }
 
-nav#global a.burger span.burger, nav#global a.burger span.burger::after, nav#global a.burger span.burger::before {
+nav#global a.burger.hidden {
+  display: none;
+}
+
+nav#global a.burger span.burger,
+nav#global a.burger span.burger::after,
+nav#global a.burger span.burger::before {
   content: "";
   position: absolute;
   background: #fff;
   height: 3px;
   width: 36px;
-  transition: 0.2s all ease-in-out
-
+  transition: 0.2s all ease-in-out;
 }
 
-header.page.scrolled ~ nav#global a.burger span.burger, header.page.scrolled ~ nav#global a.burger span.burger::before, header.page.scrolled ~ nav#global a.burger span.burger::after {
-  background: var(--blue)
+header.page.scrolled ~ nav#global a.burger span.burger,
+header.page.scrolled ~ nav#global a.burger span.burger::before,
+header.page.scrolled ~ nav#global a.burger span.burger::after,
+header.page.phoneNavOpen ~ nav#global a.burger span.burger,
+header.page.phoneNavOpen ~ nav#global a.burger span.burger::before,
+header.page.phoneNavOpen ~ nav#global a.burger span.burger::after {
+  background: var(--blue);
 }
 
 nav#global a.burger span.burger::before {
@@ -204,6 +229,75 @@ nav#global a.burger.active span.burger::after {
 
 nav#global a.burger.active span.burger {
   width: 0;
+}
+
+nav#global #nav-links {
+  background-color: #ffffff;
+  position: fixed;
+  top: 5rem;
+  left: 0;
+  width: calc((100vw - 720px) / 2 - 5.5vw);
+  padding-right: 2em;
+}
+
+@media (max-width: 1090px) {
+  nav#global #nav-links {
+    width: 100vw;
+    height: 0;
+    top: 3rem;
+    box-sizing: border-box;
+    display: none;
+  }
+
+  header.phoneNavOpen + nav#global #nav-links {
+    height: 100vh;
+    display: block;
+  }
+}
+
+nav#global ul {
+  list-style: none;
+  padding: 0;
+  padding-left: 16px;
+}
+
+nav#global #nav-links ul {
+  height: 0;
+  position: relative;
+  visibility: hidden;
+}
+
+nav#global #nav-links li.open ul {
+  height: auto;
+  margin-top: 8px;
+  visibility: visible;
+}
+
+nav#global #nav-links li.open span {
+  color: var(--blue);
+}
+
+nav#global #nav-links li.open li {
+  margin: 12px 0;
+}
+
+nav#global #nav-links > li {
+  margin: 8px 0;
+  cursor: pointer;
+  font-size: 1.3rem;
+  font-weight: 300;
+}
+
+nav#global #nav-links > li.open > span::after {
+  transform: rotate(180deg);
+}
+
+nav#global #nav-links > li > span::after {
+  font-family: "Material Icons";
+  content: "expand_more";
+  position: absolute;
+  right: 1rem;
+  color: var(--dark-grey) !important;
 }
 
 /**
@@ -382,7 +476,7 @@ nav#global a.burger.active span.burger {
   transition: var(--transition);
   display: flex;
   flex-direction: column;
-  justify-content: space-around
+  justify-content: space-around;
 }
 .calendar section .calendar-body > * {
   padding-left: 16px;
@@ -474,4 +568,31 @@ nav#global a.burger.active span.burger {
 }
 #updates .updates {
   width: 100%;
+}
+
+/**
+ * footer
+ **/
+
+footer {
+  height: 40vh;
+  background-color: var(--blue);
+  position: relative;
+  margin-top: 20vh;
+  display: flex;
+  align-items: center;
+  justify-content: space-around;
+}
+
+footer::before {
+  position: absolute;
+  transform: rotate(-3deg);
+  content: "";
+  background-color: var(--blue);
+  display: inline-block;
+  height: 70px;
+  padding: 0;
+  right: -5px;
+  left: -5px;
+  top: -35px;
 }

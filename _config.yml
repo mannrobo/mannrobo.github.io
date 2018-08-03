@@ -29,6 +29,47 @@ plugins:
   - jekyll-feed
   - jekyll-seo-tag
 
+links:
+    - title: About
+      href: "/about/"
+
+    - title: Teams
+      children: 
+        - title: 3796A
+          href: /teams/3796A/
+        - title: 3796B
+          href: /teams/3796B/
+        - title: 3796C
+          href: /teams/3796C/
+    
+    - title: Events
+      children:
+        - title: Mann Robotics Fall Qualifier
+          href: https://www.robotevents.com/robot-competitions/vex-robotics-competition/RE-VRC-18-5641.html
+          external: true
+        - title: Mann Robotics Upstate Qualifier
+          href: https://www.robotevents.com/robot-competitions/vex-robotics-competition/RE-VRC-18-5641.html
+          external: true
+        - title: Volunteer
+          href: /volunteer/
+    
+    - title: Community
+      children:
+        - title: Falcon's Middle School Qualifier
+          href: /community/falcons/ 
+        - title: BCUZ at Clemson University
+          href: /community/bcuz/ 
+        - title: Sponsorships
+          href: /community/sponsors/
+    
+    - title: Contact
+      children:
+        - title: Join Us!
+          href: https://go.bren.app/mannrobo/interest/
+          external: true
+        - title: General Contact
+          href: /contact/
+
 # Exclude from processing.
 # The following items will not be processed, by default. Create a custom list
 # to override the default setting.
