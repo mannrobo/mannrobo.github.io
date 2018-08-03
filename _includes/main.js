@@ -94,7 +94,7 @@ window.addEventListener("scroll", function scrollEvent() {
   }
 });
 
-window.addEventListener("load", function() {
+document.addEventListener("DOMContentLoaded", function() {
   ELEMENTS.burger = document.querySelector("nav a.burger");
   ELEMENTS.header = document.querySelector("header");
   ELEMENTS.navExpandos = document.querySelectorAll("nav#global li.expando");
