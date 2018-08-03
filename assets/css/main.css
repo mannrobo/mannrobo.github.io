@@ -581,7 +581,37 @@ footer {
   margin-top: 20vh;
   display: flex;
   align-items: center;
+  flex-direction: column;
+  justify-content: center;
+}
+
+footer svg:first-of-type {
+  height: 48px;
+  z-index: 9;
+}
+
+footer section.container {
+  margin: 8px 0;
+  color: #ffffff;
+  text-align: right;
+}
+
+footer section.container p {
+  margin: 0;
+}
+
+footer .social-links {
+  display: flex;
+  align-items: center;
   justify-content: space-around;
+  height: 3rem;
+  z-index: 10;
+}
+
+footer .social-links svg {
+  height: 24px;
+  width: 24px;
+  fill: #fff;
 }
 
 footer::before {

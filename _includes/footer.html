@@ -1,0 +1,21 @@
+<footer>
+    {% include logo-white.svg %}
+    <section class="social-links container">
+        <a href="https://github.com/mannrobo">
+            {% include social/github.svg %}
+        </a>
+        <a href="https://twitter.com/mannrobo">
+            {% include social/twitter.svg %}
+        </a>
+        <a href="https://www.youtube.com/channel/UCJCYTEWkZoA9uXfm2mhsf2w?view_as=subscriber">
+            {% include social/youtube.svg %}
+        </a>
+        <a href="https://instagram.com/mannrobotics">
+            {% include social/instagram.svg %}
+        </a>
+    </section>
+    <section class="container">
+        <p>© 20{{ site.time | date: "%y" }} Mann Robotics</p>
+        <p>Built {{ site.time | date: "%D" }} by Jekyll</p>
+    </section>
+</footer>
