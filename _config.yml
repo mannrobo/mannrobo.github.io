@@ -32,6 +32,8 @@ plugins:
 links:
     - title: About
       href: "/about/"
+    - title: Calendar
+      href: "/calendar/"
 
     - title: Teams
       children: 
