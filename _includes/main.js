@@ -12,10 +12,13 @@ const gcal = {
 
   cache: {},
 
-  events(
-    after = new Date(),
-    before = new Date(Date.now() + 365 * 24 * 60 * 60 * 1000)
-  ) {
+  events(after, before) {
+    if (!after) {
+      after = new Date();
+    }
+    if (!before) {
+      before = new Date(Date.now() + 365 * 24 * 60 * 60 * 1000);
+    }
     if (this.cache[after.toISOString() + "-" + before.toISOString()]) {
       return Promise.resolve(
         this.cache[after.toISOString() + "-" + before.toISOString()]
@@ -81,7 +84,7 @@ window.addEventListener(
   })
 );
 
-window.addEventListener("scroll", function scrollEvent() {
+function scrollEvent() {
   if (ELEMENTS.main) {
     if (
       this.scrollY >
@@ -92,7 +95,8 @@ window.addEventListener("scroll", function scrollEvent() {
       ELEMENTS.header.classList.remove("scrolled");
     }
   }
-});
+}
+window.addEventListener("scroll", scrollEvent);
 
 document.addEventListener("DOMContentLoaded", function() {
   ELEMENTS.burger = document.querySelector("nav a.burger");
