@@ -7,12 +7,12 @@
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
     <title>{{ page.title }} | {{ site.title }}</title>
     <link rel="stylesheet" href="/assets/css/main.css" />
-    {% if page.embedScript %}
     <script>
     {% include main.js %}
+    {% if page.embedScript %}
     {% include {{ page.embedScript }} %}
-    </script>
     {% endif %}
+    </script>
     {% seo %}
     
     <style>
@@ -21,7 +21,7 @@
     {% endif %}
     header.page {
           background-image: linear-gradient(rgba(0, 0, 0, 0.8), rgba(0, 0, 0, 0.5)),
-    url({{ page.headerImage }});
+    url({{ page.image }});
     }
     </style>
 </head>
@@ -29,7 +29,7 @@
 <body>
     {% include header.html %}
     <main class="container">
-        {{ page.content }}
+        {{ content }}
     </main>
     {% include footer.html %}
 </body>
