@@ -96,12 +96,17 @@ input.button {
 nav#global {
   position: fixed;
   left: 0;
-  right: 0;
   top: 0;
   height: 6rem;
   display: flex;
   align-items: center;
   z-index: 1000;
+}
+
+@media (max-width: 1090px) {
+  nav#global {
+    right: 0;
+  }
 }
 
 header.page.scrolled ~ nav#global .st1,
