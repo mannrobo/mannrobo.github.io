@@ -254,6 +254,7 @@ nav#global #nav-links {
     top: 3rem;
     box-sizing: border-box;
     display: none;
+    border-radius: 0;
   }
 
   header.phoneNavOpen + nav#global #nav-links {
@@ -532,49 +533,23 @@ nav#global #nav-links > li > span::after {
   margin: 8px 1vw;
 }
 
-#updates div > a {
-  background-color: var(--blue);
-  color: #ffffff;
-  text-decoration: none;
-  transition: var(--transition-quick);
-  border-radius: 8px;
-  margin: 4px 0;
-  flex: 1;
-  height: 56px;
+#updates .updates {
+  display: flex;
+  flex-wrap: wrap;
+}
+
+#updates article {
+  width: 100%;
   max-width: 360px;
   margin: 8px auto;
-  display: flex;
-  align-items: center;
-  position: relative;
 }
-#updates div > a i {
-  position: absolute;
-  right: 1rem;
-  bottom: calc((56px - 24px) / 2);
+
+#updates p {
+  color: var(--grey);
 }
-#updates div > a:first-child {
-  margin-top: 8px;
-}
-#updates div > a div {
-  display: flex;
-  flex-direction: column;
-  margin-left: 16px;
-}
-#updates div > a div p {
-  margin: 0;
-  padding: 0;
-}
-#updates div > a div p[aria-label="date"] {
-  font-size: 75%;
-  margin-bottom: 4px;
-}
-#updates {
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-}
-#updates .updates {
-  width: 100%;
+
+#updates a:hover {
+  text-decoration: none;
 }
 
 /**
