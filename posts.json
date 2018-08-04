@@ -1,0 +1,15 @@
+---
+---
+
+{
+    "posts": [
+        {% for post in site.posts reversed %}
+              {
+                  "title": "{{ post.title }}",
+                  "date": "{{ post.date }}",
+                  "url": "{{ post.url }}"
+              },
+        {% endfor %}
+        {}
+    ]
+}
