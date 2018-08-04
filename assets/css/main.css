@@ -243,6 +243,8 @@ nav#global #nav-links {
   left: 0;
   width: calc((100vw - 720px) / 2 - 5.5vw);
   padding-right: 2em;
+  border-top-right-radius: 6px;
+  border-bottom-right-radius: 6px;
 }
 
 @media (max-width: 1090px) {
