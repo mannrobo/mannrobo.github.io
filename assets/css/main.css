@@ -100,6 +100,7 @@ nav#global {
   height: 6rem;
   display: flex;
   align-items: center;
+  justify-content: space-between;
   z-index: 1000;
 }
 
@@ -157,11 +158,18 @@ header.page {
   display: flex;
   align-items: center;
   justify-content: center;
+  flex-direction: column;
 }
 
 header.page h1 {
-  position: absolute;
+  font-size: 2.5rem;
+  color: #ffffff;
+}
+
+header.page h3 {
+  color: #ffffff;
   font-size: 2rem;
+  margin-top: -32px;
 }
 
 header.page::after {
@@ -180,10 +188,10 @@ header.page::after {
 }
 
 nav#global a.burger {
-  position: absolute;
-  right: 2rem;
+  margin-right: 2rem;
   height: 26px !important;
   width: 32px;
+  position: relative;
 }
 
 nav#global a.burger.hidden {
