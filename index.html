@@ -1,7 +1,7 @@
 ---
 title: Home
 layout: default
-image: assets/images/home.jpg
+image: /assets/images/organization.jpg
 embedScript: scripts/index.js
 ---
 
@@ -101,7 +101,7 @@ embedScript: scripts/index.js
 <section id="updates">
     <h1 class="heading">UPDATES</h1>
     <div class="updates" role="tablist">
-        {% for post in site.posts reversed limit: 3%}
+        {% for post in site.posts limit: 3 %}
             <article class="post">
                 <a href="{{ post.url }}">
                     <img src="{{ post.image }}" />
