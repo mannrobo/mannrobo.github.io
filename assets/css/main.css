@@ -164,6 +164,7 @@ header.page {
 header.page h1 {
   font-size: 2.5rem;
   color: #ffffff;
+  text-align: center;
 }
 
 header.page h3 {
