@@ -1,7 +1,7 @@
 <section class="top">
     <header class="page">
-        <h1>Mann Robotics</h1>
-        <h3>3796</h3>
+        <h1>{{ page.heading }}</h1>
+        <h3>{{ page.subheading }}</h3>
     </header>
     <nav id="global">
         <a href="/">
@@ -9,20 +9,20 @@
         </a>
         <ul id="nav-links">
             {% for link in site.links %}
-                <li {% if link.children %}class="expando"{% endif %}>
-                    {% if link.children %}
-                        <span>{{ link.title }}</span>
-                        <ul>
-                        {% for child in link.children %}
-                            <li>
-                                <a href="{{ child.href }}" {% if child.external %}target="_blank" rel="noopener" class="external"{% endif %}>{{ child.title }}</a>
-                            </li>
-                        {% endfor %}
-                        </ul>
-                    {% else %}
-                        <a href="{{ link.href }}" {% if link.external %}target="_blank" rel="noopener" class="external"{% endif %}>{{ link.title }}</a>
-                    {% endif %}
-                </li>
+            <li {% if link.children %}class="expando" {% endif %}>
+                {% if link.children %}
+                <span>{{ link.title }}</span>
+                <ul>
+                    {% for child in link.children %}
+                    <li>
+                        <a href="{{ child.href }}" {% if child.external %}target="_blank" rel="noopener" class="external" {% endif %}>{{ child.title }}</a>
+                    </li>
+                    {% endfor %}
+                </ul>
+                {% else %}
+                <a href="{{ link.href }}" {% if link.external %}target="_blank" rel="noopener" class="external" {% endif %}>{{ link.title }}</a>
+                {% endif %}
+            </li>
             {% endfor %}
         </ul>
         <a href="#" class="burger" aria-label="Toggle Menu">
