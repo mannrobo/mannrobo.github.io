@@ -1,0 +1,37 @@
+---
+title: Contact Us
+permalink: /contact/
+heading: Get in Touch!
+subheading: 
+layout: default
+---
+
+<section class="social-links container">
+    <a href="https://twitter.com/mannrobo">
+        {% include social/twitter.svg %}
+    </a>
+    <a href="https://www.youtube.com/channel/UCJCYTEWkZoA9uXfm2mhsf2w?view_as=subscriber">
+        {% include social/youtube.svg %}
+    </a>
+    <a href="https://instagram.com/mannrobotics">
+        {% include social/instagram.svg %}
+    </a>
+</section>
+
+<form action="https://formspree.io/contact@mannrobo.org" method="POST">
+    <div class="form-group">
+        <label for="name" class="sr-only">Name</label>
+        <input type="text" id="name" class="form-control" name="name" placeholder="Name">
+    </div>
+    <div class="form-group">
+        <label for="email" class="sr-only">Email</label>
+        <input type="email" id="email" class="form-control" name="email" placeholder="Email">
+    </div>
+    <div class="form-group">
+        <label for="Message" class="sr-only">Message</label>
+        <textarea type="Message" id="Message" class="form-control" name="Message" placeholder="Message"></textarea>
+    </div>
+    <div class="form-group">
+        <input class="button" value="Send message" type="submit">
+    </div>
+</form>

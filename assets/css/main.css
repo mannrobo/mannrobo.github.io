@@ -617,3 +617,78 @@ footer::before {
   left: -5px;
   top: -35px;
 }
+
+/**
+ * Form
+ */
+.form-group {
+  margin-bottom: 15px;
+}
+
+.form-control {
+  display: block;
+  box-sizing: border-box;
+  width: 100%;
+  height: 54px !important;
+  padding: 10px 20px;
+  font-size: 14px;
+  line-height: 1.42857;
+  color: #555555;
+  box-shadow: none;
+  background: transparent;
+  border: 2px solid rgba(0, 0, 0, 0.1);
+  border-radius: 3px;
+  height: 54px;
+  font-size: 18px;
+  font-weight: 400;
+  transition: var(--transition);
+}
+
+.form-control:active,
+.form-control:focus {
+  outline: none;
+  box-shadow: none;
+  border-color: var(--blue);
+}
+
+.form-control::-moz-placeholder {
+  color: #999;
+  opacity: 1;
+}
+
+.form-control:-ms-input-placeholder {
+  color: #999;
+}
+
+.form-control::-webkit-input-placeholder {
+  color: #999;
+}
+
+.form-control[disabled],
+.form-control[readonly],
+fieldset[disabled] .form-control {
+  background-color: #eeeeee;
+  opacity: 1;
+}
+
+.form-control[disabled],
+fieldset[disabled] .form-control {
+  cursor: not-allowed;
+}
+
+textarea.form-control {
+  height: auto;
+  min-height: 149px;
+}
+
+input[type="search"] {
+  -webkit-appearance: none;
+}
+
+input[type="submit"] {
+  -webkit-appearance: button;
+}
+
+.sr-only {
+  display: none;
+}
