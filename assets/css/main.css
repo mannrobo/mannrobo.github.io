@@ -591,7 +591,7 @@ footer section.container p {
   margin: 0;
 }
 
-footer .social-links {
+section.social-links {
   display: flex;
   align-items: center;
   justify-content: space-around;
@@ -599,7 +599,7 @@ footer .social-links {
   z-index: 10;
 }
 
-footer .social-links svg {
+section.social-links svg {
   height: 24px;
   width: 24px;
   fill: #fff;
