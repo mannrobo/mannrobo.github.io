@@ -15,12 +15,14 @@
                 <ul>
                     {% for child in link.children %}
                     <li>
-                        <a href="{{ child.href }}" {% if child.external %}target="_blank" rel="noopener" class="external" {% endif %}>{{ child.title }}</a>
+                        <a href="{{ child.href }}" {% if child.external %}target="_blank" rel="noopener" class="external" {% endif %}>{{
+                            child.title }}</a>
                     </li>
                     {% endfor %}
                 </ul>
                 {% else %}
-                <a href="{{ link.href }}" {% if link.external %}target="_blank" rel="noopener" class="external" {% endif %}>{{ link.title }}</a>
+                <a href="{{ link.href }}" {% if link.external %}target="_blank" rel="noopener" class="external" {% endif %}>{{
+                    link.title }}</a>
                 {% endif %}
             </li>
             {% endfor %}
