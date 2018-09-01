@@ -1,12 +1,5 @@
----
-title: Home
-layout: default
-image: /assets/images/organization.jpg
-embedScript: scripts/index.js
-
-heading: Mann Robotics
-subheading: VRC 3796
----
+--- title: Home layout: default image: /assets/images/organization.jpg embedScript: scripts/index.js heading: Mann Robotics
+subheading: VRC 3796 ---
 
 <section id="about">
     <div class="map-wrapper">
@@ -17,7 +10,9 @@ subheading: VRC 3796
         </aside>
     </div>
     <div class="about">
-        <p>Mann Robotics is a competitive robotics organization at J.L. Mann High School, in Greenville, SC. We compete in the VEX Robotics Competition, and have done so for the past 5 years. During that time, our program has taught planning, teamwork, professional and STEM skills to over 50 students and alumni.</p>
+        <p>Mann Robotics is a competitive robotics organization at J.L. Mann High School, in Greenville, SC. We compete in
+            the VEX Robotics Competition, and have done so for the past 5 years. During that time, our program has taught
+            planning, teamwork, professional and STEM skills to over 50 students and alumni.</p>
         <p>Currenly, we have three teams (3796A, 3796B, and 3796C)</p>
         <a href="/about/" class="button primary center">More</a>
     </div>
@@ -26,17 +21,17 @@ subheading: VRC 3796
 <section id="teams">
     <div class="teamlist">
         <section class="a team">
-            <a href="/team/3796A/">
+            <a href="/teams/3796A/">
                 <span>3796A</span>
             </a>
         </section>
         <section class="b team">
-            <a href="/team/3796B/">
+            <a href="/teams/3796B/">
                 <span>3796B</span>
             </a>
         </section>
         <section class="c team">
-            <a href="/team/3796C/">
+            <a href="/teams/3796C/">
                 <span>3796C</span>
             </a>
         </section>
@@ -105,12 +100,12 @@ subheading: VRC 3796
     <h1 class="heading">UPDATES</h1>
     <div class="updates" role="tablist">
         {% for post in site.posts limit: 3 %}
-            <article class="post">
-                <a href="{{ post.url }}">
-                    <img src="{{ post.image }}" />
-                    <p class="title">{{ post.title }}</p>
-                </a>
-            </article>
+        <article class="post">
+            <a href="{{ post.url }}">
+                <img src="{{ post.image }}" />
+                <p class="title">{{ post.title }}</p>
+            </a>
+        </article>
         {% endfor %}
     </div>
 </section>
