@@ -444,10 +444,16 @@ nav#global #nav-links > li > span::after {
   display: flex;
   flex-direction: column;
   align-items: center;
+  width: 100%;
+}
+
+#calendar .calendar {
+  width: 100%;
 }
 
 .calendar section {
   max-width: 360px;
+  width: 100%;
   margin: 8px auto;
 }
 .calendar section header {
