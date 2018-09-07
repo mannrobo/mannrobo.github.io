@@ -456,6 +456,10 @@ nav#global #nav-links > li > span::after {
   width: 100%;
 }
 
+.calendar > p {
+  text-align: center;
+}
+
 .calendar section {
   max-width: 360px;
   width: 100%;
