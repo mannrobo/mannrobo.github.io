@@ -447,6 +447,11 @@ nav#global #nav-links > li > span::after {
   width: 100%;
 }
 
+.add-calendar-cta {
+  text-align: center;
+  margin: 16px 0;
+}
+
 #calendar .calendar {
   width: 100%;
 }
