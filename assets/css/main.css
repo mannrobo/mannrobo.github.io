@@ -50,7 +50,7 @@ a:hover {
  * Buttton
  */
 .button {
-  padding: 8px 32px;
+  padding: 8px 24px;
   margin: 8px;
   text-decoration: none;
   text-transform: uppercase;
@@ -61,6 +61,11 @@ a:hover {
   cursor: pointer;
   outline: none;
 }
+
+.button.cta {
+  margin: 16px 0;
+}
+
 input.button {
   background: var(--blue);
   color: #fff;
