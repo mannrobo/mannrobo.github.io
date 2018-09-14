@@ -145,6 +145,7 @@ nav#global svg {
 
 nav#global a:first-child {
   width: calc((100vw - 720px) / 2 - 2vw);
+  max-width: 240px;
 }
 
 @media (max-width: 1090px) {
@@ -256,6 +257,7 @@ nav#global #nav-links {
   top: 5rem;
   left: 0;
   width: calc((100vw - 720px) / 2 - 5.5vw);
+  max-width: 240px;
   padding-right: 2em;
   border-top-right-radius: 6px;
   border-bottom-right-radius: 6px;
