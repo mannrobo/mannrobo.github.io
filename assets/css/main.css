@@ -257,11 +257,14 @@ nav#global #nav-links {
   top: 5rem;
   left: 0;
   width: calc((100vw - 720px) / 2 - 5.5vw);
-  max-width: 240px;
   box-sizing: border-box;
   padding-right: 2em;
   border-top-right-radius: 6px;
   border-bottom-right-radius: 6px;
+}
+
+header:not(.phoneNavOpen) #nav-links {
+  max-width: 240px;
 }
 
 @media (max-width: 1090px) {
