@@ -337,6 +337,10 @@ figcaption {
   font-size: 80%;
 }
 
+h5.subtitle {
+  margin-top: -12px;
+}
+
 /**
  * About
  */
