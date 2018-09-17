@@ -328,6 +328,15 @@ nav#global #nav-links > li > span::after {
   color: var(--dark-grey) !important;
 }
 
+img.feature {
+  margin: 8px auto;
+  max-width: 480px;
+}
+
+figcaption {
+  font-size: 80%;
+}
+
 /**
  * About
  */
