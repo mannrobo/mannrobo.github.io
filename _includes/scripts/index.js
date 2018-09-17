@@ -1,4 +1,4 @@
-window.addEventListener("DOMContentLoaded", function() {
+document.addEventListener("DOMContentLoaded", function() {
   ELEMENTS.calendarItems = document.querySelectorAll(
     "#calendar .calendar section"
   );
@@ -30,4 +30,3 @@ window.addEventListener("DOMContentLoaded", function() {
     })
   );
 });
-
