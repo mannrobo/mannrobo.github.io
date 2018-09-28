@@ -446,6 +446,12 @@ h5.subtitle {
   background-position: center;
   background-position-y: 30%;
 }
+#teams .team.d::after {
+  background-image: url(/assets/images/teams/3796D.jpg);
+  background-size: 150%;
+  background-position: center;
+  background-position-y: 30%;
+}
 #teams .team a {
   font-size: 2.4rem;
   color: white;
