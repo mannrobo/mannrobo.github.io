@@ -181,7 +181,7 @@ header.page h3 {
 
 header.page::after {
   position: absolute;
-  transform: rotate(-3deg);
+  transform: rotate(-1deg);
   content: "";
   background-color: #fff;
   display: inline-block;
