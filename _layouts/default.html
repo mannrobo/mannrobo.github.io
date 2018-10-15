@@ -22,7 +22,9 @@
     gtag('config', 'UA-82048274-1');
     </script>
 
-    {% seo %}
+    {% if jekyll.environment == "production" %}
+        {% seo %}
+    {% endif %}
     
     <style>
     {% if page.embedStyle %}
