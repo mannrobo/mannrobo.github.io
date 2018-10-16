@@ -181,11 +181,11 @@ header.page h3 {
 
 header.page::after {
   position: absolute;
-  transform: rotate(-1deg);
+  transform: rotate(-3deg);
   content: "";
   background-color: #fff;
   display: inline-block;
-  height: 70px;
+  height: 90px;
   padding: 0;
   right: -5px;
   left: -5px;
@@ -256,7 +256,8 @@ nav#global #nav-links {
   position: fixed;
   top: 5rem;
   left: 0;
-  width: calc((100vw - 720px) / 2 - 5.5vw);
+  width: 20vw;
+  width: calc((100vw - 720px) / 2 - 3vw);
   box-sizing: border-box;
   padding-right: 2em;
   border-top-right-radius: 6px;
