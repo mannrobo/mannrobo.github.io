@@ -395,11 +395,16 @@ h5.subtitle {
 /**
  * Teams
  */
-#teams .teamlist {
+#teams .teamlist, #teams .teamgroup {
   display: flex;
   flex-wrap: wrap;
 }
-@media (max-width: 600px) {
+
+#teams .teamgroup {
+  flex: 1;
+}
+
+@media (max-width: 720px) {
   #teams .teamlist {
     flex-direction: column;
   }
@@ -606,6 +611,13 @@ h5.subtitle {
 #updates a:hover {
   text-decoration: none;
 }
+
+#updates img {
+  object-fit: cover;
+  height: 40vh;
+  width: 40vh;
+}
+
 
 /**
  * footer
