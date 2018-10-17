@@ -10,7 +10,10 @@
     <script>
     {% include main.js %}
     {% if page.embedScript %}
-    {% include {{ page.embedScript }} %}
+        {% include {{ page.embedScript }} %}
+    {% endif %}
+    {% if layout.embedScript %}
+        {% include {{ layout.embedScript }} %}
     {% endif %}
     </script>
     <script async src="https://www.googletagmanager.com/gtag/js?id=UA-82048274-1"></script>
@@ -28,7 +31,10 @@
     
     <style>
     {% if page.embedStyle %}
-    {% include {{ page.embedStyle }} %}
+        {% include {{ page.embedStyle }} %}
+    {% endif %}
+    {% if layout.embedStyle %}
+        {% include {{ layout.embedStyle }} %}
     {% endif %}
     header.page {
           background-image: linear-gradient(rgba(0, 0, 0, 0.8), rgba(0, 0, 0, 0.5)),
