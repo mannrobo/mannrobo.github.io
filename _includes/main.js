@@ -116,3 +116,20 @@ document.addEventListener("DOMContentLoaded", function() {
   sizeEvent();
   scrollEvent();
 });
+
+function h(tag, attributes, children) {
+  let element = document.createElement(tag);
+  for (const key in attributes) {
+    if (attributes.hasOwnProperty(key)) {
+      element.setAttribute(key, attributes[key]);
+    }
+  }
+  children.forEach(function(child) {
+    if (typeof child === "string") {
+      child = document.createTextNode(child);
+    }
+    element.appendChild(child);
+  });
+
+  return element;
+}

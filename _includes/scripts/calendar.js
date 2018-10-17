@@ -49,23 +49,6 @@ function loadEvents() {
     .then(events => events.map(evt => ELEMENTS.calendarList.appendChild(evt)));
 }
 
-function h(tag, attributes, children) {
-  let element = document.createElement(tag);
-  for (const key in attributes) {
-    if (attributes.hasOwnProperty(key)) {
-      element.setAttribute(key, attributes[key]);
-    }
-  }
-  children.forEach(function(child) {
-    if (typeof child === "string") {
-      child = document.createTextNode(child);
-    }
-    element.appendChild(child);
-  });
-
-  return element;
-}
-
 function makeEventDOM(event) {
   let dom = h(
     "section",
