@@ -1,0 +1,20 @@
+nav[for="stats"] {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    max-width: 480px;
+    margin: 0 auto;
+    z-index: 1001;
+}
+
+nav[for="stats"] a.hidden {
+    visibility: hidden;
+}
+  
+nav[for="stats"] i {
+    font-size: 2rem;
+}
+  
+#stats {
+    min-height: 60vh;
+}
