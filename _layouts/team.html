@@ -1,13 +1,26 @@
 ---
 layout: default
+embedScript: scripts/stats.js
+embedStyle: styles/stats.css
 ---
 
-<h1>{{ page.title }}</h1>
-<p><strong>Members:</strong> {{ page.members }}</p>
-<p><strong>Alumni:</strong> {{ page.alumni }}</p>
+<h1 class="heading left">{{ page.title }}</h1>
+<p><strong>Members—</strong>{{ page.members }}</p>
+<p><strong>Alumni—</strong>{{ page.alumni }}</p>
 
 {{ content }}
 
-<section class="stats">
+<nav for="stats">
+    <a href="#" class="back">
+        <i class="material-icons">keyboard_arrow_left</i>
+    </a>
+    <h1 class="heading" id="seasonSelection"></h1>
+    <a href="#" class="forward">
+        <i class="material-icons">keyboard_arrow_right</i>
+    </a>
+</nav>
+<section id="stats">
 
 </section>
+
+<script src="https://unpkg.com/unfetch/polyfill"></script>
