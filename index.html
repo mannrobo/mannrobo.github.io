@@ -122,7 +122,9 @@ subheading: VRC 3796
         <article class="post">
             <a href="{{ post.url }}">
                 <img src="{{ post.image }}" />
-                <p class="title">{{ post.title }}</p>
+                <div class="title">
+                    <p>{{ post.title }}</p>
+                </div>
             </a>
         </article>
         {% endfor %}

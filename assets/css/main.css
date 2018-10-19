@@ -615,10 +615,38 @@ h5.subtitle {
   width: 100%;
   max-width: 360px;
   margin: 8px auto;
+  position: relative;
+  height: 40vh;
+  width: 60vh;
+  box-shadow: 0px 4px 6px rgba(0, 0, 0, 0.4);
+  border-radius: 6px;
+
+  transition: var(--transition)
+}
+
+#updates article:hover {
+  box-shadow: 0px 6px 8px rgba(0, 0, 0, 0.5);
 }
 
 #updates p {
   color: var(--grey);
+  margin-left: 8px;
+  margin-bottom: 0;
+  margin-top: 0;
+}
+
+#updates .title {
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  height: 25%;
+  background-color: #fff;
+  border-bottom-left-radius: 6px;
+  border-bottom-right-radius: 6px;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-around;
 }
 
 #updates a:hover {
@@ -627,8 +655,11 @@ h5.subtitle {
 
 #updates img {
   object-fit: cover;
-  height: 40vh;
-  width: 40vh;
+  border-radius: 6px;
+  width: 100%;
+  margin: 0 auto;
+  position: absolute;
+
 }
 
 
