@@ -18,3 +18,7 @@ nav[for="stats"] i {
 #stats {
     min-height: 60vh;
 }
+
+p.nothing {
+    text-align: center;
+}
