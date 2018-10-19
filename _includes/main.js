@@ -128,6 +128,11 @@ function h(tag, attributes, children) {
     if (typeof child === "string") {
       child = document.createTextNode(child);
     }
+
+    if(child === null) {
+      return;
+    }
+
     element.appendChild(child);
   });
 
