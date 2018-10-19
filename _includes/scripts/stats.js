@@ -116,7 +116,9 @@ function makeEventDOM(event) {
     let rankings = rankingData.rankings[event.sku],
         awards = awardData.awards[event.sku];
     return h("section", { class: "event" }, [
-        h("h3", { class: "left heading" }, [event.name]),
+        h("a", { href: "https://www.robotevents.com/robot-competitions/vex-robotics-competition/"+event.sku+".html" }, [
+            h("h3", { class: "left heading"}, [event.name])
+        ]),
         h("div", { class: "data" }, [
             rankings ? h("p", { class: "rank" }, ["Ranked " + rankings.rank + " (" + [rankings.wins, rankings.losses, rankings.ties ].join("-") + ")"]) : null,
             awards ? h("p", { class: "awards" }, ["Won " + awards.map(a => a.name.split("(")[0]).join(", ")]) : null
