@@ -44,7 +44,11 @@ function handleRankings(rankings) {
 function handleAwardData(awards) {
     awardData.loaded = true;
     for(var i = 0; i < awards.length; i++) {
-        awardData.awards[awards[i].sku] = awards[i]
+        if(awardData.awards[awards[i].sku]) {
+            awardData.awards[awards[i].sku].push(awards[i])
+        }  else {
+            awardData.awards[awards[i].sku] = [awards[i]]
+        }
     }
 
     displaySeason();
@@ -109,11 +113,13 @@ window.addEventListener("load", function() {
 });
 
 function makeEventDOM(event) {
-    let rankings = rankingData.rankings[event.sku];
+    let rankings = rankingData.rankings[event.sku],
+        awards = awardData.awards[event.sku];
     return h("section", { class: "event" }, [
         h("h3", { class: "left heading" }, [event.name]),
         h("div", { class: "data" }, [
-            rankings ? h("p", { class: "rank" }, ["Ranked " + rankings.rank + " (" + [rankings.wins, rankings.losses, rankings.ties ].join("-") + ")"]) : null
+            rankings ? h("p", { class: "rank" }, ["Ranked " + rankings.rank + " (" + [rankings.wins, rankings.losses, rankings.ties ].join("-") + ")"]) : null,
+            awards ? h("p", { class: "awards" }, ["Won " + awards.map(a => a.name.split("(")[0]).join(", ")]) : null
         ])  
     ])
 }
