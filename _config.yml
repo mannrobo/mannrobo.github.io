@@ -43,8 +43,8 @@ links:
         href: /teams/3796B/
       - title: 3796C
         href: /teams/3796C/
-      - title: 3796D
-        href: /teams/3796D/
+      - title: 3796E
+        href: /teams/3796E/
 
   - title: Events
     children:
@@ -73,7 +73,6 @@ links:
         external: true
       - title: General Contact
         href: /contact/
-
 # Exclude from processing.
 # The following items will not be processed, by default. Create a custom list
 # to override the default setting.
