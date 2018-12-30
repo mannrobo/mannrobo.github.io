@@ -1,56 +1,60 @@
 <!DOCTYPE html>
 <html lang="en">
-
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta http-equiv="X-UA-Compatible" content="ie=edge" />
     <title>{{ page.title }} | {{ site.title }}</title>
     <link rel="stylesheet" href="/assets/css/main.css" />
     <script>
-    {% include main.js %}
-    {% if page.embedScript %}
-        {% include {{ page.embedScript }} %}
-    {% endif %}
-    {% if layout.embedScript %}
-        {% include {{ layout.embedScript }} %}
-    {% endif %}
+      {% include main.js %}
+      {% if page.embedScript %}
+          {% include {{ page.embedScript }} %}
+      {% endif %}
+      {% if layout.embedScript %}
+          {% include {{ layout.embedScript }} %}
+      {% endif %}
     </script>
-    <script async src="https://www.googletagmanager.com/gtag/js?id=UA-82048274-1"></script>
+    <script
+      async
+      src="https://www.googletagmanager.com/gtag/js?id=UA-82048274-1"
+    ></script>
     <script>
-    window.dataLayer = window.dataLayer || [];
-    function gtag(){dataLayer.push(arguments);}
-    gtag('js', new Date());
+      window.dataLayer = window.dataLayer || [];
+      function gtag() {
+        dataLayer.push(arguments);
+      }
+      gtag("js", new Date());
 
-    gtag('config', 'UA-82048274-1');
+      gtag("config", "UA-82048274-1");
     </script>
 
     {% seo %}
-    
+
     <style>
-    {% if page.embedStyle %}
-        {% include {{ page.embedStyle }} %}
-    {% endif %}
-    {% if layout.embedStyle %}
-        {% include {{ layout.embedStyle }} %}
-    {% endif %}
-    header.page {
-          background-image: linear-gradient(rgba(0, 0, 0, 0.8), rgba(0, 0, 0, 0.5)),
-    url({{ page.image }});
-          background-position: center center;
-     {% if page.containImage %}
-        background-size: contain
-     {% endif %}
-    }
+      {% if page.embedStyle %}
+          {% include {{ page.embedStyle }} %}
+      {% endif %}
+      {% if layout.embedStyle %}
+          {% include {{ layout.embedStyle }} %}
+      {% endif %}
+      header.page {
+            {% if page.noHeaderGradient %}
+              background-image: url({{ page.image }});
+            {% else %}
+              background-image: linear-gradient(rgba(0, 0, 0, 0.8), rgba(0, 0, 0, 0.5)), url({{ page.image }});
+            {% endif %}
+            background-position: center center;
+       {% if page.containImage %}
+          background-size: contain
+       {% endif %}
+      }
     </style>
-</head>
+  </head>
 
-<body>
+  <body>
     {% include header.html %}
-    <main class="container">
-        {{ content }}
-    </main>
+    <main class="container">{{ content }}</main>
     {% include footer.html %}
-</body>
-
+  </body>
 </html>
