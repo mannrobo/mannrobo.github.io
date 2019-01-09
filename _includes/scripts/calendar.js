@@ -63,7 +63,11 @@ function makeEventDOM(event) {
       h("header", { "aria-haspopup": true }, [
         h("p", { class: "title" }, [event.summary]),
         h("p", { class: "date" }, [
-          new Date(event.start.dateTime).toLocaleDateString()
+          new Date(event.start.dateTime).toLocaleDateString("en-us", {
+            day: "numeric",
+            month: "short",
+            year: "numeric"
+          })
         ]),
         h("i", { class: "material-icons" }, ["expand_more"])
       ]),
