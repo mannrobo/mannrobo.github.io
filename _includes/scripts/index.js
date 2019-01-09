@@ -20,7 +20,14 @@ document.addEventListener("DOMContentLoaded", function() {
         location = item.querySelector(".calendar-location");
 
       title.innerHTML = event.summary;
-      date.innerHTML = new Date(event.start.dateTime).toLocaleDateString();
+      date.innerHTML = new Date(event.start.dateTime).toLocaleDateString(
+        "en-us",
+        {
+          day: "numeric",
+          month: "short",
+          year: "numeric"
+        }
+      );
       desc.innerHTML = event.description;
       time.innerHTML = formatTime(event.start.dateTime, event.end.dateTime);
       location.innerHTML = `<a target="_blank" rel="noopener" href="${"https://www.google.com/maps/dir/?api=1&origin=" +
