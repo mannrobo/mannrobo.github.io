@@ -11,3 +11,5 @@ Community involvement is important to Mann Robotics. Keeping with this spirit Ma
 [IMAGE HERE]
 
 In past years, Mann Robotics has worked with Clemson's VEXU team BCUZ and other Greenville area teams to volunteer at Sevier's Falcon's Middle School Qualifier, and have done so for 4 years and counting. At the most recent Sevier event, Brendan McGuire was awarded with Volunteer of the Year for his service as the Head Referee.
+
+Mann Robotics is also assisting some Sevier Middle School teams with flywheel construction, as teams A and B have constructed flywheels in the past.
