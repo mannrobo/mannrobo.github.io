@@ -129,11 +129,13 @@ nav#global {
 }
 
 header.page.scrolled ~ nav#global .st1,
-header.page.phoneNavOpen ~ nav#global .st1 {
+header.page.phoneNavOpen ~ nav#global .st1,
+header.page-sidebarOnly ~ nav#global .st1 {
   fill: var(--blue);
 }
 header.page.scrolled.white-bg ~ nav#global,
-header.page.phoneNavOpen ~ nav#global {
+header.page.phoneNavOpen ~ nav#global,
+header.page-sidebarOnly.phoneNavOpen ~ nav#global {
   background: #fff;
   box-shadow: 0px 4px 6px rgba(0, 0, 0, 0.4);
   z-index: 99;
@@ -141,12 +143,14 @@ header.page.phoneNavOpen ~ nav#global {
 }
 
 header.page.scrolled.white-bg ~ nav#global svg,
-header.page.phoneNavOpen ~ nav#global svg {
+header.page.phoneNavOpen ~ nav#global svg,
+header.page-sidebarOnly.phoneNavOpen ~ nav#global svg {
   margin-left: 8px;
 }
 
 header.page.scrolled.white-bg ~ nav#global a,
-header.page.phoneNavOpen ~ nav#global a {
+header.page.phoneNavOpen ~ nav#global a,
+header.page-sidebarOnly.phoneNavOpen ~ nav#global a {
   height: 3rem;
 }
 
@@ -234,7 +238,10 @@ header.page.scrolled ~ nav#global a.burger span.burger::before,
 header.page.scrolled ~ nav#global a.burger span.burger::after,
 header.page.phoneNavOpen ~ nav#global a.burger span.burger,
 header.page.phoneNavOpen ~ nav#global a.burger span.burger::before,
-header.page.phoneNavOpen ~ nav#global a.burger span.burger::after {
+header.page.phoneNavOpen ~ nav#global a.burger span.burger::after,
+header.page-sidebarOnly ~ nav#global a.burger span.burger,
+header.page-sidebarOnly ~ nav#global a.burger span.burger::before,
+header.page-sidebarOnly ~ nav#global a.burger span.burger::after {
   background: var(--blue);
 }
 

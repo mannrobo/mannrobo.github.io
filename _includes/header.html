@@ -1,5 +1,7 @@
 <section class="top">
-  {% if include.sidebarOnly %} {% else %}
+  {% if include.sidebarOnly %}
+  <header class="page-sidebarOnly"></header>
+  {% else %}
   <header class="page">
     <h1>{{ page.heading }}</h1>
     <h3>{{ page.subheading }}</h3>
