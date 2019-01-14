@@ -58,85 +58,84 @@ subheading: VRC 3796
   </div>
 </section>
 
-  <section id="calendar">
-    <h1 class="heading">UPCOMING EVENTS</h1>
-    <div class="calendar" role="tablist">
-      <section aria-label="Calendar Item">
-        <header aria-haspopup="true">
-          <p class="title"></p>
-          <p class="date"></p>
-          <i class="material-icons">expand_more</i>
-        </header>
-        <div class="calendar-body">
-          <div class="calendar-meta">
-            <div class="calendar-time"></div>
-            <div class="calendar-location"></div>
-          </div>
-          <div class="calendar-desc">
-            Lorem ipsum dolor sit amet consectetur adipisicing elit. Ullam, quo.
-            Ipsam voluptatibus cupiditate optio ut suscipit reprehenderit
-            dignissimos tempora nisi quae soluta explicabo sed ab debitis quasi,
-            provident quo a!
-          </div>
+<section id="calendar">
+  <h1 class="heading">Upcoming Events</h1>
+  <div class="calendar" role="tablist">
+    <section aria-label="Calendar Item">
+      <header aria-haspopup="true">
+        <p class="title"></p>
+        <p class="date"></p>
+        <i class="material-icons">expand_more</i>
+      </header>
+      <div class="calendar-body">
+        <div class="calendar-meta">
+          <div class="calendar-time"></div>
+          <div class="calendar-location"></div>
         </div>
-      </section>
-      <section aria-label="Calendar Item">
-        <header aria-haspopup="true">
-          <p class="title"></p>
-          <p class="date"></p>
-          <i class="material-icons">expand_more</i>
-        </header>
-        <div class="calendar-body">
-          <div class="calendar-meta">
-            <div class="calendar-time"></div>
-            <div class="calendar-location"></div>
-          </div>
-          <div class="calendar-desc">
-            Lorem ipsum dolor sit amet consectetur adipisicing elit. Ullam, quo.
-            Ipsam voluptatibus cupiditate optio ut suscipit reprehenderit
-            dignissimos tempora nisi quae soluta explicabo sed ab debitis quasi,
-            provident quo a!
-          </div>
+        <div class="calendar-desc">
+          Lorem ipsum dolor sit amet consectetur adipisicing elit. Ullam, quo.
+          Ipsam voluptatibus cupiditate optio ut suscipit reprehenderit
+          dignissimos tempora nisi quae soluta explicabo sed ab debitis quasi,
+          provident quo a!
         </div>
-      </section>
-      <section aria-label="Calendar Item">
-        <header aria-haspopup="true">
-          <p class="title"></p>
-          <p class="date"></p>
-          <i class="material-icons">expand_more</i>
-        </header>
-        <div class="calendar-body">
-          <div class="calendar-meta">
-            <div class="calendar-time"></div>
-            <div class="calendar-location"></div>
-          </div>
-          <div class="calendar-desc">
-            Lorem ipsum dolor sit amet consectetur adipisicing elit. Ullam, quo.
-            Ipsam voluptatibus cupiditate optio ut suscipit reprehenderit
-            dignissimos tempora nisi quae soluta explicabo sed ab debitis quasi,
-            provident quo a!
-          </div>
+      </div>
+    </section>
+    <section aria-label="Calendar Item">
+      <header aria-haspopup="true">
+        <p class="title"></p>
+        <p class="date"></p>
+        <i class="material-icons">expand_more</i>
+      </header>
+      <div class="calendar-body">
+        <div class="calendar-meta">
+          <div class="calendar-time"></div>
+          <div class="calendar-location"></div>
         </div>
-      </section>
-    </div>
-    <a href="/calendar/" class="button primary centered">Full Calendar</a>
-  </section>
+        <div class="calendar-desc">
+          Lorem ipsum dolor sit amet consectetur adipisicing elit. Ullam, quo.
+          Ipsam voluptatibus cupiditate optio ut suscipit reprehenderit
+          dignissimos tempora nisi quae soluta explicabo sed ab debitis quasi,
+          provident quo a!
+        </div>
+      </div>
+    </section>
+    <section aria-label="Calendar Item">
+      <header aria-haspopup="true">
+        <p class="title"></p>
+        <p class="date"></p>
+        <i class="material-icons">expand_more</i>
+      </header>
+      <div class="calendar-body">
+        <div class="calendar-meta">
+          <div class="calendar-time"></div>
+          <div class="calendar-location"></div>
+        </div>
+        <div class="calendar-desc">
+          Lorem ipsum dolor sit amet consectetur adipisicing elit. Ullam, quo.
+          Ipsam voluptatibus cupiditate optio ut suscipit reprehenderit
+          dignissimos tempora nisi quae soluta explicabo sed ab debitis quasi,
+          provident quo a!
+        </div>
+      </div>
+    </section>
+  </div>
+  <a href="/calendar/" class="button primary center">Full Calendar</a>
+</section>
 
-  <section id="updates">
-    <h1 class="heading">THE LATEST</h1>
-    <div class="updates" role="tablist">
-      {% for post in site.posts limit: 1%}
-      <article class="post">
-        <a href="{{ post.url }}">
-          <div class="img-wrapper">
-            <img src="{{ post.image }}" alt="{{ post.title }}" />
-          </div>
-          <div class="text">
-            <p class="title">{{ post.title }}</p>
-            <p class="date">{{ post.date | date: "%B %d, %Y" }}</p>
-          </div>
-        </a>
-      </article>
-      {% endfor %}
-  </section>
-</div>
+<section id="updates">
+  <h1 class="heading">The Latest</h1>
+  <div class="updates">
+    {% for post in site.posts limit: 3 %}
+    <article class="update">
+      <a href="{{ post.url }}">
+        <img src="{{ post.image }}" alt="{{ post.title }}" />
+        <div class="text">
+          <p class="title">{{ post.title }}</p>
+          <small class="date">{{ post.date | date: "%B %d, %Y" }}</small>
+        </div>
+      </a>
+    </article>
+    {% endfor %}
+    <a href="/updates/" class="button primary center updates">All Updates</a>
+  </div>
+</section>
