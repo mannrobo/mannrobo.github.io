@@ -1,10 +1,15 @@
-<section class="top {{ page.headerClass }}">
+<section class="top">
+  {% if include.sidebarOnly %} {% else %}
   <header class="page">
     <h1>{{ page.heading }}</h1>
     <h3>{{ page.subheading }}</h3>
   </header>
+  {% endif %}
   <nav id="global">
-    <a href="/"> {% include logo-white.svg %} </a>
+    <a href="/">
+      {% if include.sidebarOnly %}{% include logo-blue.svg %} {% else %} {%
+      include logo-white.svg %} {% endif %}
+    </a>
     <ul id="nav-links">
       {% for link in site.links %}
       <li {% if link.children %}class="expando" {% endif %}>
