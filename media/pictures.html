@@ -17,16 +17,49 @@ permalink: /media/pictures/
     display: flex;
     flex-wrap: wrap;
   }
+  a.button {
+    text-align: center;
+    margin: 0 auto;
+  }
+  .content {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
 </style>
+
+<div class="content">
+  <div class="images"></div>
+  <a class="button primary center">Load More</a>
+</div>
 
 <script>
   const IMAGES = "{% for image in site.static_files %}{% if image.path contains 'gallery/' %}{{ site.baseurl }}{{ image.path }} {% endif %}{% endfor %}".split(
     " "
   );
-  const AMOUNT = 10;
-</script>
 
-<main>
-  <div class="images"></div>
-  <a class="button primary center updates">Load More</a>
-</main>
+  let total = 0;
+  function prepareImages(step) {
+    let imageDOM = IMAGES.slice(total, total + step);
+    total += step;
+
+    return imageDOM.map(url =>
+      h("img", { src: url, class: "gallery-img" }, [])
+    );
+  }
+
+  function appendNodes(container, nodes) {
+    for (let i = 0; i < nodes.length; i++) {
+      container.appendChild(nodes[i]);
+    }
+  }
+
+  // We'll load 10 images initally, then load more when they press the big blue button
+  appendNodes(document.querySelector(".images"), prepareImages(10));
+
+  document
+    .querySelector("a.button.primary")
+    .addEventListener("click", function() {
+      appendNodes(document.querySelector(".images"), prepareImages(10));
+    });
+</script>
