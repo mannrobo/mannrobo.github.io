@@ -1,0 +1,17 @@
+---
+title: Updates about Mann Robotics
+layout: post
+
+image: /assets/images/volunteer.jpg
+permalink: /updates/
+---
+
+{% for post in site.posts %}
+<h1 class="heading" style="text-align: left">{{ post.title }}</h1>
+<p style="margin-top: -16px">{{ post.date | date: "%B %d, %Y" }}</p>
+
+<p>{{ post.excerpt }}</p>
+
+<a href="{{ post.url }}">More</a>
+
+{% endfor %}
