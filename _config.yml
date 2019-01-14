@@ -29,6 +29,11 @@ plugins:
   - jekyll-feed
   - jekyll-seo-tag
 
+excerpt_separator: <!--more-->
+
+collections:
+  - gallery
+
 links:
   - title: About
     href: "/about/"
