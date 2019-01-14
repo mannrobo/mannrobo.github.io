@@ -53,7 +53,8 @@
   </head>
 
   <body>
-    {% include header.html %}
+    {% if page.noHeader %} {% include header.html sidebarOnly="true" %} {% else
+    %} {% include header.html %} {% endif %}
     <main class="container">{{ content }}</main>
     {% include footer.html %}
   </body>
