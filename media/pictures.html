@@ -9,7 +9,6 @@ permalink: /media/pictures/
 <style>
   .gallery-img {
     width: 220px;
-    height: 120px;
     border-radius: 6px;
     margin: 8px;
     cursor: pointer;
@@ -29,6 +28,7 @@ permalink: /media/pictures/
     flex-wrap: wrap;
     align-items: center;
     justify-content: center;
+    margin-bottom: 16px;
   }
   a.button {
     text-align: center;
@@ -46,6 +46,12 @@ permalink: /media/pictures/
     color: var(--dark-grey);
     font-family: "Roboto";
     margin-top: 128px;
+  }
+
+  @media (max-width: 520px) {
+    img {
+      width: unset !important;
+    }
   }
 </style>
 
