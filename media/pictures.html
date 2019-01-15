@@ -12,10 +12,22 @@ permalink: /media/pictures/
     height: 120px;
     border-radius: 6px;
     margin: 8px;
+    cursor: pointer;
+    transition: 0.3s all ease-in-out;
   }
+
+  .gallery-img.open {
+    width: 100%;
+    height: unset;
+    z-index: 99;
+    position: absolute;
+  }
+
   .images {
     display: flex;
     flex-wrap: wrap;
+    align-items: center;
+    justify-content: center;
   }
   a.button {
     text-align: center;
@@ -25,6 +37,14 @@ permalink: /media/pictures/
     display: flex;
     flex-direction: column;
     align-items: center;
+  }
+
+  h1 {
+    text-transform: uppercase;
+    text-align: center;
+    color: var(--dark-grey);
+    font-family: "Roboto";
+    margin-top: 128px;
   }
 </style>
 
@@ -54,12 +74,25 @@ permalink: /media/pictures/
     }
   }
 
+  const imagesDOM = document.querySelector(".images");
+
   // We'll load 10 images initally, then load more when they press the big blue button
-  appendNodes(document.querySelector(".images"), prepareImages(10));
+  appendNodes(imagesDOM, prepareImages(10));
+
+  // Pull image up
+  imagesDOM.addEventListener("click", function(e) {
+    if (e.target && e.target.closest("img")) {
+      // Remove open on all other images open state
+      Array.from(imagesDOM.children).forEach(child => {
+        child.classList.remove("open");
+      });
+      e.target.classList.toggle("open");
+    }
+  });
 
   document
     .querySelector("a.button.primary")
     .addEventListener("click", function() {
-      appendNodes(document.querySelector(".images"), prepareImages(10));
+      appendNodes(imagesDOM, prepareImages(10));
     });
 </script>
