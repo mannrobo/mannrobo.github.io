@@ -135,6 +135,7 @@ header.page-sidebarOnly ~ nav#global .st1 {
 }
 header.page.scrolled.white-bg ~ nav#global,
 header.page.phoneNavOpen ~ nav#global,
+header.page-sidebarOnly.white-bg.scrolled ~ nav#global,
 header.page-sidebarOnly.phoneNavOpen ~ nav#global {
   background: #fff;
   box-shadow: 0px 4px 6px rgba(0, 0, 0, 0.4);
