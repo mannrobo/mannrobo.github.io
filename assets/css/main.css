@@ -426,14 +426,6 @@ h5.subtitle {
   flex: 1;
 }
 
-#teams .teamgroup:first-child {
-  margin-left: -8px;
-}
-
-#teams .teamgroup:last-child {
-  margin-right: -8px;
-}
-
 @media (max-width: 720px) {
   #teams .teamlist {
     flex-direction: column;
