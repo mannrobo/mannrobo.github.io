@@ -14,6 +14,7 @@ permalink: /media/pictures/
     margin: 8px;
     cursor: pointer;
     transition: 0.3s all ease-in-out;
+    background-color: #eeeeee;
   }
 
   .gallery-img.open {
@@ -77,7 +78,7 @@ permalink: /media/pictures/
   const imagesDOM = document.querySelector(".images");
 
   // We'll load 10 images initally, then load more when they press the big blue button
-  appendNodes(imagesDOM, prepareImages(10));
+  appendNodes(imagesDOM, prepareImages(9));
 
   // Pull image up
   imagesDOM.addEventListener("click", function(e) {
@@ -93,6 +94,6 @@ permalink: /media/pictures/
   document
     .querySelector("a.button.primary")
     .addEventListener("click", function() {
-      appendNodes(imagesDOM, prepareImages(10));
+      appendNodes(imagesDOM, prepareImages(9));
     });
 </script>
