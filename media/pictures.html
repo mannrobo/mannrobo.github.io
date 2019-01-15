@@ -4,56 +4,9 @@ layout: post
 
 noHeader: true
 permalink: /media/pictures/
+
+embedStyle: styles/pictures.css
 ---
-
-<style>
-  .gallery-img {
-    width: 220px;
-    border-radius: 6px;
-    margin: 8px;
-    cursor: pointer;
-    transition: 0.3s all ease-in-out;
-    background-color: #eeeeee;
-  }
-
-  .gallery-img.open {
-    width: 100%;
-    height: unset;
-    z-index: 99;
-    position: absolute;
-  }
-
-  .images {
-    display: flex;
-    flex-wrap: wrap;
-    align-items: center;
-    justify-content: center;
-    margin-bottom: 16px;
-  }
-  a.button {
-    text-align: center;
-    margin: 0 auto;
-  }
-  .content {
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-  }
-
-  h1 {
-    text-transform: uppercase;
-    text-align: center;
-    color: var(--dark-grey);
-    font-family: "Roboto";
-    margin-top: 128px;
-  }
-
-  @media (max-width: 520px) {
-    img {
-      width: unset !important;
-    }
-  }
-</style>
 
 <div class="content">
   <div class="images"></div>
